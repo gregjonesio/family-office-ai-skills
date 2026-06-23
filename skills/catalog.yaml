@@ -1,0 +1,317 @@
+# Family Office AI Skills — Catalog
+#
+# Machine-readable inventory of the skills in this repository.
+# This file is documentation and optional structure. It is NOT executable and
+# enforces nothing. It is intended to help operators and AI builders discover,
+# compare, and govern skills.
+#
+# Metadata is deliberately conservative. All skills are read-only,
+# human-in-the-loop, and judgment-support only. None grant tool permissions or
+# transaction authority. Entries are validated (by hand) against
+# schemas/skill-manifest.schema.json.
+#
+# See CLAUDE.md and docs/skill-design-principles.md before adding a skill.
+
+version: 0.1.0
+catalog_disclaimer: >-
+  These skills support human judgment and produce unverified drafts for review.
+  They do not provide investment, legal, tax, accounting, compliance, or
+  fiduciary advice, and they do not authorize any decision, transaction, or
+  communication. Human review is required for every output. Risk levels describe
+  the sensitivity of the domain, not a measure of safety.
+
+skills:
+  - id: principal-weekly-brief
+    display_name: Principal Weekly Brief
+    category: executive-decision-support
+    description: >-
+      Consolidates calendar items, open decisions, investment updates,
+      operational issues, travel notes, and pending follow-ups into a concise,
+      decision-ready weekly briefing draft for a principal.
+    intended_users:
+      - chief-of-staff
+      - executive-assistant
+      - family-office-operator
+    input_types:
+      - calendar-items
+      - open-decisions
+      - investment-updates
+      - operational-notes
+      - travel-notes
+      - follow-ups
+    output_types:
+      - structured-briefing
+    risk_level: medium
+    tool_permissions: none
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+      - account-numbers-or-identifiers-not-required-by-the-task
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Summarizes investment and operational items for review only. Makes no
+      recommendation and provides no professional advice.
+    example_use_case: >-
+      A chief of staff drafts the weekly principal brief in a consistent format
+      for human review.
+    path: skills/principal-weekly-brief/
+
+  - id: investment-memo-screener
+    display_name: Investment Memo Screener
+    category: deal-flow
+    description: >-
+      Converts a deal summary, pitch deck notes, CIM excerpt, or founder email
+      into a structured first-pass investment memo draft that separates the
+      promoter's thesis from verified fact and surfaces diligence questions.
+    intended_users:
+      - investment-analyst
+      - deal-flow-manager
+      - family-office-operator
+    input_types:
+      - deal-summary
+      - pitch-deck-notes
+      - cim-excerpt
+      - founder-email
+      - call-notes
+    output_types:
+      - screening-memo
+    risk_level: medium
+    tool_permissions: none
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - material-nonpublic-information-handled-improperly
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Produces a screen, not a recommendation. Makes no recommendation to
+      invest, pass, or size a position, and provides no professional advice.
+    example_use_case: >-
+      An analyst triages inbound deal flow into a consistent screening format.
+    path: skills/investment-memo-screener/
+
+  - id: manager-diligence-summarizer
+    display_name: Manager Diligence Summarizer
+    category: research-and-diligence
+    description: >-
+      Summarizes investment manager and fund materials (pitch books, DDQs,
+      factsheets, call notes) into a consistent, diligence-ready draft, treating
+      all track record and fee figures as unverified.
+    intended_users:
+      - investment-analyst
+      - allocator
+      - ria-operator
+    input_types:
+      - pitch-book
+      - ddq
+      - factsheet
+      - call-notes
+    output_types:
+      - diligence-summary
+    risk_level: medium
+    tool_permissions: none
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Organizes promotional material for diligence. Makes no recommendation to
+      allocate or avoid and provides no professional advice.
+    example_use_case: >-
+      An RIA standardizes manager write-ups across an allocation pipeline.
+    path: skills/manager-diligence-summarizer/
+
+  - id: meeting-prep-pack
+    display_name: Meeting Prep Pack
+    category: communication
+    description: >-
+      Assembles a structured meeting brief draft from prior notes, attendee
+      details, agenda, open items, and desired outcomes.
+    intended_users:
+      - executive-assistant
+      - chief-of-staff
+      - family-office-operator
+    input_types:
+      - meeting-basics
+      - attendee-details
+      - agenda
+      - prior-notes
+      - desired-outcomes
+    output_types:
+      - meeting-brief
+    risk_level: medium
+    tool_permissions: none
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - fabricated-attendee-backgrounds
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Prepares an attendee for a meeting. Commits the office to no position and
+      provides no professional advice.
+    example_use_case: >-
+      An executive assistant prepares the principal for a counterparty meeting.
+    path: skills/meeting-prep-pack/
+
+  - id: post-meeting-action-extractor
+    display_name: Post-Meeting Action Extractor
+    category: institutional-memory
+    description: >-
+      Converts raw meeting notes into a structured record of decisions, action
+      items, owners, deadlines, and dependencies, plus an internal follow-up
+      draft for human review and sending.
+    intended_users:
+      - family-office-operator
+      - chief-of-staff
+      - executive-assistant
+    input_types:
+      - raw-meeting-notes
+      - attendee-list
+    output_types:
+      - decision-and-action-record
+      - internal-followup-draft
+    risk_level: medium
+    tool_permissions: none
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Records decisions and drafts an internal follow-up only. Does not send
+      communications and provides no professional advice.
+    example_use_case: >-
+      An operator turns a long meeting into a clean, owned action list.
+    path: skills/post-meeting-action-extractor/
+
+  - id: vendor-review
+    display_name: Vendor Review
+    category: operations
+    description: >-
+      Turns a vendor proposal, renewal notice, service-issue summary, or
+      performance update into a structured review draft with terms, risks,
+      questions, and a recommended process next step.
+    intended_users:
+      - operations-lead
+      - chief-of-staff
+      - executive-assistant
+    input_types:
+      - vendor-proposal
+      - renewal-notice
+      - contract-excerpt
+      - invoice
+      - service-summary
+    output_types:
+      - vendor-review
+    risk_level: medium
+    tool_permissions: none
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Prepares a review to support a human decision. Does not approve, sign,
+      renew, or terminate, does not assess whether pricing is fair, and provides
+      no legal or procurement advice.
+    example_use_case: >-
+      An operations lead reviews a custodian or technology renewal before
+      approval.
+    path: skills/vendor-review/
+
+  - id: document-digest
+    display_name: Document Digest
+    category: document-management
+    description: >-
+      Summarizes an administrative, legal, insurance, trust, entity,
+      subscription, or operating document into plain-English notes, key dates,
+      obligations, flagged unusual terms, and questions for counsel.
+    intended_users:
+      - family-office-operator
+      - chief-of-staff
+      - executive-assistant
+    input_types:
+      - document-or-excerpt
+    output_types:
+      - plain-english-digest
+    risk_level: medium
+    tool_permissions: none
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Makes a document legible and surfaces questions for professional review.
+      Does not interpret the document as a professional, does not recommend
+      signing or declining, and is not legal, tax, or accounting advice.
+    example_use_case: >-
+      An operator gets a plain-English read of a subscription document before it
+      goes to counsel.
+    path: skills/document-digest/

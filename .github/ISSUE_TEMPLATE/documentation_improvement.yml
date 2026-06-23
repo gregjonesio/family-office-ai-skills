@@ -1,0 +1,36 @@
+name: Documentation improvement
+description: Suggest a clarification or improvement to the documentation.
+title: "[Docs] <page affected>"
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the documentation. Please keep suggestions generic and
+        free of any confidential information.
+  - type: input
+    id: page
+    attributes:
+      label: Page affected
+      placeholder: e.g., docs/implementation-guide.md
+    validations:
+      required: true
+  - type: textarea
+    id: unclear
+    attributes:
+      label: What is unclear or could be improved
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: This suggestion contains no confidential information.
+          required: true

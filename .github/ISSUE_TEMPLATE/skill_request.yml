@@ -1,0 +1,95 @@
+name: Skill request
+description: Propose a new family office / RIA workflow skill for this library.
+title: "[Skill request] <short workflow name>"
+labels: ["skill-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a skill. This library is conservative by design: skills are
+        read-only, human-in-the-loop, and provide no professional advice. Please describe
+        the workflow generically — **do not include any confidential or real information.**
+  - type: input
+    id: workflow-name
+    attributes:
+      label: Workflow name
+      placeholder: e.g., Quarterly entity compliance summary
+    validations:
+      required: true
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: User type
+      description: Who would use this skill?
+      options:
+        - Single-family office operator
+        - Multi-family office
+        - RIA
+        - Investment analyst
+        - Chief of staff
+        - Executive assistant
+        - Operations team
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem being solved
+      description: What operational problem would this skill address?
+    validations:
+      required: true
+  - type: textarea
+    id: current-process
+    attributes:
+      label: Current manual process
+      description: How is this done today, without AI? Keep it generic.
+    validations:
+      required: true
+  - type: textarea
+    id: desired-output
+    attributes:
+      label: Desired output
+      description: What should the skill produce? Describe the structure of the draft.
+    validations:
+      required: true
+  - type: textarea
+    id: confidentiality
+    attributes:
+      label: Confidentiality considerations
+      description: What sensitive information would this touch, and how should it be handled or de-identified?
+    validations:
+      required: true
+  - type: textarea
+    id: advice-risk
+    attributes:
+      label: Professional advice risk
+      description: Could this be mistaken for legal, tax, investment, accounting, compliance, or fiduciary advice? How should the boundary be drawn?
+    validations:
+      required: true
+  - type: dropdown
+    id: read-only
+    attributes:
+      label: Should this remain read-only?
+      description: Skills in this library do not act, send, approve, or transact.
+      options:
+        - "Yes — read-only, judgment-support only"
+        - "Unsure — needs discussion"
+    validations:
+      required: true
+  - type: textarea
+    id: prohibited-actions
+    attributes:
+      label: Prohibited actions
+      description: What must this skill never do (beyond the standard prohibitions)?
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: This request contains no confidential information, real names, or client data.
+          required: true
+        - label: I understand skills here are read-only, human-in-the-loop, and provide no professional advice.
+          required: true

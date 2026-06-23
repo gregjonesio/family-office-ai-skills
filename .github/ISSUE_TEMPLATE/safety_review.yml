@@ -1,0 +1,62 @@
+name: Safety / confidentiality / advice-boundary concern
+description: Flag content that may be risky, misleading, or could be mistaken for professional advice.
+title: "[Safety] <file or skill affected>"
+labels: ["safety-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping keep this library safe and conservative. Reports like this are
+        as valuable as new content. **Do not include confidential information in this issue.**
+        For a sensitive disclosure, contact the maintainer privately instead (see SECURITY.md).
+  - type: input
+    id: affected
+    attributes:
+      label: File or skill affected
+      placeholder: e.g., skills/investment-memo-screener/SKILL.md
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      options:
+        - Could be mistaken for professional advice
+        - Could imply autonomy / transaction authority
+        - Could lead to data leakage / confidentiality risk
+        - Overclaim or implies reliability / enforceable guardrail
+        - Weakened or missing disclaimer
+        - Prompt-injection / instruction-handling risk
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: why-risky
+    attributes:
+      label: Why this may be risky
+      description: Explain the concern and the scenario in which it could cause harm.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-wording
+    attributes:
+      label: Suggested safer wording
+      description: If you have one, propose more conservative language.
+    validations:
+      required: false
+  - type: checkboxes
+    id: implications
+    attributes:
+      label: Could this content imply any of the following?
+      options:
+        - label: Professional advice (legal, tax, investment, accounting, compliance, fiduciary)
+        - label: Autonomy or transaction authority
+        - label: Data leakage or unsafe handling of confidential information
+        - label: That guardrails are enforceable controls or that output is reliable
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: This report contains no confidential information.
+          required: true

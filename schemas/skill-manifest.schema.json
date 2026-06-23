@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sm3llz/family-office-ai-skills/blob/main/schemas/skill-manifest.schema.json",
+  "title": "Family Office AI Skill Manifest",
+  "description": "Schema for entries in skills/catalog.yaml and for optional per-skill manifests. This schema is documentation and optional structure only. It is NOT enforced by any script in this repository, which is non-executable by default. It encodes the conservative, read-only, human-in-the-loop posture every skill must follow.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "display_name",
+    "category",
+    "description",
+    "risk_level",
+    "tool_permissions",
+    "human_review_required",
+    "prohibited_actions",
+    "advice_boundary",
+    "path"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable kebab-case identifier matching the skill folder name.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Human-readable skill name.",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "description": "Operating-model layer or functional area the skill serves.",
+      "enum": [
+        "information-intake",
+        "research-and-diligence",
+        "communication",
+        "operations",
+        "analytics-and-reporting",
+        "deal-flow",
+        "institutional-memory",
+        "executive-decision-support",
+        "document-management"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "Concise description of what the skill produces. Must describe a draft for review, not a decision.",
+      "minLength": 1
+    },
+    "intended_users": {
+      "type": "array",
+      "description": "Roles the skill is designed for.",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "input_types": {
+      "type": "array",
+      "description": "Kinds of input the skill consumes.",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "output_types": {
+      "type": "array",
+      "description": "Kinds of draft artifact the skill produces.",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "risk_level": {
+      "type": "string",
+      "description": "Sensitivity of the domain the skill touches. Describes domain sensitivity, not a guarantee of safety. Skills touching wealth, investment, legal, tax, or family office operations are typically 'medium' even when read-only.",
+      "enum": ["low", "medium", "high"]
+    },
+    "tool_permissions": {
+      "description": "Tool/system access the skill is granted. Must be 'none'. Skills in this repository are read-only and access no live systems.",
+      "const": "none"
+    },
+    "human_review_required": {
+      "description": "Whether a competent person must review output before use. Must be true.",
+      "const": true
+    },
+    "prohibited_inputs": {
+      "type": "array",
+      "description": "Inputs that must never be provided to the skill.",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "prohibited_actions": {
+      "type": "array",
+      "description": "Actions the skill must never take. The listed core actions are required in every manifest.",
+      "items": { "type": "string" },
+      "uniqueItems": true,
+      "minItems": 9,
+      "allOf": [
+        { "contains": { "const": "execute-transactions" } },
+        { "contains": { "const": "approve-investments" } },
+        { "contains": { "const": "send-communications-automatically" } },
+        { "contains": { "const": "provide-legal-advice" } },
+        { "contains": { "const": "provide-tax-advice" } },
+        { "contains": { "const": "provide-investment-advice" } },
+        { "contains": { "const": "make-fiduciary-determinations" } },
+        { "contains": { "const": "access-live-systems" } },
+        { "contains": { "const": "rely-on-confidential-data-in-unapproved-ai-tools" } }
+      ]
+    },
+    "advice_boundary": {
+      "type": "string",
+      "description": "Plain statement of where the skill stops and professional advice begins.",
+      "minLength": 1
+    },
+    "example_use_case": {
+      "type": "string",
+      "description": "A short, fictional, generic example of how the skill is used."
+    },
+    "path": {
+      "type": "string",
+      "description": "Repository-relative path to the skill folder.",
+      "pattern": "^skills/[a-z0-9]+(-[a-z0-9]+)*/$"
+    }
+  }
+}
