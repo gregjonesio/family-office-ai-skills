@@ -45,4 +45,4 @@ wealth operators.
   cybersecurity, or fiduciary advice.
 - All examples use fully fictional, generic data.
 
-[0.1.0]: https://github.com/sm3llz/family-office-ai-skills/releases/tag/v0.1.0
+[0.1.0]: https://github.com/gregjonesio/family-office-ai-skills/releases/tag/v0.1.0

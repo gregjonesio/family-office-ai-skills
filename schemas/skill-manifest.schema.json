@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/sm3llz/family-office-ai-skills/blob/main/schemas/skill-manifest.schema.json",
+  "$id": "https://github.com/gregjonesio/family-office-ai-skills/blob/main/schemas/skill-manifest.schema.json",
   "title": "Family Office AI Skill Manifest",
   "description": "Schema for entries in skills/catalog.yaml and for optional per-skill manifests. This schema is documentation and optional structure only. It is NOT enforced by any script in this repository, which is non-executable by default. It encodes the conservative, read-only, human-in-the-loop posture every skill must follow.",
   "type": "object",
