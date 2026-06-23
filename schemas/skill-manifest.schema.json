@@ -75,6 +75,16 @@
       "description": "Tool/system access the skill is granted. Must be 'none'. Skills in this repository are read-only and access no live systems.",
       "const": "none"
     },
+    "context_sources": {
+      "type": "array",
+      "description": "How context may be provided to the skill — for example, manual input, or an approved read-only connector the user separately configures and governs. These are not bundled integrations; the repository includes no connectors. See docs/connectors-and-context.md.",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "connector_posture": {
+      "type": "string",
+      "description": "The conservative posture for any connector used to feed this skill: manual input or approved read-only connector; no write, send, or transaction authority."
+    },
     "human_review_required": {
       "description": "Whether a competent person must review output before use. Must be true.",
       "const": true

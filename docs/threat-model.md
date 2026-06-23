@@ -36,6 +36,12 @@ To make the risks of using AI in family office workflows explicit, so operators 
 | T6 | False confidence from clean formatting | Well-structured output reads as authoritative regardless of accuracy |
 | T7 | Accidental disclosure through sample data | A contributor uses real (or thinly disguised) data in an example |
 | T8 | Unreviewed contributions add risky instructions | A pull request introduces advice, autonomy, or weakened guardrails |
+| T9 | Overly broad connector permissions | A context connector can reach far more data than any single task needs |
+| T10 | Stale or incorrect retrieved context | A connector pulls outdated or wrong information that the output then relies on |
+| T11 | Accidental retrieval of privileged/confidential material | A connector reaches an estate, tax, legal, or privileged file the task did not require |
+| T12 | Write-capable connectors changing records | A connector with write access creates or modifies records, tasks, or messages |
+| T13 | Autonomous sending or transaction actions | A connector is wired to send a message or initiate a transaction without human approval |
+| T14 | Connector access not revoked after role changes | Access persists after a person changes role or leaves, widening exposure |
 
 ## Misuse cases
 
@@ -65,6 +71,10 @@ These skills can produce output that *resembles* legal, tax, or investment analy
 
 The skills are read-only by design. The risk is that a builder removes the human from the loop — wiring a skill into a pipeline that sends, approves, or transacts. Nothing in this repository grants that authority, and doing so converts a low-risk drafting aid into a high-risk autonomous system. Any such integration must be independently reviewed by someone accountable for security and compliance.
 
+## Connector / context-access risks
+
+Connectors (a context-access layer that retrieves information for a workflow) are optional and are not included in this repository, but adopting them adds risk: overly broad permissions, stale or incorrect retrieved context, accidental retrieval of privileged or confidential material, write-capable connectors changing records, autonomous sending or transaction actions, and access that is not revoked after a role change. A connector is a data-access decision, not a safety control — granting access widens what the workflow can reach. See [connectors-and-context.md](connectors-and-context.md) for the full operating model, maturity levels, and approval checklist.
+
 ## Mitigations
 
 | Risk | Practice that reduces it |
@@ -77,6 +87,12 @@ The skills are read-only by design. The risk is that a builder removes the human
 | False confidence (T6) | Verify facts against source regardless of how clean the output looks |
 | Sample-data leakage (T7) | Use only fictional examples; review PRs for real data |
 | Risky contributions (T8) | Enforce the contribution checklist and safety-review process |
+| Broad connector permissions (T9) | Least privilege; scope to the minimum the workflow needs |
+| Stale/incorrect context (T10) | Read-only first; verify all retrieved facts against source |
+| Privileged/confidential retrieval (T11) | Approved systems only; scope to specific folders/sources; human review |
+| Write-capable connectors (T12) | Keep connectors read-only; no write access without formal controls |
+| Autonomous send/transaction (T13) | No autonomous action; keep a human between retrieval and any action |
+| Access not revoked (T14) | Maintain a revocation process and review access on role changes |
 
 ## Human review model
 

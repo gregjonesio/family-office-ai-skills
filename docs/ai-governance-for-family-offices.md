@@ -50,6 +50,19 @@ When in doubt, the use case is prohibited until someone accountable approves it.
 - **Never paste highly sensitive material into public tools.** See [privacy-and-confidentiality.md](privacy-and-confidentiality.md) for the detailed rules.
 - **Control where output lives.** AI output is working material; store it under the same access controls as the source documents it summarizes.
 
+## 4a. Connector governance
+
+If you allow an AI system to retrieve context from your systems (calendars, document repositories, email, task managers, notes, CRM, knowledge bases), govern that access deliberately. Connectors are optional, are not required to use these workflows, and are a data-access risk — not a safety control. Govern them with:
+
+- **A connector inventory.** Maintain a list of what is connected, to which AI environment, with what scope.
+- **Approved data sources.** Define which systems may be connected at all; default is none until approved.
+- **Approved use cases.** Tie each connector to specific workflows, not general access.
+- **Prohibited data categories.** Name the data that must not be connected (e.g., credentials, identity documents, health, unredacted tax, privileged material) — see [connectors-and-context.md](connectors-and-context.md).
+- **Permission scope (least privilege).** Grant the minimum access a workflow needs, scoped to specific folders or sources.
+- **Read-only preference.** Prefer read-only access; treat write-, send-, or transaction-capable connectors as out of scope absent formal controls and review.
+- **Review and revocation cadence.** Review connector access on a regular cadence and on role changes; ensure access can be revoked quickly.
+- **Staff training.** Train staff that retrieval is not action, that retrieved context is unverified, and that human review is still required.
+
 ## 5. Model selection
 
 Choose the tool deliberately rather than by default:

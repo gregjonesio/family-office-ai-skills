@@ -45,6 +45,17 @@ Good first pilots:
 
 Avoid starting with the highest-stakes workflows (investment screening, manager diligence) until the team has built review habits on something lower-consequence.
 
+## Decide how context enters the workflow
+
+Before you scale, decide how information will reach the workflow.
+
+- **Start with manual input.** For pilots, paste fictional or approved, non-confidential material. This is the lowest-risk way to learn how a skill behaves.
+- **Read-only connectors can reduce copy/paste** once a workflow has earned trust — for example, retrieving an approved calendar or document for a brief.
+- **Connectors should be approved and scoped** to the minimum necessary (least privilege), read-only first, with no autonomous write, send, or transaction.
+- **Do not connect live confidential systems without governance** — approval, access controls, logging, revocation, and human review must be in place first.
+
+Connectors are optional and are not required to use these skills. They improve context; they do not replace human review or reduce confidentiality risk. See [connectors-and-context.md](connectors-and-context.md) for the full operating model, maturity levels, and approval checklist.
+
 ## Step 3 — Train the people who will use it
 
 Training is short but should cover, in order:

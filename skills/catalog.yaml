@@ -10,6 +10,12 @@
 # transaction authority. Entries are validated (by hand) against
 # schemas/skill-manifest.schema.json.
 #
+# No connectors or live integrations are included in this repository. The
+# context_sources and connector_posture fields describe how context MAY be
+# provided to a skill (manually, or via an approved read-only connector the
+# user separately configures and governs) — they are not bundled integrations.
+# See docs/connectors-and-context.md.
+#
 # See CLAUDE.md and docs/skill-design-principles.md before adding a skill.
 
 version: 0.1.0
@@ -43,6 +49,10 @@ skills:
       - structured-briefing
     risk_level: medium
     tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
     human_review_required: true
     prohibited_inputs:
       - confidential-data-in-unapproved-ai-tools
@@ -87,6 +97,10 @@ skills:
       - screening-memo
     risk_level: medium
     tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
     human_review_required: true
     prohibited_inputs:
       - confidential-data-in-unapproved-ai-tools
@@ -129,6 +143,10 @@ skills:
       - diligence-summary
     risk_level: medium
     tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
     human_review_required: true
     prohibited_inputs:
       - confidential-data-in-unapproved-ai-tools
@@ -170,6 +188,10 @@ skills:
       - meeting-brief
     risk_level: medium
     tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
     human_review_required: true
     prohibited_inputs:
       - confidential-data-in-unapproved-ai-tools
@@ -211,6 +233,10 @@ skills:
       - internal-followup-draft
     risk_level: medium
     tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
     human_review_required: true
     prohibited_inputs:
       - confidential-data-in-unapproved-ai-tools
@@ -253,6 +279,10 @@ skills:
       - vendor-review
     risk_level: medium
     tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
     human_review_required: true
     prohibited_inputs:
       - confidential-data-in-unapproved-ai-tools
@@ -293,6 +323,10 @@ skills:
       - plain-english-digest
     risk_level: medium
     tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
     human_review_required: true
     prohibited_inputs:
       - confidential-data-in-unapproved-ai-tools

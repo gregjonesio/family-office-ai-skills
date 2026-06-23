@@ -121,6 +121,7 @@ Browse any skill's `examples/` folder for the rest.
 | [Privacy and Confidentiality](docs/privacy-and-confidentiality.md) | What must never be pasted into public tools, de-identification, failure modes, a pre-paste checklist |
 | [Implementation Guide](docs/implementation-guide.md) | A step-by-step rollout for a small office or RIA: pilot selection, training, review loops, measurement |
 | [Operating Model](docs/operating-model.md) | The eight-layer AI-native family office operating model, from information intake to executive decision support |
+| [Connectors and Context Access](docs/connectors-and-context.md) | How an optional context-access layer fits, its maturity levels, and an approval checklist — a data-access risk, not a safety control |
 | [Threat Model](docs/threat-model.md) | Practical risks of public family office AI skills, misuse cases, and the human-review model |
 | [Evaluation and Red-Team Guide](docs/evaluation-guide.md) | How to test that a skill behaves conservatively, with example red-team prompts and expected safe responses |
 | [Measurement Framework](docs/measurement-framework.md) | Honest, directional metrics for adoption and value — with explicit limits |
@@ -138,6 +139,7 @@ The short version of how this library is meant to be used:
 - **No skill grants transaction authority** — nothing here approves, executes, allocates, or sends.
 - **Human review is required** — every output is an unverified draft for a competent person to verify.
 - **Guardrails are instructions, not guarantees** — a skill's rules are written instructions to the AI, not enforceable controls; human review is the real control.
+- **Connectors are a data-access risk, not a safety control** — connectors may improve context, but they should be approved, scoped, and treated as a data-access risk, not a safety control.
 - **You are responsible for professional review and compliance** — these materials are not investment, legal, tax, accounting, compliance, cybersecurity, or fiduciary advice, and create no professional relationship.
 
 See the [Threat Model](docs/threat-model.md) and [Evaluation Guide](docs/evaluation-guide.md) for how this posture is maintained in practice.
