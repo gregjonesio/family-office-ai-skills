@@ -45,6 +45,17 @@ Good first pilots:
 
 Avoid starting with the highest-stakes workflows (investment screening, manager diligence) until the team has built review habits on something lower-consequence.
 
+## Choose a blueprint before adding complexity
+
+Before adding agents, connectors, or multiple skills, choose **one system blueprint** and run it end to end.
+
+- **Do not add agents or connectors before selecting a workflow.** Complexity added before a workflow is proven is complexity you cannot evaluate.
+- **Start with one [system blueprint](../blueprints/).** For example, the [weekly principal briefing system](../blueprints/weekly-principal-briefing-system.md) or the [meeting-to-execution system](../blueprints/meeting-to-execution-system.md).
+- **Use the blueprint to identify** the inputs, the human review gates, the outputs, and the measurement metrics before you build anything.
+- **Add capability only after the manual version works** and the review gates hold.
+
+A blueprint gives you a defined shape to pilot, measure, and govern — rather than an open-ended "use AI more."
+
 ## Decide how context enters the workflow
 
 Before you scale, decide how information will reach the workflow.

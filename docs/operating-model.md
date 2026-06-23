@@ -132,6 +132,15 @@ Across all eight layers, the pattern is the same:
 
 That division is what makes the model both practical and conservative. It lets a lean team cover a wider surface area with more consistent preparation, without surrendering control of any consequential decision. It is not a claim that AI replaces headcount, judgment, or professional advice.
 
+## Going deeper
+
+This operating model describes the *layers of work*. For the system design that sits around them — context, controls, and measurement — and for how to compose and mature these workflows, see:
+
+- [Reference Architecture](reference-architecture.md) — the six-layer architecture with review gates and feedback.
+- [AI Workforce Operating Model](ai-workforce-operating-model.md) — what an AI Workforce is, and what stays human.
+- [Skill Maturity Matrix](skill-maturity-matrix.md) — from a one-off prompt to an operating layer.
+- [System blueprints](../blueprints/) — composed, end-to-end designs across briefings, deal review, meetings, and vendors.
+
 ---
 
 *This operating model is a conceptual and operational framework, not legal, compliance, investment, or regulatory advice. Adapt it to your own structure and obligations.*

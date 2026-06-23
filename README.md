@@ -16,6 +16,7 @@ An open-source library of structured **AI skills, prompts, and workflow template
 ## Contents
 
 - [Try this first](#try-this-first)
+- [For advanced operators and builders](#for-advanced-operators-and-builders)
 - [Why this exists](#why-this-exists)
 - [What's inside](#whats-inside)
 - [The skills](#the-skills)
@@ -39,6 +40,17 @@ New here? The [Quickstart](QUICKSTART.md) walks you through running one skill in
 - **Start with [Principal Weekly Brief](skills/principal-weekly-brief/)** — the simplest, highest-frequency workflow to see how a skill behaves.
 - **Use fictional or approved, non-confidential data** — never paste confidential information into public or unapproved AI tools.
 - **Treat the output as a draft for human review** — verify every fact against source before relying on it.
+
+## For advanced operators and builders
+
+This repository treats AI adoption as an operating-system problem, not a prompt-engineering problem. If you are designing an AI-native family office operating layer — as an RIA COO, chief of staff, or wealthtech builder — start here:
+
+- **[Reference architecture](docs/reference-architecture.md)** — the six-layer model: context, connector governance, skills, review gates, outputs, measurement.
+- **[AI Workforce operating model](docs/ai-workforce-operating-model.md)** — what an AI Workforce is, what stays human, and the vocabulary (prompt → skill → workflow → system).
+- **[Skill maturity matrix](docs/skill-maturity-matrix.md)** — how usage matures from a one-off prompt to an operating layer (more structure and review, not more autonomy).
+- **[System blueprints](blueprints/)** — composed, end-to-end designs (briefing, opportunity review, meeting-to-execution, vendor management).
+- **[Evaluation examples](evals/)** — non-executable red-team scenarios for testing conservative behavior.
+- **[Connector / context-access guide](docs/connectors-and-context.md)** — how approved context enters workflows, as a governed data-access risk.
 
 ## Why this exists
 
@@ -121,6 +133,9 @@ Browse any skill's `examples/` folder for the rest.
 | [Privacy and Confidentiality](docs/privacy-and-confidentiality.md) | What must never be pasted into public tools, de-identification, failure modes, a pre-paste checklist |
 | [Implementation Guide](docs/implementation-guide.md) | A step-by-step rollout for a small office or RIA: pilot selection, training, review loops, measurement |
 | [Operating Model](docs/operating-model.md) | The eight-layer AI-native family office operating model, from information intake to executive decision support |
+| [Reference Architecture](docs/reference-architecture.md) | The six-layer AI-native family office architecture: context, connector governance, skills, review gates, outputs, measurement |
+| [AI Workforce Operating Model](docs/ai-workforce-operating-model.md) | What an "AI Workforce" is and is not, the prompt→skill→system vocabulary, and what stays human |
+| [Skill Maturity Matrix](docs/skill-maturity-matrix.md) | How AI usage matures from a one-off prompt to an operating layer — more structure and review, not more autonomy |
 | [Connectors and Context Access](docs/connectors-and-context.md) | How an optional context-access layer fits, its maturity levels, and an approval checklist — a data-access risk, not a safety control |
 | [Threat Model](docs/threat-model.md) | Practical risks of public family office AI skills, misuse cases, and the human-review model |
 | [Evaluation and Red-Team Guide](docs/evaluation-guide.md) | How to test that a skill behaves conservatively, with example red-team prompts and expected safe responses |
@@ -128,6 +143,10 @@ Browse any skill's `examples/` folder for the rest.
 | [AI Maturity Model](docs/family-office-ai-maturity-model.md) | Five levels from no formal AI use to a governed, AI-native family office |
 | [Skill Design Principles](docs/skill-design-principles.md) | The rules every skill in this library follows |
 | [Operator Case Study](docs/operator-case-study.md) | Sanitized example of measuring an AI-native family office workflow layer (illustrative figures) |
+
+**System blueprints:** composed, end-to-end designs in [`blueprints/`](blueprints/) — [weekly principal briefing](blueprints/weekly-principal-briefing-system.md), [investment opportunity review](blueprints/investment-opportunity-review-system.md), [meeting-to-execution](blueprints/meeting-to-execution-system.md), and [vendor management](blueprints/vendor-management-system.md).
+
+**Evaluation examples:** non-executable red-team scenarios in [`evals/`](evals/) for testing that a skill behaves conservatively under pressure.
 
 For AI builders: the machine-readable [skill catalog](skills/catalog.yaml) and its [JSON schema](schemas/skill-manifest.schema.json) document each skill's conservative metadata. See the [Roadmap](ROADMAP.md) for direction and the [Changelog](CHANGELOG.md) for history.
 

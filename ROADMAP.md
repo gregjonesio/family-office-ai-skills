@@ -12,6 +12,16 @@ This roadmap is directional and may change. Nothing here is a commitment or a ti
 - Documentation that helps operators adopt AI responsibly: governance, privacy, threat model, evaluation, measurement, and the maturity model.
 - Keeping the library conservative, sanitized, and non-executable by default.
 
+## Advanced operator layer
+
+Included in v0.1.0. These move the repository beyond a skill library toward a public blueprint for an AI-native family office operating layer — all read-only, human-in-the-loop, and non-executable:
+
+- [Reference architecture](docs/reference-architecture.md) — the six-layer model.
+- [AI Workforce operating model](docs/ai-workforce-operating-model.md) — definition, vocabulary, and what stays human.
+- [Skill maturity matrix](docs/skill-maturity-matrix.md) — prompt to operating layer.
+- [System blueprints](blueprints/) — composed, end-to-end workflow designs.
+- [Non-executable evaluation examples](evals/) — red-team scenarios for conservative behavior.
+
 ## Near-term improvements
 
 - Refining the existing skills' instructions and quality-control checks based on feedback.
