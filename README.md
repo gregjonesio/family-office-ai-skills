@@ -23,6 +23,7 @@ An open-source library of structured **AI skills, prompts, and workflow template
 - [Who it's for](#who-its-for)
 - [How to use these skills](#how-to-use-these-skills)
 - [Examples in practice](#examples-in-practice)
+- [Case studies](#case-studies)
 - [Documentation](#documentation)
 - [Trust and safety posture](#trust-and-safety-posture)
 - [Privacy, security, and governance](#privacy-security-and-governance)
@@ -124,6 +125,14 @@ Each skill ships with a fictional, end-to-end example so you can see exactly wha
   → [sample input](skills/document-digest/examples/sample-input.md) · [sample output](skills/document-digest/examples/sample-output.md)
 
 Browse any skill's `examples/` folder for the rest.
+
+## Case studies
+
+The [`case-studies/`](case-studies/) folder shows how the skills, blueprints, review gates, and connector guidance fit together in realistic operating workflows — a weekly principal brief, a first-pass investment opportunity review, an insurance renewal review, capital call processing, and turning ambiguous meeting notes into an execution plan.
+
+They are **fictionalized, sanitized examples** — invented scenarios with no real names, employers, principals, vendors, investments, or documents — written to show how the skills apply in practice, not to describe any actual client or employer workflow. Each keeps the same read-only, human-in-the-loop, non-advisory posture as the rest of the repository.
+
+→ Start with the [case studies overview](case-studies/README.md).
 
 ## Documentation
 

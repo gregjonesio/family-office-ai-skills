@@ -56,6 +56,8 @@ Before adding agents, connectors, or multiple skills, choose **one system bluepr
 
 A blueprint gives you a defined shape to pilot, measure, and govern — rather than an open-ended "use AI more."
 
+To see how the skills, blueprints, review gates, and connector guidance fit together end to end before you build, read the [operator case studies](../case-studies/). Each one walks a realistic (fictional) workflow — a weekly principal brief, an investment opportunity first-pass, an insurance renewal review, capital call processing, meeting-to-execution — from the operating problem through the review gates to what stays human. They are the best place to picture how a workflow actually runs in your office, and a useful reference when scoping your own pilot.
+
 ## Decide how context enters the workflow
 
 Before you scale, decide how information will reach the workflow.
