@@ -23,6 +23,7 @@ An open-source library of structured **AI skills, prompts, and workflow template
 - [Who it's for](#who-its-for)
 - [How to use these skills](#how-to-use-these-skills)
 - [Examples in practice](#examples-in-practice)
+- [Playbooks](#playbooks)
 - [Case studies](#case-studies)
 - [Documentation](#documentation)
 - [Trust and safety posture](#trust-and-safety-posture)
@@ -68,11 +69,18 @@ This repository publishes generalized, sanitized versions of workflows that map 
 ```
 family-office-ai-skills/
 ├── skills/        Seven structured AI workflows (SKILL.md + README + examples)
+├── blueprints/    Composed, end-to-end system designs
+├── playbooks/     How recurring operational responsibilities are executed
+├── case-studies/  Fictional, worked end-to-end examples
 ├── templates/     Reusable markdown templates for the artifacts they produce
+├── evals/         Non-executable red-team scenarios
 └── docs/          Governance, privacy, implementation, and operating-model guidance
 ```
 
 - **`skills/`** — Seven workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output.
+- **`blueprints/`** — Composed, end-to-end system designs that show how several skills, context sources, and review gates fit together.
+- **`playbooks/`** — How a lean family office runs its recurring operational responsibilities — the cadence, approvals, accountability, and review gates — and where AI reduces administrative burden without replacing judgment. See the [playbooks overview](playbooks/README.md).
+- **`case-studies/`** — Fictional, sanitized examples that walk one workflow from operating problem to follow-through.
 - **`templates/`** — Reusable markdown templates for weekly briefs, investment memos, manager diligence, meeting prep, and action items.
 - **`docs/`** — Practical guidance for running AI responsibly inside a family office or RIA: [governance](docs/ai-governance-for-family-offices.md), [privacy](docs/privacy-and-confidentiality.md), [implementation](docs/implementation-guide.md), and the [operating model](docs/operating-model.md).
 
@@ -125,6 +133,14 @@ Each skill ships with a fictional, end-to-end example so you can see exactly wha
   → [sample input](skills/document-digest/examples/sample-input.md) · [sample output](skills/document-digest/examples/sample-output.md)
 
 Browse any skill's `examples/` folder for the rest.
+
+## Playbooks
+
+The [`playbooks/`](playbooks/) folder documents how a lean family office runs its recurring operational responsibilities — the operating cadence, information flow, approvals, accountability, and review gates — and where AI reduces administrative burden without replacing judgment. Where a skill describes a reusable AI workflow, a playbook describes the standing *job* that workflow plugs into.
+
+Ten playbooks cover the work an office repeats: the [principal weekly review](playbooks/principal-weekly-review.md), [capital call processing](playbooks/capital-call-processing.md), [investment opportunity intake](playbooks/investment-opportunity-intake.md), [board and committee meeting preparation](playbooks/board-meeting-preparation.md), [executive travel coordination](playbooks/executive-travel-coordination.md), [insurance renewal management](playbooks/insurance-renewal-management.md), [vendor onboarding and review](playbooks/vendor-onboarding-and-review.md), [quarter-end close](playbooks/quarter-end-close.md), the [entity governance calendar](playbooks/entity-governance-calendar.md), and [document review for counsel](playbooks/document-review-for-counsel.md). Each separates AI assistance from human responsibility, carries explicit review gates, and cross-links the relevant skills, blueprints, case studies, and governance documents.
+
+→ Start with the [playbooks overview](playbooks/README.md).
 
 ## Case studies
 
