@@ -208,9 +208,11 @@ AI-generated output can be inaccurate, incomplete, or misleading. You are respon
 
 ## Built from operator experience
 
-Created by Greg Jones from generalized operator experience. The repository contains sanitized workflow patterns and fictional examples. It is an independent public project and is **not affiliated with, endorsed by, or representative of any employer, client, principal, family office, investment adviser, or other third party.**
+Created by [Greg Jones](https://gregjones.io) from generalized operator experience. The repository contains sanitized workflow patterns and fictional examples. It is an independent public project and is **not affiliated with, endorsed by, or representative of any employer, client, principal, family office, investment adviser, or other third party.**
 
 The workflows describe general patterns for lean family office and wealth operations — briefings, screening, diligence, meeting prep, follow-through, and document digestion. They are shared so other operators can adapt the *structure*, not to prescribe any particular decision or to publish any private operating system.
+
+The reasoning behind these patterns — why a control is placed where it is, and where the machine is made to stop — is written up in longer form at [gregjones.io](https://gregjones.io) and in the essays at [gregjonesio.substack.com](https://gregjonesio.substack.com).
 
 ## Contributing
 
