@@ -3,8 +3,8 @@
 **Opportunity:** [Name / placeholder]
 **Prepared by:** [Preparer]
 **Date:** [Date]
-**Source material:** [What this memo is based on — deck, email, CIM excerpt, call notes]
-**Status:** First-pass screen — not a recommendation; verify all facts
+**Source material:** [What this memo is based on: deck, email, CIM excerpt, call notes]
+**Status:** First-pass screen, not a recommendation; verify all facts
 
 > This is a screening document, not investment advice or a recommendation to invest. All figures and claims are drawn from the source material, are unverified, and must be independently confirmed. Items marked *(assumption)* are inferred, not stated. Items marked *(missing)* were not provided.
 
@@ -24,7 +24,7 @@
 
 ## Investment thesis (as presented)
 
-[The case *as the source material presents it* — not an endorsement. Summarize the argument for the opportunity.]
+[The case *as the source material presents it*, not an endorsement. Summarize the argument for the opportunity.]
 
 ## Key risks
 
@@ -46,11 +46,11 @@
 
 ## Potential fit
 
-[Neutral observation on how this maps to a generic mandate — sector, stage, size, liquidity, concentration. Framed as considerations, not a verdict.]
+[Neutral observation on how this maps to a generic mandate: sector, stage, size, liquidity, concentration. Framed as considerations, not a verdict.]
 
 ## Suggested next step
 
-[A process step only — e.g., "request the items under Missing information," "pass for now," "route to [reviewer] for a full review." Not a decision to invest.]
+[A process step only: e.g., "request the items under Missing information," "pass for now," "route to [reviewer] for a full review." Not a decision to invest.]
 
 ---
 

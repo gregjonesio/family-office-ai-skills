@@ -77,7 +77,7 @@
     },
     "context_sources": {
       "type": "array",
-      "description": "How context may be provided to the skill — for example, manual input, or an approved read-only connector the user separately configures and governs. These are not bundled integrations; the repository includes no connectors. See docs/connectors-and-context.md.",
+      "description": "How context may be provided to the skill: for example, manual input, or an approved read-only connector the user separately configures and governs. These are not bundled integrations; the repository includes no connectors. See docs/connectors-and-context.md.",
       "items": { "type": "string" },
       "uniqueItems": true
     },

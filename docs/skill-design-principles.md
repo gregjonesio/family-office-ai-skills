@@ -6,7 +6,7 @@ How skills in this repository are designed. These principles keep the library co
 
 ## 1. Workflows, not prompts
 
-A skill is a contract, not a sentence. It specifies inputs, an output structure, behavioral rules, quality-control checks, and prohibited actions. That structure is what makes output consistent and reviewable — and what distinguishes this from generic prompt engineering.
+A skill is a contract, not a sentence. It specifies inputs, an output structure, behavioral rules, quality-control checks, and prohibited actions. That structure is what makes output consistent and reviewable, and what distinguishes this from generic prompt engineering.
 
 ## 2. Read-only by default
 
@@ -30,11 +30,11 @@ A skill flags what it does not know rather than filling the gap. Under pressure 
 
 ## 7. Decision-ready, not decision-making
 
-Output should be concise, structured, and useful enough to support a decision — and must stop short of making one. The skill frames decisions for human judgment; it does not render them.
+Output should be concise, structured, and useful enough to support a decision, and must stop short of making one. The skill frames decisions for human judgment; it does not render them.
 
 ## 8. Every skill includes prohibited actions
 
-Each `SKILL.md` has a `Do not` section listing what the skill must never do. These are written instructions to the AI, understood as guidance rather than enforceable controls — which is exactly why human review remains the real safeguard.
+Each `SKILL.md` has a `Do not` section listing what the skill must never do. These are written instructions to the AI, understood as guidance rather than enforceable controls, which is exactly why human review remains the real safeguard.
 
 ## 9. Every skill includes quality control
 
@@ -46,7 +46,7 @@ Each skill ships with `examples/sample-input.md` and `examples/sample-output.md`
 
 ## 11. Sample data must be fictional
 
-All examples use fully fictional, generic data — no real names, entities, deals, vendors, principals, or figures, and nothing thinly disguised. Placeholders (`[Principal]`, `[Entity A]`, "the Fund") are preferred.
+All examples use fully fictional, generic data: no real names, entities, deals, vendors, principals, or figures, and nothing thinly disguised. Placeholders (`[Principal]`, `[Entity A]`, "the Fund") are preferred.
 
 ## 12. Carry the disclaimer
 
@@ -81,4 +81,4 @@ A skill that follows these principles will read like the rest of the library: co
 
 ---
 
-*These principles are operational guidance for designing skills. They are not professional advice, and following them does not make any AI output reliable — human review remains required.*
+*These principles are operational guidance for designing skills. They are not professional advice, and following them does not make any AI output reliable: human review remains required.*

@@ -1,12 +1,12 @@
 # Blueprint: Investment Opportunity Review System
 
-A composed system for moving an inbound opportunity through a consistent first-pass review, diligence question development, and meeting follow-through — without ever recommending, approving, or sizing an investment. This is a **design pattern**, not an automation. Read-only, human-in-the-loop, non-advisory. It does not replace diligence, an investment committee, or professional advice.
+A composed system for moving an inbound opportunity through a consistent first-pass review, diligence question development, and meeting follow-through, without ever recommending, approving, or sizing an investment. This is a **design pattern**, not an automation. Read-only, human-in-the-loop, non-advisory. It does not replace diligence, an investment committee, or professional advice.
 
 ---
 
 ## Purpose
 
-Standardize the front of the deal funnel so every opportunity receives the same disciplined first-pass treatment: a structured screen, the right diligence questions, a clear list of what is missing, and prepared follow-through — all as drafts for human judgment.
+Standardize the front of the deal funnel so every opportunity receives the same disciplined first-pass treatment: a structured screen, the right diligence questions, a clear list of what is missing, and prepared follow-through: all as drafts for human judgment.
 
 ## When to use
 
@@ -27,10 +27,10 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Skills used
 
-- [Investment Memo Screener](../skills/investment-memo-screener/) — first-pass memo
-- [Manager Diligence Summarizer](../skills/manager-diligence-summarizer/) — where a fund/manager is involved
-- [Meeting Prep Pack](../skills/meeting-prep-pack/) — prep for diligence calls
-- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) — capture follow-ups
+- [Investment Memo Screener](../skills/investment-memo-screener/): first-pass memo
+- [Manager Diligence Summarizer](../skills/manager-diligence-summarizer/): where a fund/manager is involved
+- [Meeting Prep Pack](../skills/meeting-prep-pack/): prep for diligence calls
+- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): capture follow-ups
 
 ## Workflow sequence
 
@@ -43,9 +43,9 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Human review gates
 
-- **Gate 1 — Inputs:** confirm the environment is approved for this material; no unapproved confidential data.
-- **Gate 2 — Memo review:** a competent person verifies every figure and claim against source, confirms the memo makes no recommendation, and checks the missing-information list.
-- **Gate 3 — Process:** the opportunity enters the office's normal diligence and investment-committee process; the system does not shortcut it.
+- **Gate 1: Inputs:** confirm the environment is approved for this material; no unapproved confidential data.
+- **Gate 2: Memo review:** a competent person verifies every figure and claim against source, confirms the memo makes no recommendation, and checks the missing-information list.
+- **Gate 3: Process:** the opportunity enters the office's normal diligence and investment-committee process; the system does not shortcut it.
 
 ## Outputs
 

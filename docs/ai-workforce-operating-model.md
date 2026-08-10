@@ -11,7 +11,7 @@ The phrase is useful only if it stays disciplined. An "AI Workforce" is not a te
 ## What an AI Workforce is
 
 - A **governed set** of reusable workflows (skills), supporting templates, and review practices.
-- A way to absorb **repeatable, structure-heavy work** — drafting, summarizing, organizing, preparing.
+- A way to absorb **repeatable, structure-heavy work:** drafting, summarizing, organizing, preparing.
 - A system with **human review as its primary control** and measurement to improve over time.
 - **Model-agnostic and read-only by default**, run inside an approved environment.
 
@@ -25,7 +25,7 @@ The phrase is useful only if it stays disciplined. An "AI Workforce" is not a te
 
 ## A vocabulary: prompts, skills, workflows, agents, automations, systems
 
-These words are often used loosely. Precision matters, because each step up the ladder adds structure and review needs — not autonomy.
+These words are often used loosely. Precision matters, because each step up the ladder adds structure and review needs, not autonomy.
 
 | Term | What it is | Example |
 |------|-----------|---------|
@@ -37,7 +37,7 @@ These words are often used loosely. Precision matters, because each step up the 
 | **Automation** | A scheduled or triggered helper that moves information (still reviewed; never deciding/sending on its own) | A scheduled prompt that drafts a brief for a person to review |
 | **System / operating layer** | Skills + context + review gates + measurement + governance, working together | A weekly briefing system (see [blueprints](../blueprints/)) |
 
-Higher on this ladder means **more structure, review, governance, and repeatability** — never more independent authority.
+Higher on this ladder means **more structure, review, governance, and repeatability**, never more independent authority.
 
 ## The role of human review
 
@@ -49,7 +49,7 @@ Connectors are an optional context-access layer that can reduce manual copy/past
 
 ## The role of measurement
 
-Measurement turns a static set of prompts into an improving system. Track activity (workflows run), governance (review completion, confidentiality incidents), and directional value — honestly, with value figures kept internal and caveated. Recurring corrections in review are signal: they usually mean an input was incomplete or a skill needs tuning. See [measurement-framework.md](measurement-framework.md).
+Measurement turns a static set of prompts into an improving system. Track activity (workflows run), governance (review completion, confidentiality incidents), and directional value: honestly, with value figures kept internal and caveated. Recurring corrections in review are signal: they usually mean an input was incomplete or a skill needs tuning. See [measurement-framework.md](measurement-framework.md).
 
 ## The role of governance
 
@@ -57,20 +57,20 @@ Governance is what keeps capability and control advancing together. Approved and
 
 ## How institutional memory improves over time
 
-A lean office's memory often lives in individuals. An AI Workforce, used well, captures durable records — decisions, owners, learnings, document digests — in a consistent, reviewable form. Over time this compounds: better-structured memory makes briefs sharper, prep faster, and follow-through more reliable. The memory is only as trustworthy as the human review behind it, but when that discipline holds, the office's context stops leaking between meetings and across years.
+A lean office's memory often lives in individuals. An AI Workforce, used well, captures durable records (decisions, owners, learnings, document digests) in a consistent, reviewable form. Over time this compounds: better-structured memory makes briefs sharper, prep faster, and follow-through more reliable. The memory is only as trustworthy as the human review behind it, but when that discipline holds, the office's context stops leaking between meetings and across years.
 
 ## Why this matters for lean family offices
 
-Lean family offices have a distinctive profile that makes structured AI assistance valuable — and makes discipline essential:
+Lean family offices have a distinctive profile that makes structured AI assistance valuable, and makes discipline essential:
 
-- **Broad operating surface area.** Investments, operations, governance, communications, reporting, vendors, entities, travel — on a small team.
+- **Broad operating surface area.** Investments, operations, governance, communications, reporting, vendors, entities, travel, on a small team.
 - **Limited headcount.** Capacity rarely scales with complexity.
 - **High confidentiality.** Some of the most sensitive information that exists about a family.
 - **High context switching.** Operators move between unrelated domains all day.
 - **Recurring knowledge work.** The same structure-heavy tasks repeat constantly.
 - **Need for institutional memory.** Context is easily lost when attention is scarce.
 
-These conditions are exactly where a governed AI Workforce helps most — and exactly where careless use does the most harm.
+These conditions are exactly where a governed AI Workforce helps most, and exactly where careless use does the most harm.
 
 ## What remains human
 
@@ -85,7 +85,7 @@ The AI Workforce never absorbs these. They stay with people, always:
 - **Capital allocation**
 - **Legal / tax / compliance determinations**
 
-If a use of AI would touch any of these, the AI prepares and a human decides — never the other way around.
+If a use of AI would touch any of these, the AI prepares and a human decides, never the other way around.
 
 ---
 

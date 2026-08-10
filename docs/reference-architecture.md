@@ -1,8 +1,8 @@
 # AI-Native Family Office Reference Architecture
 
-How the skills in this repository fit into a broader AI-native family office operating model. This is a system design reference, not a product and not a deployment. It describes layers and controls — not software to install. Everything remains read-only, human-in-the-loop, model-agnostic, and non-advisory.
+How the skills in this repository fit into a broader AI-native family office operating model. This is a system design reference, not a product and not a deployment. It describes layers and controls, not software to install. Everything remains read-only, human-in-the-loop, model-agnostic, and non-advisory.
 
-The central idea: an AI-native family office is not "a chatbot plus prompts." It is a layered operating model where each layer has a purpose, a risk profile, and a control. The skills are one layer; they only work well when the layers around them — context, governance, review, and measurement — are in place.
+The central idea: an AI-native family office is not "a chatbot plus prompts." It is a layered operating model where each layer has a purpose, a risk profile, and a control. The skills are one layer; they only work well when the layers around them (context, governance, review, and measurement) are in place.
 
 ---
 
@@ -26,17 +26,17 @@ Read it as a pipeline with a control gate in the middle:
 - **Outputs remain drafts until reviewed.** A draft is not a decision, a communication, or an action.
 - **Measurement improves the system over time.** Feedback tunes inputs, skills, and governance.
 
-## Layer 1 — Data / Context Layer
+## Layer 1: Data / Context Layer
 
 **Purpose.** The information the office works from: calendars, documents, notes, task systems, correspondence, reporting exports, research.
 
-**Examples.** A weekly calendar feeding a brief; a document provided for a digest; meeting notes feeding an action register. (Generic categories only — no specific systems.)
+**Examples.** A weekly calendar feeding a brief; a document provided for a digest; meeting notes feeding an action register. (Generic categories only: no specific systems.)
 
 **Risks.** Confidentiality exposure; sensitive data handled in unapproved tools; stale or incomplete information; aggregation of individually harmless details into sensitive ones.
 
 **Review / control requirements.** Use an approved environment with acceptable data terms; minimize and de-identify; never paste highly sensitive material into public tools. See [privacy-and-confidentiality.md](privacy-and-confidentiality.md).
 
-## Layer 2 — Connector Governance Layer
+## Layer 2: Connector Governance Layer
 
 **Purpose.** Govern how (and whether) context is retrieved automatically rather than pasted by hand. This layer decides what may be connected, at what scope, and under what approval.
 
@@ -46,17 +46,17 @@ Read it as a pipeline with a control gate in the middle:
 
 **Review / control requirements.** Least privilege; read-only first; approved systems only; a connector inventory; logging; a revocation process; explicit approval. Connectors are not security controls. See [connectors-and-context.md](connectors-and-context.md).
 
-## Layer 3 — Workflow Skills Layer
+## Layer 3: Workflow Skills Layer
 
-**Purpose.** The repeatable workflows themselves — the `SKILL.md` contracts that turn inputs into structured drafts (briefs, memos, digests, action lists).
+**Purpose.** The repeatable workflows themselves: the `SKILL.md` contracts that turn inputs into structured drafts (briefs, memos, digests, action lists).
 
 **Examples.** [Principal Weekly Brief](../skills/principal-weekly-brief/), [Investment Memo Screener](../skills/investment-memo-screener/), [Document Digest](../skills/document-digest/), and the rest of the [skills](../skills/).
 
 **Risks.** Hallucination; presenting assumptions as fact; advice creep; following injected instructions in source material; over-trust from clean formatting.
 
-**Review / control requirements.** Each skill's `Quality control` and `Do not` sections; separation of facts from assumptions; flagging of missing information. These are instructions to the model, not enforceable controls — the control is the next layer.
+**Review / control requirements.** Each skill's `Quality control` and `Do not` sections; separation of facts from assumptions; flagging of missing information. These are instructions to the model, not enforceable controls: the control is the next layer.
 
-## Layer 4 — Review / Control Layer
+## Layer 4: Review / Control Layer
 
 **Purpose.** The human gates between a draft and any use of it. This is the primary control in the entire architecture.
 
@@ -66,7 +66,7 @@ Read it as a pipeline with a control gate in the middle:
 
 **Review / control requirements.** Review scaled to consequence (spot-check → verify facts → named reviewer → human writes/sends). The reviewer is accountable for the output as if they produced it. See the human-review model in [threat-model.md](threat-model.md).
 
-## Layer 5 — Principal / Operator Output Layer
+## Layer 5: Principal / Operator Output Layer
 
 **Purpose.** The reviewed artifacts that reach a principal or operator and support a decision: the brief, the memo, the action register, the digest.
 
@@ -74,11 +74,11 @@ Read it as a pipeline with a control gate in the middle:
 
 **Risks.** Outputs treated as decisions rather than inputs to a decision; outputs forwarded through channels not appropriate for the underlying data.
 
-**Review / control requirements.** Outputs are decision-*support*, never decision-*making*. Final actions — sending, approving, allocating, transacting — remain human and outside the skill. Store outputs under the same controls as their sources.
+**Review / control requirements.** Outputs are decision-*support*, never decision-*making*. Final actions (sending, approving, allocating, transacting) remain human and outside the skill. Store outputs under the same controls as their sources.
 
-## Layer 6 — Measurement / Feedback Layer
+## Layer 6: Measurement / Feedback Layer
 
-**Purpose.** Observing whether the system helps, and feeding that back into the other layers. Honest, directional measurement — not audited metrics.
+**Purpose.** Observing whether the system helps, and feeding that back into the other layers. Honest, directional measurement, not audited metrics.
 
 **Examples.** Tracking workflows executed, human-review completion, correction rate, and confidentiality incidents; noting recurring corrections that indicate a skill or input needs tuning.
 

@@ -1,12 +1,12 @@
 # Blueprint: Weekly Principal Briefing System
 
-A composed system that turns a week's scattered inputs into a reviewed principal briefing, with meeting prep and follow-through wired in. This is a **design pattern**, not an automation — every step produces a draft a person reviews, and nothing is sent, decided, or actioned by the system. Read-only, human-in-the-loop, non-advisory.
+A composed system that turns a week's scattered inputs into a reviewed principal briefing, with meeting prep and follow-through wired in. This is a **design pattern**, not an automation: every step produces a draft a person reviews, and nothing is sent, decided, or actioned by the system. Read-only, human-in-the-loop, non-advisory.
 
 ---
 
 ## Purpose
 
-Give a principal a concise, consistent weekly briefing — plus the meeting prep and follow-ups that surround it — assembled from approved inputs and verified by a competent person before it reaches the principal.
+Give a principal a concise, consistent weekly briefing (plus the meeting prep and follow-ups that surround it) assembled from approved inputs and verified by a competent person before it reaches the principal.
 
 ## When to use
 
@@ -29,9 +29,9 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Skills used
 
-- [Principal Weekly Brief](../skills/principal-weekly-brief/) — the core briefing
-- [Meeting Prep Pack](../skills/meeting-prep-pack/) — prep for the week's key meetings
-- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) — folding last week's outcomes into follow-ups
+- [Principal Weekly Brief](../skills/principal-weekly-brief/): the core briefing
+- [Meeting Prep Pack](../skills/meeting-prep-pack/): prep for the week's key meetings
+- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): folding last week's outcomes into follow-ups
 
 ## Workflow sequence
 
@@ -44,9 +44,9 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Human review gates
 
-- **Gate 1 — Inputs:** confirm sources are approved and contain no unapproved confidential material.
-- **Gate 2 — Pre-delivery:** a competent person verifies every fact, date, and figure against source, confirms assumptions are labeled and missing items flagged, and edits framing.
-- **Gate 3 — Delivery:** a person delivers the brief; the system never sends it.
+- **Gate 1: Inputs:** confirm sources are approved and contain no unapproved confidential material.
+- **Gate 2: Pre-delivery:** a competent person verifies every fact, date, and figure against source, confirms assumptions are labeled and missing items flagged, and edits framing.
+- **Gate 3: Delivery:** a person delivers the brief; the system never sends it.
 
 ## Outputs
 

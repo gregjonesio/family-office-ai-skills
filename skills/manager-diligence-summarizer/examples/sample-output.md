@@ -5,9 +5,9 @@
 **Prepared by:** Analyst
 **Date:** [Date]
 **Source material:** Pitch book notes and intro call notes
-**Status:** Diligence summary — unverified; not a recommendation
+**Status:** Diligence summary: unverified; not a recommendation
 
-> This summary organizes manager-provided and other material for diligence review. It is not investment advice or a recommendation. All figures — especially track record and fees — are drawn from source material, are unverified, and must be independently confirmed. Items marked *(assumption)* are inferred; items marked *(missing)* were not provided.
+> This summary organizes manager-provided and other material for diligence review. It is not investment advice or a recommendation. All figures (especially track record and fees) are drawn from source material, are unverified, and must be independently confirmed. Items marked *(assumption)* are inferred; items marked *(missing)* were not provided.
 
 ---
 
@@ -30,9 +30,9 @@ Concentrated long/short equity fund, launched ~4 years ago, focused on consumer 
 |--------|-----------|--------|-----------------|
 | Best year | "Up over 30%" | One year | Single data point; selective |
 | Down years | "One down year" | Since inception | Magnitude not given *(missing)* |
-| Annualized return | *(missing)* | — | Not provided |
-| Benchmark / outperformance | "Consistent outperformance" | — | Benchmark and figures *(missing)* |
-| AUM | "Growing steadily" | — | No figure *(missing)* |
+| Annualized return | *(missing)* | n/a | Not provided |
+| Benchmark / outperformance | "Consistent outperformance" | n/a | Benchmark and figures *(missing)* |
+| AUM | "Growing steadily" | n/a | No figure *(missing)* |
 
 *Track record is described qualitatively only. No annualized, net-of-fee, or audited figures were provided. Highlighting a best year while omitting full performance is a diligence flag.*
 
@@ -42,10 +42,10 @@ Concentrated long/short equity fund, launched ~4 years ago, focused on consumer 
 |------|--------|
 | Management fee | 1.5% |
 | Performance fee | 20% |
-| Hurdle / high-water mark | *(missing — confirm)* |
+| Hurdle / high-water mark | *(missing, confirm)* |
 | Lock-up | 1 year |
 | Redemption / liquidity | Quarterly, 60 days' notice |
-| Gates / side pockets | *(missing — confirm)* |
+| Gates / side pockets | *(missing, confirm)* |
 
 ## Portfolio construction
 

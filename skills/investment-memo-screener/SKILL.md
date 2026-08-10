@@ -7,7 +7,7 @@ description: Use this skill to convert a deal summary, pitch deck notes, CIM exc
 
 ## Purpose
 
-This skill converts raw investment opportunity material — a deal summary, pitch deck notes, a CIM excerpt, a founder email — into a consistent, first-pass investment memo. It standardizes the front of the deal-flow funnel so every inbound opportunity receives the same disciplined initial treatment, surfaces the right diligence questions, and flags what is missing. It produces a screening artifact for human review, not an investment recommendation.
+This skill converts raw investment opportunity material (a deal summary, pitch deck notes, a CIM excerpt, a founder email) into a consistent, first-pass investment memo. It standardizes the front of the deal-flow funnel so every inbound opportunity receives the same disciplined initial treatment, surfaces the right diligence questions, and flags what is missing. It produces a screening artifact for human review, not an investment recommendation.
 
 ## When to use this
 
@@ -23,19 +23,19 @@ Provide whatever you have; the skill works with partial material and flags gaps.
 - **Source material:** deal summary, pitch deck notes, CIM excerpt, founder email, call notes, or term sheet.
 - **Instrument / structure** if known (equity, SAFE, convertible, debt, fund interest, direct, co-invest).
 - **Amount and terms** as presented.
-- **Any mandate context** you want it screened against (sector, stage, size, liquidity, concentration limits) — kept generic.
+- **Any mandate context** you want it screened against (sector, stage, size, liquidity, concentration limits): kept generic.
 
 ## Output
 
 Produce a memo with these sections, in this order:
 
-1. **Company / opportunity overview** — what it is, stage, structure, amount, terms (as stated).
-2. **Investment thesis (as presented)** — the case *as the source presents it*, not an endorsement.
-3. **Key risks** — table of risks and why each matters.
-4. **Diligence questions** — the questions that must be answered before this could advance.
-5. **Missing information** — material information not provided.
-6. **Potential fit** — neutral mapping to a generic mandate (sector, stage, size, liquidity, concentration).
-7. **Suggested next step** — a process step only (request items, pass for now, route to reviewer).
+1. **Company / opportunity overview:** what it is, stage, structure, amount, terms (as stated).
+2. **Investment thesis (as presented):** the case *as the source presents it*, not an endorsement.
+3. **Key risks:** table of risks and why each matters.
+4. **Diligence questions:** the questions that must be answered before this could advance.
+5. **Missing information:** material information not provided.
+6. **Potential fit:** neutral mapping to a generic mandate (sector, stage, size, liquidity, concentration).
+7. **Suggested next step:** a process step only (request items, pass for now, route to reviewer).
 
 Use the [investment memo template](../../templates/investment-memo-template.md) as the output structure.
 
@@ -46,7 +46,7 @@ Use the [investment memo template](../../templates/investment-memo-template.md) 
 - Separate **confirmed/stated information** from **assumptions**. Mark inferred items *(assumption)*.
 - Be specific in risks and diligence questions; generic risk lists are not useful. Tie each to something in the material.
 - In *Potential fit*, describe considerations neutrally; do not render a verdict on whether to invest.
-- Keep *Suggested next step* procedural — never "invest" or "pass" as a judgment, only the next process action.
+- Keep *Suggested next step* procedural, never "invest" or "pass" as a judgment, only the next process action.
 - Flag every material gap under *Missing information*.
 
 ## Quality control

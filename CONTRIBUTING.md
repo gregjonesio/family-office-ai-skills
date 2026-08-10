@@ -5,10 +5,10 @@ Thank you for considering a contribution. This repository exists to give family 
 ## What we welcome
 
 - **New skills** that follow the standard `SKILL.md` format and fill a genuine operational gap.
-- **Improvements to existing skills** — clearer instructions, better quality-control checks, stronger guardrails.
+- **Improvements to existing skills:** clearer instructions, better quality-control checks, stronger guardrails.
 - **New or improved templates** for common family office artifacts.
 - **Documentation** that helps operators implement and govern AI responsibly.
-- **Better examples** — sanitized, realistic sample inputs and outputs.
+- **Better examples:** sanitized, realistic sample inputs and outputs.
 
 ## Hard requirements
 

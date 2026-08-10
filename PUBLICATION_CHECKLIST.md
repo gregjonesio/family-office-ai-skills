@@ -7,19 +7,19 @@ A pre-flight checklist for taking this repository public and launching v0.1.0. W
 ## Before publishing
 
 - [ ] **No confidential information** anywhere in the repository.
-- [ ] **No real names, entities, deals, vendors, principals, or data** — all examples are fictional and generic.
+- [ ] **No real names, entities, deals, vendors, principals, or data:** all examples are fictional and generic.
 - [ ] **No employer or client affiliation is implied** anywhere.
 - [ ] **No third-party endorsement is implied** (no employer, client, principal, family office, or investor).
 - [ ] **No current employer is named.**
 - [ ] **Copyright holder is Greg Jones** (`LICENSE`).
-- [ ] **Reporting path confirmed** — security, confidentiality, and safety concerns route to the Safety Review issue template in `SECURITY.md` and `CODE_OF_CONDUCT.md` (no email address published).
-- [ ] **Final repo URL placeholders resolved** — `CHANGELOG.md` link reference and `schemas/skill-manifest.schema.json` `$id`.
+- [ ] **Reporting path confirmed:** security, confidentiality, and safety concerns route to the Safety Review issue template in `SECURITY.md` and `CODE_OF_CONDUCT.md` (no email address published).
+- [ ] **Final repo URL placeholders resolved:** `CHANGELOG.md` link reference and `schemas/skill-manifest.schema.json` `$id`.
 - [ ] **README disclaimer present and intact.**
 - [ ] **LICENSE present** (MIT) with the advisory notice.
 - [ ] **SECURITY.md contact path confirmed.**
 - [ ] **No executable code, scripts, GitHub Actions, or credentials.**
 - [ ] **All sample data is fictional.**
-- [ ] **Attribution language is independent** — "Created by Greg Jones from generalized operator experience," not affiliated with or endorsed by any third party.
+- [ ] **Attribution language is independent:** "Created by Greg Jones from generalized operator experience," not affiliated with or endorsed by any third party.
 
 ## GitHub setup
 
@@ -45,7 +45,7 @@ A pre-flight checklist for taking this repository public and launching v0.1.0. W
 - [ ] **Collect issues** and triage with the issue templates.
 - [ ] **Track stars / forks / watchers.**
 - [ ] **Track inbound conversations.**
-- [ ] **Publish v0.1.1 only after feedback** — incorporate real input rather than guessing.
+- [ ] **Publish v0.1.1 only after feedback:** incorporate real input rather than guessing.
 
 ---
 

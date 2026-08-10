@@ -4,7 +4,7 @@
 **Prepared by:** Analyst
 **Date:** [Date]
 **Source material:** Cold inbound founder email
-**Status:** First-pass screen — not a recommendation; verify all facts
+**Status:** First-pass screen, not a recommendation; verify all facts
 
 > This is a screening document, not investment advice or a recommendation to invest. All figures and claims are drawn from the source material, are unverified, and must be independently confirmed. Items marked *(assumption)* are inferred, not stated. Items marked *(missing)* were not provided.
 
@@ -41,7 +41,7 @@ The founders are domain operators automating a manual, spreadsheet-and-email wor
 
 ## Diligence questions
 
-1. What are actual MRR/ARR, growth rate (last 6–12 months), and net revenue retention — with the underlying data?
+1. What are actual MRR/ARR, growth rate (last 6–12 months), and net revenue retention, with the underlying data?
 2. What is average contract value and customer concentration across the ~40 customers?
 3. What is churn, and what is the sales motion and CAC/payback?
 4. Who are the realistic competitors and substitutes (including in-house spreadsheets)?

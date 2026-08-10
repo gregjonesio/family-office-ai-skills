@@ -7,7 +7,7 @@ description: Use this skill to turn a family office principal's calendar items, 
 
 ## Purpose
 
-This skill prepares a concise weekly briefing for a family office principal. It takes the raw, scattered inputs of the week — calendar, open decisions, investment updates, operational issues, travel, and pending follow-ups — and organizes them into a single, decision-ready document the principal can read quickly and act on. It saves the chief of staff or operator hours of assembly while keeping every fact subject to human verification.
+This skill prepares a concise weekly briefing for a family office principal. It takes the raw, scattered inputs of the week (calendar, open decisions, investment updates, operational issues, travel, and pending follow-ups) and organizes them into a single, decision-ready document the principal can read quickly and act on. It saves the chief of staff or operator hours of assembly while keeping every fact subject to human verification.
 
 ## When to use this
 
@@ -22,7 +22,7 @@ Provide as much of the following as you have. The skill works with partial input
 
 - **Calendar items** for the week (meetings, calls, travel, deadlines).
 - **Open decisions** awaiting the principal, with any context and timing.
-- **Investment updates** (manager notes, capital calls, portfolio items) — for summary only.
+- **Investment updates** (manager notes, capital calls, portfolio items), for summary only.
 - **Operational issues** (office, household, entity, vendor, administrative).
 - **Travel notes** relevant to the week.
 - **Pending follow-ups** carried over from prior weeks.
@@ -32,14 +32,14 @@ Provide as much of the following as you have. The skill works with partial input
 
 Produce a structured brief with these sections, in this order:
 
-1. **Executive summary** — 3–6 sentences on what matters most this week.
-2. **Decisions needed** — table: decision, context, needed-by, owner.
-3. **Upcoming meetings** — table: date, meeting, attendees, objective, prep status.
-4. **Investment items** — table: item, update, action/decision, status (summary only, no recommendation).
-5. **Operational issues** — table: issue, detail, owner, status.
-6. **Risks or delays** — table: risk/delay, impact, next step, owner.
-7. **Suggested follow-ups** — checklist with owners and dates.
-8. **Open questions / missing information** — anything needed to complete the brief.
+1. **Executive summary:** 3–6 sentences on what matters most this week.
+2. **Decisions needed:** table: decision, context, needed-by, owner.
+3. **Upcoming meetings:** table: date, meeting, attendees, objective, prep status.
+4. **Investment items:** table: item, update, action/decision, status (summary only, no recommendation).
+5. **Operational issues:** table: issue, detail, owner, status.
+6. **Risks or delays:** table: risk/delay, impact, next step, owner.
+7. **Suggested follow-ups:** checklist with owners and dates.
+8. **Open questions / missing information:** anything needed to complete the brief.
 
 Use the [weekly family office brief template](../../templates/family-office-brief-template.md) as the output structure.
 

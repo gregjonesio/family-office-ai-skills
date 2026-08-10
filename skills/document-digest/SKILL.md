@@ -7,7 +7,7 @@ description: Use this skill to summarize an administrative, legal, insurance, tr
 
 ## Purpose
 
-This skill summarizes a dense administrative, legal, insurance, trust, entity, subscription, or operating document into clear, plain-English notes an operator can actually use. It identifies what the document is, what it says, who is involved, the key dates and obligations, and anything unusual — and it produces the questions to put to counsel or an advisor. It makes documents legible and surfaces what needs professional review. It is **not** a substitute for legal, tax, or accounting advice.
+This skill summarizes a dense administrative, legal, insurance, trust, entity, subscription, or operating document into clear, plain-English notes an operator can actually use. It identifies what the document is, what it says, who is involved, the key dates and obligations, and anything unusual, and it produces the questions to put to counsel or an advisor. It makes documents legible and surfaces what needs professional review. It is **not** a substitute for legal, tax, or accounting advice.
 
 ## When to use this
 
@@ -28,14 +28,14 @@ Provide whatever you have; the skill works with excerpts and flags gaps.
 
 Produce a digest with these sections, in this order:
 
-1. **Document type** — what kind of document this is.
-2. **Plain-English summary** — what it does and says, in accessible language.
-3. **Key parties** — who is involved and their role.
-4. **Key dates** — effective dates, deadlines, renewal/expiry, notice periods.
-5. **Obligations** — what each party must do.
-6. **Risks / unusual terms** — anything notable, one-sided, or atypical (flagged, not adjudicated).
-7. **Questions for counsel or advisor** — what a professional should confirm or interpret.
-8. **Action items** — concrete next steps for the operator.
+1. **Document type:** what kind of document this is.
+2. **Plain-English summary:** what it does and says, in accessible language.
+3. **Key parties:** who is involved and their role.
+4. **Key dates:** effective dates, deadlines, renewal/expiry, notice periods.
+5. **Obligations:** what each party must do.
+6. **Risks / unusual terms:** anything notable, one-sided, or atypical (flagged, not adjudicated).
+7. **Questions for counsel or advisor:** what a professional should confirm or interpret.
+8. **Action items:** concrete next steps for the operator.
 
 ## Instructions
 
@@ -52,7 +52,7 @@ Produce a digest with these sections, in this order:
 - **Missing information:** If the excerpt is partial or key sections are absent (e.g., termination, governing law, fees), say so explicitly rather than assuming standard terms.
 - **Hallucination risk:** Do not invent clauses, dates, parties, or obligations. Legal documents must be summarized strictly from their text. Re-read and remove anything not supported by the document.
 - **Confidentiality:** Treat the document as confidential. Introduce no outside information about the parties.
-- **Uncertainty:** When the meaning of a clause is unclear, do not resolve it — flag it as a question for counsel.
+- **Uncertainty:** When the meaning of a clause is unclear, do not resolve it: flag it as a question for counsel.
 
 ## Do not
 

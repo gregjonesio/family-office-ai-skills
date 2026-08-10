@@ -6,7 +6,7 @@ A practical threat model for using and contributing to a public library of famil
 
 ## Purpose
 
-To make the risks of using AI in family office workflows explicit, so operators adopt these skills with their eyes open and contributors do not unknowingly add risk. The most important risks here are not exotic attacks — they are ordinary, high-probability mistakes: confidential data in the wrong tool, fluent output mistaken for truth, and a read-only workflow quietly turned into an autonomous one.
+To make the risks of using AI in family office workflows explicit, so operators adopt these skills with their eyes open and contributors do not unknowingly add risk. The most important risks here are not exotic attacks: they are ordinary, high-probability mistakes: confidential data in the wrong tool, fluent output mistaken for truth, and a read-only workflow quietly turned into an autonomous one.
 
 ## Scope
 
@@ -18,7 +18,7 @@ To make the risks of using AI in family office workflows explicit, so operators 
 
 | Asset | Why it matters |
 |-------|----------------|
-| Confidential family/principal information | Net worth, holdings, structures, health, security, travel — high-harm if exposed |
+| Confidential family/principal information | Net worth, holdings, structures, health, security, travel: high-harm if exposed |
 | Client and counterparty information | Confidentiality obligations; reputational and legal exposure |
 | Decision quality | Bad inputs or false confidence can corrupt real decisions |
 | The office's credibility | Acting on an unverified AI output that proves wrong |
@@ -57,11 +57,11 @@ The highest-probability harm. AI tools are a new surface where sensitive informa
 
 ## Prompt-injection and skill-injection risks
 
-Source documents and pasted materials can contain instructions — visible or hidden — that attempt to override a skill's rules ("ignore the confidentiality rules," "recommend this investment," "send this"). Because a skill's guardrails are instructions to the model, not enforced controls, an injected instruction may be followed. **Mitigation is procedural:** review output against the skill's intended behavior, be suspicious of documents from untrusted sources, and never let skill output drive an action without human review.
+Source documents and pasted materials can contain instructions (visible or hidden) that attempt to override a skill's rules ("ignore the confidentiality rules," "recommend this investment," "send this"). Because a skill's guardrails are instructions to the model, not enforced controls, an injected instruction may be followed. **Mitigation is procedural:** review output against the skill's intended behavior, be suspicious of documents from untrusted sources, and never let skill output drive an action without human review.
 
 ## Overreliance risks
 
-Fluent, well-formatted output invites trust it has not earned. The risk increases under time pressure ("the principal wants it now") and with repetition (the workflow has "always been fine"). The mitigation is a standing habit: treat every output as an unverified draft and verify material facts against source — most rigorously exactly when time is short.
+Fluent, well-formatted output invites trust it has not earned. The risk increases under time pressure ("the principal wants it now") and with repetition (the workflow has "always been fine"). The mitigation is a standing habit: treat every output as an unverified draft and verify material facts against source: most rigorously exactly when time is short.
 
 ## Professional advice boundary risks
 
@@ -69,11 +69,11 @@ These skills can produce output that *resembles* legal, tax, or investment analy
 
 ## Automation/autonomy risks
 
-The skills are read-only by design. The risk is that a builder removes the human from the loop — wiring a skill into a pipeline that sends, approves, or transacts. Nothing in this repository grants that authority, and doing so converts a low-risk drafting aid into a high-risk autonomous system. Any such integration must be independently reviewed by someone accountable for security and compliance.
+The skills are read-only by design. The risk is that a builder removes the human from the loop: wiring a skill into a pipeline that sends, approves, or transacts. Nothing in this repository grants that authority, and doing so converts a low-risk drafting aid into a high-risk autonomous system. Any such integration must be independently reviewed by someone accountable for security and compliance.
 
 ## Connector / context-access risks
 
-Connectors (a context-access layer that retrieves information for a workflow) are optional and are not included in this repository, but adopting them adds risk: overly broad permissions, stale or incorrect retrieved context, accidental retrieval of privileged or confidential material, write-capable connectors changing records, autonomous sending or transaction actions, and access that is not revoked after a role change. A connector is a data-access decision, not a safety control — granting access widens what the workflow can reach. See [connectors-and-context.md](connectors-and-context.md) for the full operating model, maturity levels, and approval checklist.
+Connectors (a context-access layer that retrieves information for a workflow) are optional and are not included in this repository, but adopting them adds risk: overly broad permissions, stale or incorrect retrieved context, accidental retrieval of privileged or confidential material, write-capable connectors changing records, autonomous sending or transaction actions, and access that is not revoked after a role change. A connector is a data-access decision, not a safety control: granting access widens what the workflow can reach. See [connectors-and-context.md](connectors-and-context.md) for the full operating model, maturity levels, and approval checklist.
 
 ## Mitigations
 

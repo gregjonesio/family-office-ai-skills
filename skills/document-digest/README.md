@@ -1,6 +1,6 @@
 # Document Digest
 
-A skill that summarizes a dense administrative, legal, insurance, trust, entity, subscription, or operating document into clear, plain-English notes — and surfaces the questions to put to counsel or an advisor. It does not provide legal, tax, or accounting advice.
+A skill that summarizes a dense administrative, legal, insurance, trust, entity, subscription, or operating document into clear, plain-English notes, and surfaces the questions to put to counsel or an advisor. It does not provide legal, tax, or accounting advice.
 
 ## What it does
 
@@ -25,8 +25,8 @@ Operators, chiefs of staff, and executive assistants who need to understand a do
 
 ## Files
 
-- [SKILL.md](SKILL.md) — the workflow contract.
-- [examples/sample-input.md](examples/sample-input.md) — a fictional document excerpt.
-- [examples/sample-output.md](examples/sample-output.md) — the digest produced from it.
+- [SKILL.md](SKILL.md): the workflow contract.
+- [examples/sample-input.md](examples/sample-input.md): a fictional document excerpt.
+- [examples/sample-output.md](examples/sample-output.md): the digest produced from it.
 
 *Output is a plain-English draft for human review. Not legal, tax, or accounting advice. Have qualified professionals review the underlying document before acting.*

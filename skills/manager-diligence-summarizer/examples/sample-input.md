@@ -1,4 +1,4 @@
-# Sample Input — Manager Diligence Summarizer
+# Sample Input: Manager Diligence Summarizer
 
 *Fully fictional. No real manager, fund, or data.*
 

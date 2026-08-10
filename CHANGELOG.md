@@ -11,7 +11,7 @@ All notable changes to this repository are documented here. This project follows
 - **Operating Playbooks** (`playbooks/`): a new top-level section documenting how
   recurring family office responsibilities are executed and where AI reduces
   administrative burden while human review stays the primary control. Includes a
-  `README.md`, a `PLAYBOOK-TEMPLATE.md`, and ten playbooks — principal weekly
+  `README.md`, a `PLAYBOOK-TEMPLATE.md`, and ten playbooks: principal weekly
   review, capital call processing, investment opportunity intake, board and
   committee meeting preparation, executive travel coordination, insurance renewal
   management, vendor onboarding and review, quarter-end close, entity governance
@@ -20,10 +20,10 @@ All notable changes to this repository are documented here. This project follows
   gates, and cross-links the relevant skills, blueprints, case studies, and
   governance documents. Read-only, human-in-the-loop, non-advisory, and
   non-executable, consistent with the rest of the repository.
-- Each playbook carries substantive family office operating detail — institutional
+- Each playbook carries substantive family office operating detail: institutional
   controls such as segregation of duties, dual authorization, independent
   out-of-band verification, authorized-signer matrices, and recurring governance
-  calendars — written so an experienced operator learns how the process is run
+  calendars: written so an experienced operator learns how the process is run
   safely even without using AI. Every playbook includes a **Common Failure
   Points** section covering how the process breaks in practice and the control
   that prevents each failure, and an **Evolution Path** section describing how the

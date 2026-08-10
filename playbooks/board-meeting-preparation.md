@@ -1,6 +1,6 @@
 # Playbook: Board & Committee Meeting Preparation
 
-How a family office prepares for recurring governance meetings — board, investment committee, advisory board, or family council — against an annual board calendar: assembling the board book ahead of a pre-read deadline, running routine items through a consent agenda, and turning the meeting into accurate minutes and a tracked action log, without overstating what was decided. Read-only, human-in-the-loop, non-advisory.
+How a family office prepares for recurring governance meetings (board, investment committee, advisory board, or family council) against an annual board calendar: assembling the board book ahead of a pre-read deadline, running routine items through a consent agenda, and turning the meeting into accurate minutes and a tracked action log, without overstating what was decided. Read-only, human-in-the-loop, non-advisory.
 
 > **Fictionalized and illustrative.** This is a generalized operating pattern. It does not describe any actual family office, board, committee, or meeting. Nothing here is investment, legal, tax, or fiduciary advice. Every AI output described is an unverified draft requiring human review.
 
@@ -12,23 +12,23 @@ Run governance meetings on a reliable cadence with complete, well-organized mate
 
 ## Operating Problem
 
-Governance meetings carry weight: they set policy, approve actions through resolutions, and create a record that counsel, auditors, and successors rely on. Preparing for them means pulling prior minutes, the open-action log, supporting documents, and agenda topics into a coherent board book, then capturing what was actually decided afterward. A lean office does this by hand under deadline, and the recurring failures are familiar — a board book that lands the night before so directors are unprepared and decisions get deferred, minutes that overstate or understate what was decided (a governance and legal exposure), and action items that evaporate so the same issues resurface every quarter. The discipline a mature board imposes is a standing annual calendar, a fixed pre-read window, and a minutes process owned by the secretary and reviewed by counsel.
+Governance meetings carry weight: they set policy, approve actions through resolutions, and create a record that counsel, auditors, and successors rely on. Preparing for them means pulling prior minutes, the open-action log, supporting documents, and agenda topics into a coherent board book, then capturing what was actually decided afterward. A lean office does this by hand under deadline, and the recurring failures are familiar: a board book that lands the night before so directors are unprepared and decisions get deferred, minutes that overstate or understate what was decided (a governance and legal exposure), and action items that evaporate so the same issues resurface every quarter. The discipline a mature board imposes is a standing annual calendar, a fixed pre-read window, and a minutes process owned by the secretary and reviewed by counsel.
 
 ## Typical Trigger
 
-A scheduled board, committee, or council meeting on the annual governance calendar — which places standing items by quarter (for example, audit and tax matters early in the year, strategy and budget later) — plus the lead time the office reserves to assemble the board book.
+A scheduled board, committee, or council meeting on the annual governance calendar (which places standing items by quarter (for example, audit and tax matters early in the year, strategy and budget later)) plus the lead time the office reserves to assemble the board book.
 
 ## Frequency
 
-Periodic and scheduled — commonly quarterly for boards and committees, with interim or special meetings as matters require.
+Periodic and scheduled: commonly quarterly for boards and committees, with interim or special meetings as matters require.
 
 ## Primary Stakeholders
 
-- **Chief of staff / COO (owner)** — assembles the board book, manages the calendar, and coordinates the post-meeting record.
-- **Chair** — sets the agenda and runs the meeting; decides what is consent vs. discussion.
-- **Directors / members** — the readers and decision-makers; independent directors where the structure provides for them.
-- **Corporate secretary / counsel** — owns the formal minutes and resolutions and confirms quorum and proper authorization. The office's notes support but never replace them.
-- **Principal** — participant and, often, the convening authority.
+- **Chief of staff / COO (owner):** assembles the board book, manages the calendar, and coordinates the post-meeting record.
+- **Chair:** sets the agenda and runs the meeting; decides what is consent vs. discussion.
+- **Directors / members:** the readers and decision-makers; independent directors where the structure provides for them.
+- **Corporate secretary / counsel:** owns the formal minutes and resolutions and confirms quorum and proper authorization. The office's notes support but never replace them.
+- **Principal:** participant and, often, the convening authority.
 
 ## Required Inputs
 
@@ -45,7 +45,7 @@ Provide sensitive governance documents manually after review.
 
 - Assemble a structured board book and per-item brief from prior minutes, the action log, the agenda, and desired outcomes with [Meeting Prep Pack](../skills/meeting-prep-pack/).
 - Produce plain-English reads of dense supporting documents with [Document Digest](../skills/document-digest/), surfacing key terms, figures, and questions.
-- After the meeting, convert notes into decisions, owners, deadlines, and dependencies with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) — flagging anything ambiguous rather than inventing a decision.
+- After the meeting, convert notes into decisions, owners, deadlines, and dependencies with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): flagging anything ambiguous rather than inventing a decision.
 - Surface open governance items and upcoming agenda obligations in the [Principal Weekly Brief](../skills/principal-weekly-brief/) between meetings.
 
 AI assembles and structures. It commits the office to no position, makes no governance determination, and drafts no formal minutes or resolutions.
@@ -60,10 +60,10 @@ AI assembles and structures. It commits the office to no position, makes no gove
 
 ## Review Gates
 
-1. **Materials gate (pre-read deadline)** — the owner confirms the board book is complete and accurate and distributes it a fixed number of days ahead. A standing pre-read window is itself a control against unprepared decisions.
-2. **Quorum-and-authority gate** — the secretary or chair confirms a quorum is present and that each action has a properly framed resolution and any required conflict disclosures before a vote.
-3. **Decision-capture gate** — a person verifies the extracted decisions and actions against the meeting; ambiguities the AI flags are resolved by a human, not guessed.
-4. **Record gate (secretary / counsel)** — formal minutes and resolutions are owned and finalized by the secretary or counsel and approved at the next meeting; the office's working notes support but do not replace them.
+1. **Materials gate (pre-read deadline):** the owner confirms the board book is complete and accurate and distributes it a fixed number of days ahead. A standing pre-read window is itself a control against unprepared decisions.
+2. **Quorum-and-authority gate:** the secretary or chair confirms a quorum is present and that each action has a properly framed resolution and any required conflict disclosures before a vote.
+3. **Decision-capture gate:** a person verifies the extracted decisions and actions against the meeting; ambiguities the AI flags are resolved by a human, not guessed.
+4. **Record gate (secretary / counsel):** formal minutes and resolutions are owned and finalized by the secretary or counsel and approved at the next meeting; the office's working notes support but do not replace them.
 
 ## Outputs
 
@@ -74,10 +74,10 @@ AI assembles and structures. It commits the office to no position, makes no gove
 
 ## Risks
 
-- **Overstated decisions** — notes can imply a decision that was not made; the decision-capture gate and explicit ambiguity flags guard against it.
-- **Incomplete materials** — a missing document undermines the meeting; the materials gate checks completeness.
-- **Confidentiality** — governance materials are highly sensitive; use only approved environments. See [privacy-and-confidentiality.md](../docs/privacy-and-confidentiality.md).
-- **Advice and authority boundary** — the office's notes are not minutes and carry no governance authority; formal records stay with the secretary or counsel.
+- **Overstated decisions:** notes can imply a decision that was not made; the decision-capture gate and explicit ambiguity flags guard against it.
+- **Incomplete materials:** a missing document undermines the meeting; the materials gate checks completeness.
+- **Confidentiality:** governance materials are highly sensitive; use only approved environments. See [privacy-and-confidentiality.md](../docs/privacy-and-confidentiality.md).
+- **Advice and authority boundary:** the office's notes are not minutes and carry no governance authority; formal records stay with the secretary or counsel.
 
 ## Common Failure Points
 
@@ -123,10 +123,10 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 
 ## Evolution Path
 
-1. **Ad hoc** — meetings are scheduled as needed, board books assembled last-minute, and decisions captured informally.
-2. **Calendared** — an annual governance calendar, a fixed pre-read window, and a consent agenda bring rhythm and preparation; these are governance controls independent of AI.
-3. **Recorded** — minutes owned by the secretary and reviewed by counsel, a conflicts register, and a carried open-action log make the record reliable and follow-through accountable.
-4. **AI-assisted** — the prep pack assembles the board book and the action extractor builds the post-meeting record; approved, read-only retrieval of prior minutes and the action log seeds the next meeting — a governed data-access change, not new authority.
+1. **Ad hoc:** meetings are scheduled as needed, board books assembled last-minute, and decisions captured informally.
+2. **Calendared:** an annual governance calendar, a fixed pre-read window, and a consent agenda bring rhythm and preparation; these are governance controls independent of AI.
+3. **Recorded:** minutes owned by the secretary and reviewed by counsel, a conflicts register, and a carried open-action log make the record reliable and follow-through accountable.
+4. **AI-assisted:** the prep pack assembles the board book and the action extractor builds the post-meeting record; approved, read-only retrieval of prior minutes and the action log seeds the next meeting: a governed data-access change, not new authority.
 
 No stage lets the office's notes become the formal record or lets the AI characterize a decision the meeting did not make. Minutes, resolutions, and quorum stay human and with the secretary or counsel.
 

@@ -1,6 +1,6 @@
 # Roadmap
 
-A conservative, public view of where this library is going. The priority is depth, trust, and repeatability — not feature count. Some things are deliberately **not** planned, and that list matters as much as the rest.
+A conservative, public view of where this library is going. The priority is depth, trust, and repeatability, not feature count. Some things are deliberately **not** planned, and that list matters as much as the rest.
 
 This roadmap is directional and may change. Nothing here is a commitment or a timeline.
 
@@ -14,13 +14,13 @@ This roadmap is directional and may change. Nothing here is a commitment or a ti
 
 ## Advanced operator layer
 
-Included in v0.1.0. These move the repository beyond a skill library toward a public blueprint for an AI-native family office operating layer — all read-only, human-in-the-loop, and non-executable:
+Included in v0.1.0. These move the repository beyond a skill library toward a public blueprint for an AI-native family office operating layer: all read-only, human-in-the-loop, and non-executable:
 
-- [Reference architecture](docs/reference-architecture.md) — the six-layer model.
-- [AI Workforce operating model](docs/ai-workforce-operating-model.md) — definition, vocabulary, and what stays human.
-- [Skill maturity matrix](docs/skill-maturity-matrix.md) — prompt to operating layer.
-- [System blueprints](blueprints/) — composed, end-to-end workflow designs.
-- [Non-executable evaluation examples](evals/) — red-team scenarios for conservative behavior.
+- [Reference architecture](docs/reference-architecture.md): the six-layer model.
+- [AI Workforce operating model](docs/ai-workforce-operating-model.md): definition, vocabulary, and what stays human.
+- [Skill maturity matrix](docs/skill-maturity-matrix.md): prompt to operating layer.
+- [System blueprints](blueprints/): composed, end-to-end workflow designs.
+- [Non-executable evaluation examples](evals/): red-team scenarios for conservative behavior.
 
 ## Near-term improvements
 
@@ -43,7 +43,7 @@ Potential areas for future skills, all subject to the same read-only, human-in-t
 - Document management
 - RIA operations
 
-Each new skill would ship with a `SKILL.md`, a plain-English README, fictional examples, a catalog entry, and a disclaimer — following the [skill design principles](docs/skill-design-principles.md).
+Each new skill would ship with a `SKILL.md`, a plain-English README, fictional examples, a catalog entry, and a disclaimer: following the [skill design principles](docs/skill-design-principles.md).
 
 ## Not currently planned
 

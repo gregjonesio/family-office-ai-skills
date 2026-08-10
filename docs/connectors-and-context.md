@@ -1,6 +1,6 @@
 # Connectors and Context Access for Family Office AI Workflows
 
-The skills in this repository are the **workflow layer** — they define the work to be done. Connectors are a separate, optional **context-access layer** — they determine how information reaches the workflow. This document explains how connectors fit, what they improve, and the confidentiality, permissioning, governance, and review risk they add.
+The skills in this repository are the **workflow layer** (they define the work to be done. Connectors are a separate, optional **context-access layer**) they determine how information reaches the workflow. This document explains how connectors fit, what they improve, and the confidentiality, permissioning, governance, and review risk they add.
 
 Connectors can make workflows more useful by reducing manual copy/paste and allowing approved context retrieval. They also enlarge the risk surface. Treat them as a data-access decision to be governed, not a convenience to be switched on.
 
@@ -8,13 +8,13 @@ Connectors can make workflows more useful by reducing manual copy/paste and allo
 
 ## Purpose
 
-Many AI workflows become more useful when the AI system can access approved context — for example, a calendar, a document repository, email, a task manager, a notes or knowledge base, or a CRM/relationship system — instead of relying entirely on what a person pastes in.
+Many AI workflows become more useful when the AI system can access approved context (for example, a calendar, a document repository, email, a task manager, a notes or knowledge base, or a CRM/relationship system) instead of relying entirely on what a person pastes in.
 
 That usefulness is real, but it is conditional. Before adopting connectors, hold these points firmly:
 
 - **Connectors are optional.** They are one way to provide context, not the only way.
 - **Connectors are not required to use this repository.** Every skill works with manual input.
-- **Connectors are not security controls.** Granting access does not make the workflow safe; it widens what the workflow — and the AI behind it — can reach.
+- **Connectors are not security controls.** Granting access does not make the workflow safe; it widens what the workflow (and the AI behind it) can reach.
 - **Connectors should be scoped, approved, and reviewed** before use, and revisited over time.
 - **Manual input is often best for early pilots.** Start by pasting fictional or approved, non-confidential input; add connectors only once a workflow has earned trust.
 
@@ -35,25 +35,25 @@ Approved data sources → Connectors / context access → AI skill / workflow �
 
 ## Connector maturity levels
 
-A staged way to think about how much access a workflow has. Higher is not better — higher means more risk and more governance required.
+A staged way to think about how much access a workflow has. Higher is not better: higher means more risk and more governance required.
 
-### Level 0 — Manual input only
+### Level 0: Manual input only
 
 **Description.** The user manually provides fictional, sanitized, or approved non-confidential input.
 
 **Use for.** Pilots, testing, public AI tools, and high-risk documents.
 
-**Risk.** Lowest, but manual and incomplete — a person curates every input, which is slow but the lowest-risk option.
+**Risk.** Lowest, but manual and incomplete: a person curates every input, which is slow but the lowest-risk option.
 
-### Level 1 — Read-only approved connectors
+### Level 1: Read-only approved connectors
 
 **Description.** The AI can retrieve from approved systems but cannot write, send, delete, approve, or transact.
 
 **Use for.** Meeting prep, document retrieval, brief drafts, task summaries.
 
-**Risk.** Context exposure and permission scope — the connector can reach more than any single task needs.
+**Risk.** Context exposure and permission scope: the connector can reach more than any single task needs.
 
-### Level 2 — Read-only connectors plus draft creation
+### Level 2: Read-only connectors plus draft creation
 
 **Description.** The AI can retrieve context and produce drafts for human review.
 
@@ -61,7 +61,7 @@ A staged way to think about how much access a workflow has. Higher is not better
 
 **Risk.** False confidence, stale context, and accidental inclusion of sensitive information pulled in automatically.
 
-### Level 3 — Write-capable connectors
+### Level 3: Write-capable connectors
 
 **Description.** The AI can create or modify records, tasks, documents, or messages.
 
@@ -69,7 +69,7 @@ A staged way to think about how much access a workflow has. Higher is not better
 
 **Risk.** Unauthorized changes, recordkeeping issues, confidentiality leakage, and operational errors.
 
-### Level 4 — Autonomous action workflows
+### Level 4: Autonomous action workflows
 
 **Description.** The AI can act without human approval.
 
@@ -79,7 +79,7 @@ A staged way to think about how much access a workflow has. Higher is not better
 
 ## Common connector categories
 
-Generic categories only — no specific private systems are named. Recommended posture is, in nearly every case: manual or read-only first, least privilege, no autonomous sending or changes, and human review required.
+Generic categories only: no specific private systems are named. Recommended posture is, in nearly every case: manual or read-only first, least privilege, no autonomous sending or changes, and human review required.
 
 | Connector category | Example sources (generic) | Useful for | Key risks | Recommended posture |
 |--------------------|---------------------------|------------|-----------|---------------------|
@@ -127,7 +127,7 @@ Illustrative context sources for the current skills. In every case the posture i
 
 ## What not to connect
 
-The following data categories are prohibited or high-risk for these public templates. This is not a claim that they can never be used under any circumstances — it is that they require **explicit approval, appropriate systems, and professional review**, and are **outside the scope of this public repository**.
+The following data categories are prohibited or high-risk for these public templates. This is not a claim that they can never be used under any circumstances: it is that they require **explicit approval, appropriate systems, and professional review**, and are **outside the scope of this public repository**.
 
 - Personal identity documents
 - Account numbers
@@ -135,9 +135,9 @@ The following data categories are prohibited or high-risk for these public templ
 - API keys
 - Health information
 - Unredacted tax returns
-- Estate planning documents — unless approved and reviewed
-- Confidential investment documents — unless the AI system is approved for that data
-- Attorney-client privileged material — unless counsel approves
+- Estate planning documents, unless approved and reviewed
+- Confidential investment documents, unless the AI system is approved for that data
+- Attorney-client privileged material, unless counsel approves
 - Employment or HR records
 - Private family information
 - Live trading or banking systems

@@ -24,24 +24,24 @@ Worked, end-to-end examples of how the skills, blueprints, governance concepts, 
 | Case study | Operating problem | Skills used | Primary value |
 |------------|-------------------|-------------|---------------|
 | [Weekly Principal Brief](weekly-principal-brief.md) | Scattered inputs must become one consistent weekly briefing under time pressure | Principal Weekly Brief, Meeting Prep Pack, Post-Meeting Action Extractor | A consistent, reviewable brief that frees scarce attention for judgment |
-| [Investment Opportunity Review](investment-opportunity-review.md) | Inbound opportunities need a fast first-pass read before they consume real diligence time | Investment Memo Screener, Manager Diligence Summarizer, Meeting Prep Pack, Post-Meeting Action Extractor | A structured triage that separates promoter claims from fact — without recommending or ranking |
-| [Insurance Renewal Review](insurance-renewal-review.md) | A renewal must be read for changes, gaps, and questions before the broker call | Vendor Review, Document Digest, Meeting Prep Pack, Post-Meeting Action Extractor | A clear list of changes and broker/counsel questions — not insurance advice |
-| [Capital Call Processing](capital-call-processing.md) | A capital call notice carries dates, amounts, approvals, and recordkeeping steps that cannot be missed | Document Digest, Principal Weekly Brief, Post-Meeting Action Extractor | A summarized obligation and a clean internal checklist — with no payment initiated |
+| [Investment Opportunity Review](investment-opportunity-review.md) | Inbound opportunities need a fast first-pass read before they consume real diligence time | Investment Memo Screener, Manager Diligence Summarizer, Meeting Prep Pack, Post-Meeting Action Extractor | A structured triage that separates promoter claims from fact, without recommending or ranking |
+| [Insurance Renewal Review](insurance-renewal-review.md) | A renewal must be read for changes, gaps, and questions before the broker call | Vendor Review, Document Digest, Meeting Prep Pack, Post-Meeting Action Extractor | A clear list of changes and broker/counsel questions, not insurance advice |
+| [Capital Call Processing](capital-call-processing.md) | A capital call notice carries dates, amounts, approvals, and recordkeeping steps that cannot be missed | Document Digest, Principal Weekly Brief, Post-Meeting Action Extractor | A summarized obligation and a clean internal checklist, with no payment initiated |
 | [Meeting-to-Execution Workflow](meeting-to-execution.md) | Ambiguous notes must become a clean execution plan without overstating what was decided | Meeting Prep Pack, Post-Meeting Action Extractor, Principal Weekly Brief | A draft execution plan that flags ambiguity instead of inventing decisions |
 
 ## How to read a case study
 
 Each follows the same structure: **Scenario → Operating problem → Traditional workflow → AI-assisted workflow → Inputs → Skills used → Context sources → Review gates → Outputs → Measurement → Risks and controls → What remains human → Takeaway.**
 
-Read the operating problem and the review gates first. The point of every case study is not the draft the AI produces — it is the judgment a person applies to that draft before anything is acted on.
+Read the operating problem and the review gates first. The point of every case study is not the draft the AI produces: it is the judgment a person applies to that draft before anything is acted on.
 
 ## Related reading
 
-- [The skills](../skills/) — the workflow contracts referenced throughout.
-- [System blueprints](../blueprints/) — the composed designs these case studies draw on.
-- [Implementation Guide](../docs/implementation-guide.md) — how to roll one of these workflows out as a pilot.
-- [Measurement Framework](../docs/measurement-framework.md) — the honest, directional way to measure value.
-- [Connectors and Context Access](../docs/connectors-and-context.md) — how approved read-only context enters a workflow.
+- [The skills](../skills/): the workflow contracts referenced throughout.
+- [System blueprints](../blueprints/): the composed designs these case studies draw on.
+- [Implementation Guide](../docs/implementation-guide.md): how to roll one of these workflows out as a pilot.
+- [Measurement Framework](../docs/measurement-framework.md): the honest, directional way to measure value.
+- [Connectors and Context Access](../docs/connectors-and-context.md): how approved read-only context enters a workflow.
 
 ---
 

@@ -4,7 +4,7 @@
 **Service category:** IT / AV managed services (residence and office)
 **Prepared by:** Operations
 **Date:** [Date]
-**Status:** Draft for review — verify terms and pricing against the contract
+**Status:** Draft for review: verify terms and pricing against the contract
 
 > Terms, pricing, and history below are drawn from the provided material and are unverified. Items marked *(assumption)* are inferred; items marked *(missing)* were not provided. This review supports a human decision; it approves nothing.
 
@@ -25,8 +25,8 @@ Roughly three years. Generally responsive on routine tickets. Two outages last y
 | Annual fee | $24,000 | $28,800 | +20% |
 | Term length | 12 months | 24 months | Longer lock-in |
 | Scope | Existing coverage | "Expanded coverage" | Not specified *(missing)* |
-| Renewal | — | Auto-renew unless cancelled | 90 days' notice |
-| Response requested | — | Within 14 days | — |
+| Renewal | n/a | Auto-renew unless cancelled | 90 days' notice |
+| Response requested |(| Within 14 days |) |
 | SLAs / outage response | *(missing)* | *(missing)* | Relevant given prior outages |
 | Termination terms | *(missing)* | *(missing)* | Confirm with contract |
 

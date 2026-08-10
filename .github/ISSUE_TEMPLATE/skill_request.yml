@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for proposing a skill. This library is conservative by design: skills are
         read-only, human-in-the-loop, and provide no professional advice. Please describe
-        the workflow generically — **do not include any confidential or real information.**
+        the workflow generically. **Do not include any confidential or real information.**
   - type: input
     id: workflow-name
     attributes:
@@ -73,8 +73,8 @@ body:
       label: Should this remain read-only?
       description: Skills in this library do not act, send, approve, or transact.
       options:
-        - "Yes — read-only, judgment-support only"
-        - "Unsure — needs discussion"
+        - "Yes: read-only, judgment-support only"
+        - "Unsure: needs discussion"
     validations:
       required: true
   - type: textarea

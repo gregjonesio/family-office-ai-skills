@@ -4,9 +4,9 @@
 **Date:** [Date]
 **Attendees:** [List]
 **Captured by:** [Preparer]
-**Status:** Draft for review — confirm owners and deadlines
+**Status:** Draft for review: confirm owners and deadlines
 
-> Decisions, owners, and deadlines below are drawn from the meeting notes provided and are unverified. Where the notes did not specify an owner or date, the field is marked *(missing)* — do not assume. Nothing here authorizes action; owners confirm and act.
+> Decisions, owners, and deadlines below are drawn from the meeting notes provided and are unverified. Where the notes did not specify an owner or date, the field is marked *(missing)*: do not assume. Nothing here authorizes action; owners confirm and act.
 
 ---
 
@@ -26,7 +26,7 @@
 
 ## Follow-up message draft
 
-> Internal draft only — for human review and editing before any send. AI does not send communications.
+> Internal draft only, for human review and editing before any send. AI does not send communications.
 
 ```
 [Draft follow-up summarizing decisions and action items, addressed to attendees.

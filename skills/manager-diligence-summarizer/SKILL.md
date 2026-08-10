@@ -28,14 +28,14 @@ Provide whatever you have; the skill works with partial material and flags gaps.
 
 Produce a summary with these sections, in this order:
 
-1. **Strategy overview** — what the manager does, markets, instruments, and stated edge.
-2. **Team** — key people, backgrounds (as stated), and key-person dependencies.
-3. **Track record summary** — stated figures with periods and caveats.
-4. **Fees and liquidity** — fees, hurdle/high-water mark, lock-up, redemption terms, gates.
-5. **Portfolio construction** — concentration, sizing, leverage, exposures.
-6. **Risk factors** — material risks as described and as inferred.
-7. **Key questions** — the questions to put to the manager.
-8. **Follow-up diligence items** — documents and confirmations to obtain.
+1. **Strategy overview:** what the manager does, markets, instruments, and stated edge.
+2. **Team:** key people, backgrounds (as stated), and key-person dependencies.
+3. **Track record summary:** stated figures with periods and caveats.
+4. **Fees and liquidity:** fees, hurdle/high-water mark, lock-up, redemption terms, gates.
+5. **Portfolio construction:** concentration, sizing, leverage, exposures.
+6. **Risk factors:** material risks as described and as inferred.
+7. **Key questions:** the questions to put to the manager.
+8. **Follow-up diligence items:** documents and confirmations to obtain.
 
 Use the [manager diligence template](../../templates/manager-diligence-template.md) as the output structure.
 

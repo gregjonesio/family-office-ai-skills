@@ -1,4 +1,4 @@
-# Sample Input — Vendor Review
+# Sample Input: Vendor Review
 
 *Fully fictional. No real vendor, pricing, or data.*
 

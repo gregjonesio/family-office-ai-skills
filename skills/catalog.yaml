@@ -1,4 +1,4 @@
-# Family Office AI Skills — Catalog
+# Family Office AI Skills: Catalog
 #
 # Machine-readable inventory of the skills in this repository.
 # This file is documentation and optional structure. It is NOT executable and
@@ -13,7 +13,7 @@
 # No connectors or live integrations are included in this repository. The
 # context_sources and connector_posture fields describe how context MAY be
 # provided to a skill (manually, or via an approved read-only connector the
-# user separately configures and governs) — they are not bundled integrations.
+# user separately configures and governs). They are not bundled integrations.
 # See docs/connectors-and-context.md.
 #
 # See CLAUDE.md and docs/skill-design-principles.md before adding a skill.

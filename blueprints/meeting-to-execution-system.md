@@ -1,12 +1,12 @@
 # Blueprint: Meeting-to-Execution System
 
-A composed system that connects meeting preparation to follow-through: prepare the meeting, capture decisions and actions afterward, and roll them into the weekly view — all as reviewed drafts. This is a **design pattern**, not an automation. Read-only, human-in-the-loop, non-advisory. The system never sends, assigns, or updates anything on its own.
+A composed system that connects meeting preparation to follow-through: prepare the meeting, capture decisions and actions afterward, and roll them into the weekly view: all as reviewed drafts. This is a **design pattern**, not an automation. Read-only, human-in-the-loop, non-advisory. The system never sends, assigns, or updates anything on its own.
 
 ---
 
 ## Purpose
 
-Close the gap between meetings and execution. Standardize prep so meetings are productive, and convert what was decided into a clean, owned action register that flows into the weekly rollup — with a person reviewing each step.
+Close the gap between meetings and execution. Standardize prep so meetings are productive, and convert what was decided into a clean, owned action register that flows into the weekly rollup, with a person reviewing each step.
 
 ## When to use
 
@@ -27,9 +27,9 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Skills used
 
-- [Meeting Prep Pack](../skills/meeting-prep-pack/) — structured prep before the meeting
-- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) — decisions and actions after
-- [Principal Weekly Brief](../skills/principal-weekly-brief/) — rolling outcomes into the weekly view
+- [Meeting Prep Pack](../skills/meeting-prep-pack/): structured prep before the meeting
+- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): decisions and actions after
+- [Principal Weekly Brief](../skills/principal-weekly-brief/): rolling outcomes into the weekly view
 
 ## Workflow sequence
 
@@ -42,9 +42,9 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Human review gates
 
-- **Gate 1 — Pre-meeting:** confirm prep facts and attendee details.
-- **Gate 2 — Post-meeting:** verify which items were actually decided, confirm or fill missing owners and deadlines, and review the follow-up draft.
-- **Gate 3 — Send/update:** a person sends follow-ups and updates task systems; the system does neither.
+- **Gate 1: Pre-meeting:** confirm prep facts and attendee details.
+- **Gate 2: Post-meeting:** verify which items were actually decided, confirm or fill missing owners and deadlines, and review the follow-up draft.
+- **Gate 3: Send/update:** a person sends follow-ups and updates task systems; the system does neither.
 
 ## Outputs
 

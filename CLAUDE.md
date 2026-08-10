@@ -1,10 +1,10 @@
-# CLAUDE.md — Standing Instructions for AI Coding Sessions
+# CLAUDE.md: Standing Instructions for AI Coding Sessions
 
 These are durable instructions for any Claude Code (or other AI coding agent) session that edits this repository. Read this file before making changes. If a request conflicts with the rules here, follow these rules and surface the conflict to the user.
 
 ## Repository purpose
 
-`family-office-ai-skills` is a **public, open-source** library of structured AI skills, prompts, workflow templates, and governance documentation for lean single-family offices, multi-family offices, registered investment advisers (RIAs), and wealth operators. The skills are read-only, judgment-support workflows that produce drafts for human review. The repository is **non-executable by default** — documentation and markdown, not running code.
+`family-office-ai-skills` is a **public, open-source** library of structured AI skills, prompts, workflow templates, and governance documentation for lean single-family offices, multi-family offices, registered investment advisers (RIAs), and wealth operators. The skills are read-only, judgment-support workflows that produce drafts for human review. The repository is **non-executable by default:** documentation and markdown, not running code.
 
 ## Repo identity
 
@@ -35,8 +35,8 @@ It is created by Greg Jones from generalized operator experience. Keep attributi
 ## Audience
 
 Two audiences, both addressed:
-- **Operators** — single/multi-family office staff, RIAs, investment analysts, chiefs of staff, executive assistants, wealth operations teams.
-- **AI builders** — engineers adapting the `SKILL.md` specifications into their own assistants, agents, or tooling.
+- **Operators:** single/multi-family office staff, RIAs, investment analysts, chiefs of staff, executive assistants, wealth operations teams.
+- **AI builders:** engineers adapting the `SKILL.md` specifications into their own assistants, agents, or tooling.
 
 ## This is a public-facing repository
 
@@ -74,7 +74,7 @@ Professional, understated, practical, operator-led. Avoid hype, buzzwords, and e
 - Anything that sends communications automatically.
 - Anything that provides professional advice (investment, legal, tax, accounting, compliance, fiduciary, cybersecurity).
 - Anything that connects to live systems or stores credentials.
-- Scripts, GitHub Actions, package manifests, or other executable code — **unless the user explicitly approves it.** The repository is non-executable by default.
+- Scripts, GitHub Actions, package manifests, or other executable code: **unless the user explicitly approves it.** The repository is non-executable by default.
 
 ## File conventions
 

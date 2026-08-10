@@ -5,9 +5,9 @@
 **Prepared by:** [Preparer]
 **Date:** [Date]
 **Source material:** [Pitch book, DDQ, factsheet, call notes, etc.]
-**Status:** Diligence summary — unverified; not a recommendation
+**Status:** Diligence summary: unverified; not a recommendation
 
-> This summary organizes manager-provided and other material for diligence review. It is not investment advice or a recommendation. All figures — especially track record and fees — are drawn from source material, are unverified, and must be independently confirmed. Items marked *(assumption)* are inferred; items marked *(missing)* were not provided.
+> This summary organizes manager-provided and other material for diligence review. It is not investment advice or a recommendation. All figures (especially track record and fees) are drawn from source material, are unverified, and must be independently confirmed. Items marked *(assumption)* are inferred; items marked *(missing)* were not provided.
 
 ---
 
@@ -44,7 +44,7 @@
 
 ## Portfolio construction
 
-[Concentration, position sizing, leverage, geography, sector exposure, turnover — as described.]
+[Concentration, position sizing, leverage, geography, sector exposure, turnover, as described.]
 
 ## Risk factors
 
@@ -60,7 +60,7 @@
 
 ## Follow-up diligence items
 
-- [ ] [Document or confirmation to request — e.g., audited statements, references, DDQ, ADV]
+- [ ] [Document or confirmation to request: e.g., audited statements, references, DDQ, ADV]
 - [ ] 
 
 ---
