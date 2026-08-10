@@ -1,6 +1,6 @@
 ---
 name: pre-booking-gap-analysis
-description: Use this skill before preparing any accounting entries from source activity. It compares a period's source items against what the ledger already contains and classifies every item as already booked, partially booked, covered by an aggregate entry, pending, a duplicate representation, genuinely missing, or ambiguous. Produces a coverage table and a draft entry packet covering only the genuinely missing items. It books nothing and reconciles nothing.
+description: Use this skill before preparing any accounting entries from source activity. Where the platform maintains its own review queue or unmatched flag, that flag is taken as a claim to be tested rather than an answer to be adopted. It compares a period's source items against what the ledger already contains and classifies every item as already booked, partially booked, covered by an aggregate entry, pending, a duplicate representation, genuinely missing, or ambiguous. Produces a coverage table and a draft entry packet covering only the genuinely missing items. It books nothing and reconciles nothing.
 ---
 
 # Pre-Booking Gap Analysis
@@ -24,6 +24,7 @@ Provide whatever you have. The skill works with partial material and flags what 
 
 - **Source population:** the transactions, statement lines, or notices for a defined period.
 - **Existing ledger activity** for the same accounts and period, including drafts and unposted items if available.
+- **The platform's own claim about what is unrecorded**, where one exists: a review queue, an unmatched flag, a status field. Provide it as an input. **It is a claim to be tested, not an answer to be adopted.** A system that failed to record something may also have failed to flag it, and a system that flags an item as unrecorded may simply not recognize the entry that already covers it.
 - **Period boundaries** and any hard date floor (for example, a conversion date before which nothing should be booked).
 - **Matching tolerances:** acceptable variance in amount and date, if the office has set them.
 - **Prior decisions:** items previously reviewed and deliberately excluded, if available.
@@ -54,6 +55,7 @@ Use exactly these classifications:
 ## Instructions
 
 - Establish what is already booked **before** examining what could be booked. State the ledger population you compared against, including its date range and which accounts it covers.
+- **Where the platform supplies its own unrecorded flag, reconcile your classification against it and report both.** Agreement is evidence. Disagreement is a finding in either direction: an item the platform calls unrecorded that you find already booked is a probable duplicate about to be created, and an item the platform considers handled that you find genuinely missing is the more dangerous case, because nothing will prompt anyone to look at it.
 - Normalize dates, amounts, and references before matching, and say how you normalized them.
 - Treat the absence of an exact description or date match as **insufficient** evidence that something is unbooked. An entry can be booked under a different memo, on a different date, or inside an aggregate.
 - Classify every source item. An unclassified item is a defect in the output, not an acceptable omission.

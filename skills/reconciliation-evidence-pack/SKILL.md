@@ -1,6 +1,6 @@
 ---
 name: reconciliation-evidence-pack
-description: Use this skill to assemble the evidence a person needs to reconcile an account. Tests two separate assertions, completeness and validity, using independently obtained source evidence rather than the ledger's own account of itself. Produces an aged reconciling-item schedule that separates timing differences from unexplained ones. It does not reconcile the account, does not sign off, and never reports that a balance ties.
+description: Use this skill to assemble the evidence a person needs to reconcile an account. Reconciles the account populations on each side before comparing any balance, since two aggregates can look comparable and cover different things. Tests two separate assertions, completeness and validity, using independently obtained source evidence rather than the ledger's own account of itself. Produces an aged reconciling-item schedule that separates timing differences from unexplained ones. It does not reconcile the account, does not sign off, and never reports that a balance ties.
 ---
 
 # Reconciliation Evidence Pack
@@ -33,6 +33,7 @@ They are not the same test, and passing one says nothing about the other.
 
 ## Inputs
 
+- **The account population on each side:** exactly which accounts the ledger figure covers, and exactly which accounts the source figure covers. Required before any balance is compared.
 - **Ledger balance and activity** for the account and period.
 - **Independent source evidence:** statement, custodian report, or confirmation, with its origin and as-of date.
 - **Prior period's reconciling items**, if available.
@@ -43,16 +44,18 @@ They are not the same test, and passing one says nothing about the other.
 
 Produce a pack with these sections, in this order:
 
-1. **Evidence inventory:** what was provided, where each piece came from, its as-of date, and whether it is independent of the ledger.
-2. **Completeness test:** source items not represented in the ledger.
-3. **Validity test:** ledger items not supported by source.
-4. **Reconciling-item schedule:** every item, aged, and classified as a timing difference or unexplained.
-5. **Gross movement summary:** the total of items in each direction, stated before any netting.
-6. **What a person must still resolve** before concluding.
-7. **Gaps, assumptions, and limits of this pack.**
+1. **Population reconciliation**, before anything else: the accounts on each side, and confirmation that they are the same set. Where they are not, stop and report that. A balance difference between two different populations is not a reconciling item and must never be presented as one.
+2. **Evidence inventory:** what was provided, where each piece came from, its as-of date, and whether it is independent of the ledger.
+3. **Completeness test:** source items not represented in the ledger.
+4. **Validity test:** ledger items not supported by source.
+5. **Reconciling-item schedule:** every item, aged, and classified as a timing difference or unexplained.
+6. **Gross movement summary:** the total of items in each direction, stated before any netting.
+7. **What a person must still resolve** before concluding.
+8. **Gaps, assumptions, and limits of this pack.**
 
 ## Instructions
 
+- **Reconcile the populations before reconciling the balances.** Name the accounts behind each figure and confirm they are the same set. Two aggregates can look directly comparable and cover different things entirely: a "cash" total that includes brokerage or investment accounts on one side and only depository accounts on the other will differ by an enormous amount that is not a reconciling item and cannot be investigated as one. Where the populations differ, stop and report the mismatch. Do not proceed to a variance.
 - Run and report the two assertions **separately.** Never merge them into one difference figure.
 - State the **gross** total of reconciling items in each direction before stating any net. A net figure appears only alongside its gross components.
 - Classify every reconciling item as a **timing difference** (expected to clear, with the expected clearing basis stated) or **unexplained** (no known basis). Do not classify an item as timing because it is small.
@@ -67,6 +70,7 @@ Produce a pack with these sections, in this order:
 - **One-directional testing is incomplete.** If only one assertion could be tested, the pack must say which one and what remains unknown.
 - **Aging reveals what netting hides.** An item that has been outstanding across several periods is a finding regardless of size.
 - **Scope errors read as clean.** Evidence covering the wrong account, entity, or date range will show few differences and look like a good result. Confirm and report the scope actually covered.
+- **A very large variance usually means the populations differ, not that the books are wrong.** Treat an implausibly large difference as a population question first and an accounting question second. Check the account counts and the entity counts on both sides before investigating a single transaction. Investigating a population mismatch as if it were an accounting error wastes days and can end in a fabricated explanation.
 - **Stale evidence:** an as-of date earlier than the period end cannot support a period-end conclusion.
 - **Hallucination risk:** do not supply an explanation for a difference that the material does not support. "Unexplained" is a valid and useful classification.
 
