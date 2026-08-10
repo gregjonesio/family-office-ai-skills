@@ -124,6 +124,10 @@ Illustrative context sources for the current skills. In every case the posture i
 | Post-Meeting Action Extractor | Meeting transcript/notes, task system | Manual or read-only first; no autonomous write/send; human review required | The follow-up draft is internal; a person reviews and sends |
 | Vendor Review | Proposal, renewal notice, service notes, contract summary | Manual or read-only first; no autonomous write/send; human review required | Route contract terms to counsel; do not act on retrieval |
 | Document Digest | Approved document repository or manually uploaded document | Manual or read-only first; no autonomous write/send; human review required | High-risk documents are best provided manually after review |
+| Pre-Booking Gap Analysis | Ledger activity extract, source transaction population, prior exclusions | Manual or read-only first; no autonomous write/send; human review required | Requires the ledger extract as well as the source, or the analysis is one-sided; a stale extract silently overstates the gap |
+| Transfer and Duplicate Review | Source rows from **every** related account, account and entity map | Manual or read-only first; no autonomous write/send; human review required | Partial account coverage produces false "unmatched" results; a counterpart in an account you did not connect cannot be found |
+| Reconciliation Evidence Pack | Ledger balance and activity, plus statement or custodian evidence obtained **independently of the ledger** | Manual or read-only first; no autonomous write/send; human review required | Connecting only the accounting platform gives you one population twice, not two directions; the independent side is the point |
+| Post-Write Verification | Read-back evidence from a **different path** than the one that recorded the change | Manual or read-only first; no autonomous write/send; human review required | A connector that reads through the same interface that wrote inherits its blind spot; prefer a report, export, or separate read path |
 
 ## What not to connect
 
