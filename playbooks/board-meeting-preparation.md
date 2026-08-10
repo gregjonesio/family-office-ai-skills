@@ -16,7 +16,7 @@ Governance meetings carry weight: they set policy, approve actions through resol
 
 ## Typical Trigger
 
-A scheduled board, committee, or council meeting on the annual governance calendar (which places standing items by quarter (for example, audit and tax matters early in the year, strategy and budget later)) plus the lead time the office reserves to assemble the board book.
+A scheduled board, committee, or council meeting on the annual governance calendar, which places standing items by quarter (for example, audit and tax matters early in the year, strategy and budget later), plus the lead time the office reserves to assemble the board book.
 
 ## Frequency
 

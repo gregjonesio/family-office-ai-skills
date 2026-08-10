@@ -16,7 +16,7 @@ The week's signal arrives in fragments: emails, calls, calendar invites, deal up
 
 ## Typical Trigger
 
-A standing weekly cadence (the brief lands at a fixed time (commonly Sunday evening or first thing Monday) ahead of the principal's week) plus a "no surprises" rule that escalates urgent items immediately rather than holding them for the cycle.
+A standing weekly cadence, with the brief landing at a fixed time (commonly Sunday evening or first thing Monday) ahead of the principal's week, plus a "no surprises" rule that escalates urgent items immediately rather than holding them for the cycle.
 
 ## Frequency
 
