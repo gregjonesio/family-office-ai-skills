@@ -1,6 +1,6 @@
 # Vendor Review
 
-A skill that turns vendor material — a proposal, renewal notice, service-issue summary, or performance update — into a structured review that helps an operator decide how to handle the relationship.
+A skill that turns vendor material (a proposal, renewal notice, service-issue summary, or performance update) into a structured review that helps an operator decide how to handle the relationship.
 
 ## What it does
 
@@ -25,8 +25,8 @@ Operations leads, chiefs of staff, and executive assistants managing vendors and
 
 ## Files
 
-- [SKILL.md](SKILL.md) — the workflow contract.
-- [examples/sample-input.md](examples/sample-input.md) — a fictional renewal notice.
-- [examples/sample-output.md](examples/sample-output.md) — the review produced from it.
+- [SKILL.md](SKILL.md): the workflow contract.
+- [examples/sample-input.md](examples/sample-input.md): a fictional renewal notice.
+- [examples/sample-output.md](examples/sample-output.md): the review produced from it.
 
 *Output is a draft review for human review. Not legal, tax, or procurement advice. No decision to renew or terminate is made or implied.*

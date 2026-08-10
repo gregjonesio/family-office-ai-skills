@@ -1,4 +1,4 @@
-# Sample Input — Document Digest
+# Sample Input: Document Digest
 
 *Fully fictional. No real parties, entity, or terms.*
 

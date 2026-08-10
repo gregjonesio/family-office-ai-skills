@@ -8,15 +8,15 @@ A sanitized, generalized account of how one operator approached building a light
 
 ## The problem
 
-A lean family office carries a wide operating surface area — investments, operations, governance, communications, reporting, vendors, entities, and the principal's time — on a small team. Headcount rarely scales with complexity. The binding constraint is usually attention: there is more structure-heavy, repeatable work (drafting briefs, summarizing documents, preparing meetings, tracking follow-through) than a small team can do well without it crowding out judgment.
+A lean family office carries a wide operating surface area (investments, operations, governance, communications, reporting, vendors, entities, and the principal's time) on a small team. Headcount rarely scales with complexity. The binding constraint is usually attention: there is more structure-heavy, repeatable work (drafting briefs, summarizing documents, preparing meetings, tracking follow-through) than a small team can do well without it crowding out judgment.
 
 ## The approach
 
 The generalized pattern is to build a **lightweight AI workflow layer** that absorbs the repeatable, structure-heavy work while keeping a human accountable for every judgment. In this pattern the layer is made up of three simple components:
 
-- **Agents** — assistants configured to run specific, bounded workflows.
-- **Automations** — scheduled or triggered helpers that move information into a usable form (still under human review; nothing that decides, transacts, or sends on its own).
-- **Reusable workflow templates** — the structured skill definitions, like those in this repository, that make output consistent and reviewable.
+- **Agents:** assistants configured to run specific, bounded workflows.
+- **Automations:** scheduled or triggered helpers that move information into a usable form (still under human review; nothing that decides, transacts, or sends on its own).
+- **Reusable workflow templates:** the structured skill definitions, like those in this repository, that make output consistent and reviewable.
 
 The layer is read-only and human-in-the-loop by design. It prepares; people decide.
 
@@ -38,13 +38,13 @@ These map to the skills published in this repository.
 
 ## The measurement approach
 
-To tell whether the layer is helping — and to do so honestly — the pattern tracks a few simple measures, separating activity from governance:
+To tell whether the layer is helping (and to do so honestly) the pattern tracks a few simple measures, separating activity from governance:
 
-- **Workflows created** — distinct reusable workflows defined.
-- **Workflows executed** — runs over a measurement window.
-- **Estimated hours saved** — directional preparation time avoided.
-- **Estimated value created** — a directional figure, defined as estimated hours saved × a conservative blended hourly rate.
-- **Human-review requirements** — every output requires review before use; review completion is tracked, and using an output without review is treated as an exception to be driven to zero.
+- **Workflows created:** distinct reusable workflows defined.
+- **Workflows executed:** runs over a measurement window.
+- **Estimated hours saved:** directional preparation time avoided.
+- **Estimated value created:** a directional figure, defined as estimated hours saved × a conservative blended hourly rate.
+- **Human-review requirements:** every output requires review before use; review completion is tracked, and using an output without review is treated as an exception to be driven to zero.
 
 See the [Measurement Framework](measurement-framework.md) for the full method and its limits.
 
@@ -66,11 +66,11 @@ The ranges below are **illustrative and directional only**. They are not audited
 
 ### Important caveats
 
-- These are **illustrative, directional productivity estimates only — not audited savings.**
+- These are **illustrative, directional productivity estimates only, not audited savings.**
 - The ranges are **illustrative** and should not be interpreted as representative results for any specific office.
 - They are **not tied to any specific office** and are not a benchmark.
 - They are **not evidence of** investment performance, operational quality, or compliance outcomes.
-- They are **not a replacement for human review** — every output still requires a competent person to verify it.
+- They are **not a replacement for human review:** every output still requires a competent person to verify it.
 - **Results will vary** by office, workflow quality, review discipline, and operating context.
 - A clean number with no caveat is exactly how directional estimates become overstated claims; treat every figure here as an internal management signal, not a result.
 

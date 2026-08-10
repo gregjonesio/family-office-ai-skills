@@ -1,6 +1,6 @@
 # Meeting Prep Pack
 
-A skill that assembles a structured meeting brief from prior notes, attendee details, agenda, open issues, and desired outcomes — so a principal or operator walks in fully prepared.
+A skill that assembles a structured meeting brief from prior notes, attendee details, agenda, open issues, and desired outcomes, so a principal or operator walks in fully prepared.
 
 ## What it does
 
@@ -25,8 +25,8 @@ Executive assistants, chiefs of staff, and operators preparing principals (or th
 
 ## Files
 
-- [SKILL.md](SKILL.md) — the workflow contract.
-- [examples/sample-input.md](examples/sample-input.md) — fictional meeting inputs.
-- [examples/sample-output.md](examples/sample-output.md) — the prep pack produced from them.
+- [SKILL.md](SKILL.md): the workflow contract.
+- [examples/sample-input.md](examples/sample-input.md): fictional meeting inputs.
+- [examples/sample-output.md](examples/sample-output.md): the prep pack produced from them.
 
 *Output is preparation material for human review. Not investment, legal, tax, or compliance advice.*

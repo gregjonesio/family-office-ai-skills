@@ -1,6 +1,6 @@
 # Roadmap
 
-A conservative, public view of where this library is going. The priority is depth, trust, and repeatability — not feature count. Some things are deliberately **not** planned, and that list matters as much as the rest.
+A conservative, public view of where this library is going. The priority is depth, trust, and repeatability, not feature count. Some things are deliberately **not** planned, and that list matters as much as the rest.
 
 This roadmap is directional and may change. Nothing here is a commitment or a timeline.
 
@@ -8,19 +8,20 @@ This roadmap is directional and may change. Nothing here is a commitment or a ti
 
 ## Current focus
 
+- Defining where the line actually falls between assistance and action, via the [action authority model](docs/action-authority-model.md). "Read-only" was a proxy for human accountability; the model states the accountability requirement directly and draws the boundary at records versus resources.
 - Strengthening the structure, governance, and safety layer around the existing seven skills.
 - Documentation that helps operators adopt AI responsibly: governance, privacy, threat model, evaluation, measurement, and the maturity model.
 - Keeping the library conservative, sanitized, and non-executable by default.
 
 ## Advanced operator layer
 
-Included in v0.1.0. These move the repository beyond a skill library toward a public blueprint for an AI-native family office operating layer — all read-only, human-in-the-loop, and non-executable:
+Included in v0.1.0. These move the repository beyond a skill library toward a public blueprint for an AI-native family office operating layer: all read-only, human-in-the-loop, and non-executable:
 
-- [Reference architecture](docs/reference-architecture.md) — the six-layer model.
-- [AI Workforce operating model](docs/ai-workforce-operating-model.md) — definition, vocabulary, and what stays human.
-- [Skill maturity matrix](docs/skill-maturity-matrix.md) — prompt to operating layer.
-- [System blueprints](blueprints/) — composed, end-to-end workflow designs.
-- [Non-executable evaluation examples](evals/) — red-team scenarios for conservative behavior.
+- [Reference architecture](docs/reference-architecture.md): the six-layer model.
+- [AI Workforce operating model](docs/ai-workforce-operating-model.md): definition, vocabulary, and what stays human.
+- [Skill maturity matrix](docs/skill-maturity-matrix.md): prompt to operating layer.
+- [System blueprints](blueprints/): composed, end-to-end workflow designs.
+- [Non-executable evaluation examples](evals/): red-team scenarios for conservative behavior.
 
 ## Near-term improvements
 
@@ -43,7 +44,7 @@ Potential areas for future skills, all subject to the same read-only, human-in-t
 - Document management
 - RIA operations
 
-Each new skill would ship with a `SKILL.md`, a plain-English README, fictional examples, a catalog entry, and a disclaimer — following the [skill design principles](docs/skill-design-principles.md).
+Each new skill would ship with a `SKILL.md`, a plain-English README, fictional examples, a catalog entry, and a disclaimer: following the [skill design principles](docs/skill-design-principles.md).
 
 ## Not currently planned
 
@@ -54,8 +55,9 @@ These are out of scope by design. They would conflict with the repository's safe
 - Transaction approval or commitment authority
 - Tax, legal, accounting, or compliance advice
 - Portfolio or allocation recommendations
-- Integrations with live or confidential systems
+- Shipped integrations, credentials, or endpoints for live or confidential systems. The repository may *document* the controls a workflow needs when an office connects one; it never provides the connection.
 - Executable code, scripts, or automation as a default part of the repository
+- Any AI-performed action that moves money or assets, sends external communication, commits the office contractually, decides an allocation, changes access or permission state, or destroys data irreversibly, with or without human approval
 - Anything that removes the human from a consequential decision
 
 If your need falls into this list, this library is intentionally not the right tool for it.

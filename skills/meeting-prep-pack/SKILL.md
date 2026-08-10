@@ -31,13 +31,13 @@ Provide whatever you have; the skill works with partial material and flags gaps.
 
 Produce a pack with these sections, in this order:
 
-1. **Meeting objective** — why the meeting is happening and what a good outcome looks like.
-2. **Attendees** — table: name, role/affiliation, relevance, notes.
-3. **Relevant background** — concise context from prior notes and history.
-4. **Open items** — table: item, status, notes.
-5. **Suggested questions** — specific questions to raise.
-6. **Desired outcomes** — what the attendee wants to leave with.
-7. **Materials to review beforehand** — checklist of documents/items and why.
+1. **Meeting objective:** why the meeting is happening and what a good outcome looks like.
+2. **Attendees:** table: name, role/affiliation, relevance, notes.
+3. **Relevant background:** concise context from prior notes and history.
+4. **Open items:** table: item, status, notes.
+5. **Suggested questions:** specific questions to raise.
+6. **Desired outcomes:** what the attendee wants to leave with.
+7. **Materials to review beforehand:** checklist of documents/items and why.
 
 Include an *Open questions / missing information* note if inputs are incomplete. Use the [meeting prep template](../../templates/meeting-prep-template.md) as the output structure.
 
@@ -45,7 +45,7 @@ Include an *Open questions / missing information* note if inputs are incomplete.
 
 - Use only the information provided. Do not invent attendee backgrounds, history, or context.
 - Lead with the objective so the brief is immediately useful.
-- Make *Suggested questions* specific to this meeting and these parties — not generic.
+- Make *Suggested questions* specific to this meeting and these parties, not generic.
 - Separate **confirmed facts** from **assumptions.** Mark inferred items *(assumption)*.
 - Where attendee detail, history, or objectives are unknown, mark them *(missing)* rather than fabricating.
 - Keep it concise; a prep pack should be skimmable in a few minutes.

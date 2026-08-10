@@ -1,15 +1,15 @@
-# Sample Input — Investment Memo Screener
+# Sample Input: Investment Memo Screener
 
 *Fully fictional. No real company, founder, or data.*
 
 ---
 
 **Source:** Founder email (cold inbound)
-**Screen against:** Generic mandate — early-stage software, $250k–$1M checks
+**Screen against:** Generic mandate: early-stage software, $250k–$1M checks
 
 ---
 
-> Subject: Investment opportunity — raising our seed round
+> Subject: Investment opportunity: raising our seed round
 >
 > Hi,
 >

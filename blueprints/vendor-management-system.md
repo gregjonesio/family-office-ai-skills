@@ -1,12 +1,12 @@
 # Blueprint: Vendor Management System
 
-A composed system for reviewing vendor proposals and renewals, digesting the underlying documents, preparing for negotiation, and tracking follow-through — without approving, terminating, signing, or sending anything. This is a **design pattern**, not an automation. Read-only, human-in-the-loop, non-advisory. Contractual questions go to counsel.
+A composed system for reviewing vendor proposals and renewals, digesting the underlying documents, preparing for negotiation, and tracking follow-through, without approving, terminating, signing, or sending anything. This is a **design pattern**, not an automation. Read-only, human-in-the-loop, non-advisory. Contractual questions go to counsel.
 
 ---
 
 ## Purpose
 
-Give an operator a consistent, reviewable way to evaluate a vendor relationship: a structured review, a plain-English read of the documents, prepared negotiation questions, and a tracked action list — all as drafts for a human decision.
+Give an operator a consistent, reviewable way to evaluate a vendor relationship: a structured review, a plain-English read of the documents, prepared negotiation questions, and a tracked action list: all as drafts for a human decision.
 
 ## When to use
 
@@ -27,10 +27,10 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Skills used
 
-- [Vendor Review](../skills/vendor-review/) — the structured review
-- [Document Digest](../skills/document-digest/) — plain-English read of contracts/notices
-- [Meeting Prep Pack](../skills/meeting-prep-pack/) — negotiation/relationship-review prep
-- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) — follow-ups after the discussion
+- [Vendor Review](../skills/vendor-review/): the structured review
+- [Document Digest](../skills/document-digest/): plain-English read of contracts/notices
+- [Meeting Prep Pack](../skills/meeting-prep-pack/): negotiation/relationship-review prep
+- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): follow-ups after the discussion
 
 ## Workflow sequence
 
@@ -42,9 +42,9 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 ## Human review gates
 
-- **Gate 1 — Documents:** verify the digest against the source document; do not act on an unreviewed summary.
-- **Gate 2 — Review:** confirm the vendor review's terms and figures; confirm it makes no fairness or legal determination.
-- **Gate 3 — Decision:** a person decides whether to renew, renegotiate, escalate, or replace; counsel handles contractual questions.
+- **Gate 1: Documents:** verify the digest against the source document; do not act on an unreviewed summary.
+- **Gate 2: Review:** confirm the vendor review's terms and figures; confirm it makes no fairness or legal determination.
+- **Gate 3: Decision:** a person decides whether to renew, renegotiate, escalate, or replace; counsel handles contractual questions.
 
 ## Outputs
 
@@ -82,7 +82,7 @@ See [measurement-framework.md](../docs/measurement-framework.md). Value figures 
 
 ## Implementation notes
 
-Provide contracts manually after a person has reviewed them. Treat the digest's "questions for counsel" as a routing step, not a substitute for counsel. Watch renewal/notice deadlines closely — the system surfaces them but does not act on them.
+Provide contracts manually after a person has reviewed them. Treat the digest's "questions for counsel" as a routing step, not a substitute for counsel. Watch renewal/notice deadlines closely: the system surfaces them but does not act on them.
 
 ---
 

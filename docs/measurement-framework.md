@@ -1,6 +1,6 @@
 # Measurement Framework
 
-A practical way to measure whether AI workflows are actually helping a family office or RIA — and to do so honestly. The framework is built around the idea of an AI-native family office operating system: a set of governed, repeatable workflows whose value should be observable, not assumed.
+A practical way to measure whether AI workflows are actually helping a family office or RIA, and to do so honestly. The framework is built around the idea of an AI-native family office operating system: a set of governed, repeatable workflows whose value should be observable, not assumed.
 
 A warning up front: the easiest numbers to produce (hours saved, dollar value) are the easiest to overstate. This framework is for internal management insight, not for marketing claims or audited reporting. Treat every value figure as **directional**.
 
@@ -40,7 +40,7 @@ Group metrics into activity, efficiency, quality/governance, and value. Activity
 | Correction rate | Share of drafts needing material correction in review |
 | Confidentiality incidents | Instances of sensitive data handled in an unapproved tool (target: zero) |
 
-The governance metrics matter most. A workflow that "saves time" while skipping review is not a success — it is an unmanaged risk.
+The governance metrics matter most. A workflow that "saves time" while skipping review is not a success: it is an unmanaged risk.
 
 ### Value metrics (handle with care)
 
@@ -48,7 +48,7 @@ The governance metrics matter most. A workflow that "saves time" while skipping 
 |--------|------------|
 | Estimated value created | A directional estimate of time value, defined below |
 
-## A suggested value estimate — and its limits
+## A suggested value estimate, and its limits
 
 A simple, transparent estimate:
 
@@ -59,9 +59,9 @@ Estimated value = estimated hours saved × blended hourly rate
 Use a conservative blended rate and conservative time estimates. Then read the caveats, which matter more than the number:
 
 - It is **directional, not audited.** It is an internal estimate, not a financial metric.
-- It **does not capture decision quality** — better preparation may or may not lead to better decisions.
-- It **does not capture avoided errors** — value from catching a missed date or a bad term is real but unmeasured here.
-- It **does not prove ROI** — it ignores tool costs, training, review time, and risk.
+- It **does not capture decision quality:** better preparation may or may not lead to better decisions.
+- It **does not capture avoided errors:** value from catching a missed date or a bad term is real but unmeasured here.
+- It **does not prove ROI:** it ignores tool costs, training, review time, and risk.
 - It **must not be represented as audited savings** or as a financial return.
 
 State these caveats wherever the figure appears. A clean number with no caveat is exactly how directional estimates become overstated claims.

@@ -3,7 +3,7 @@
 **Prepared for:** [Principal]
 **Prepared by:** [Preparer]
 **Week of:** [Date range]
-**Status:** Draft for review — verify all facts before use
+**Status:** Draft for review: verify all facts before use
 
 > All figures, dates, and names below are draft assertions and must be verified against source before this brief is relied upon. Items marked *(assumption)* are not confirmed. Items marked *(missing)* require input.
 
@@ -48,8 +48,8 @@
 
 ## Suggested follow-ups
 
-- [ ] [Follow-up] — owner, by [date]
-- [ ] [Follow-up] — owner, by [date]
+- [ ] [Follow-up]: owner, by [date]
+- [ ] [Follow-up]: owner, by [date]
 
 ## Open questions / missing information
 

@@ -5,7 +5,7 @@
 **Location / format:** [In person / call / video]
 **Prepared for:** [Principal / attendee]
 **Prepared by:** [Preparer]
-**Status:** Draft for review — verify facts and attendees
+**Status:** Draft for review: verify facts and attendees
 
 > Facts, names, and prior-context items below are drawn from provided material and are unverified. Items marked *(assumption)* are inferred; items marked *(missing)* require input before the meeting.
 
@@ -23,7 +23,7 @@
 
 ## Relevant background
 
-[Concise context from prior notes and history — what has happened, what was last agreed, where things stand. Distinguish confirmed facts from assumptions.]
+[Concise context from prior notes and history: what has happened, what was last agreed, where things stand. Distinguish confirmed facts from assumptions.]
 
 ## Open items
 
@@ -44,7 +44,7 @@
 
 ## Materials to review beforehand
 
-- [ ] [Document or item] — [why]
+- [ ] [Document or item]: [why]
 - [ ] 
 
 ## Open questions / missing information

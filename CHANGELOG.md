@@ -6,12 +6,49 @@ All notable changes to this repository are documented here. This project follows
 
 ## [Unreleased]
 
+### Changed
+
+- **Action authority replaces blanket read-only as the safety posture.** The repository
+  previously described itself as read-only by default and stated that skills "never
+  decide, transact, approve, or send." Read-only was a proxy: it guaranteed human
+  accountability by removing capability rather than by controlling it. In practice
+  offices do grant AI-assisted workflows write access to systems of record, and a
+  written posture the office does not hold provides no protection. The requirement is
+  now stated directly (**no consequential change without a named human approving that
+  specific change, and independent verification that it landed**), and the boundary is
+  drawn at **records versus resources** rather than at read versus write.
+
+  What this does *not* change: nothing in this library sends external communication,
+  moves money or assets, commits the office contractually, decides an allocation,
+  alters access or permission state, or deletes irreversibly. Those remain prohibited
+  with or without approval. Human review remains the primary control, guardrails
+  remain instructions rather than enforceable controls, and the repository remains
+  non-executable, credential-free, and free of shipped integrations.
+
+  Updated accordingly: `README.md` (trust and safety posture), `CLAUDE.md` (repo
+  purpose, identity, safety rules, prohibited content, review checklist),
+  `ROADMAP.md` (current focus and out-of-scope list),
+  `docs/skill-maturity-matrix.md`, `docs/ai-workforce-operating-model.md`,
+  `docs/connectors-and-context.md`, and `.github/pull_request_template.md`.
+  References to read-only *connector access* are unchanged; least-privilege retrieval
+  of context is a separate matter from write authority, and remains the default.
+
 ### Added
+
+- **[Action Authority Model](docs/action-authority-model.md)** (`docs/`): the five states
+  an AI-assisted action can occupy (read, draft, proposal, approved execution,
+  verification), the records-versus-resources boundary, the conditions an office must
+  meet before operating at approved execution, and a catalogue of the ways approval
+  gates fail silently in practice, including gates that are never read, gates
+  satisfied by the wrong object, actions that report success without taking effect,
+  and enforcement that lapses quietly after months of apparently normal operation.
+  Read-only, human-in-the-loop, non-advisory, and non-executable, consistent with the
+  rest of the repository.
 
 - **Operating Playbooks** (`playbooks/`): a new top-level section documenting how
   recurring family office responsibilities are executed and where AI reduces
   administrative burden while human review stays the primary control. Includes a
-  `README.md`, a `PLAYBOOK-TEMPLATE.md`, and ten playbooks — principal weekly
+  `README.md`, a `PLAYBOOK-TEMPLATE.md`, and ten playbooks: principal weekly
   review, capital call processing, investment opportunity intake, board and
   committee meeting preparation, executive travel coordination, insurance renewal
   management, vendor onboarding and review, quarter-end close, entity governance
@@ -20,10 +57,10 @@ All notable changes to this repository are documented here. This project follows
   gates, and cross-links the relevant skills, blueprints, case studies, and
   governance documents. Read-only, human-in-the-loop, non-advisory, and
   non-executable, consistent with the rest of the repository.
-- Each playbook carries substantive family office operating detail — institutional
+- Each playbook carries substantive family office operating detail: institutional
   controls such as segregation of duties, dual authorization, independent
   out-of-band verification, authorized-signer matrices, and recurring governance
-  calendars — written so an experienced operator learns how the process is run
+  calendars: written so an experienced operator learns how the process is run
   safely even without using AI. Every playbook includes a **Common Failure
   Points** section covering how the process breaks in practice and the control
   that prevents each failure, and an **Evolution Path** section describing how the

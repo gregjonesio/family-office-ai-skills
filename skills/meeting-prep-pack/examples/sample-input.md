@@ -1,4 +1,4 @@
-# Sample Input — Meeting Prep Pack
+# Sample Input: Meeting Prep Pack
 
 *Fully fictional. No real people, firms, or data.*
 

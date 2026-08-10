@@ -3,7 +3,7 @@
 **Prepared by:** Operations
 **Date:** [Date]
 **Source:** Fund subscription / side letter excerpt (illustrative, partial)
-**Status:** Plain-English digest — not legal advice; verify against the full document
+**Status:** Plain-English digest, not legal advice; verify against the full document
 
 > This digest summarizes only the text provided, which is a partial excerpt. It is not legal, tax, or accounting advice and does not interpret the document as a professional would. Items marked *(assumption)* are inferred; items marked *(missing)* are not in the excerpt. Have counsel review the full document before acting.
 
@@ -11,7 +11,7 @@
 
 ## Document type
 
-Fund subscription agreement excerpt for a Delaware limited partnership — the document by which an investor commits capital to a private fund. Several referenced sections (the Limited Partnership Agreement, governing law, default and remedy provisions) are **not included** in this excerpt.
+Fund subscription agreement excerpt for a Delaware limited partnership: the document by which an investor commits capital to a private fund. Several referenced sections (the Limited Partnership Agreement, governing law, default and remedy provisions) are **not included** in this excerpt.
 
 ## Plain-English summary
 
@@ -32,7 +32,7 @@ The investor ("Subscriber") agrees to commit a set amount of capital to the Fund
 | Capital call notice | At least 10 business days' written notice |
 | Investment period | 5 years from final closing |
 | Fund term | 10 years, plus up to two 1-year extensions (GP discretion) |
-| Final closing date | *(missing — not in excerpt; needed to anchor the periods)* |
+| Final closing date | *(missing, not in excerpt; needed to anchor the periods)* |
 
 ## Obligations
 
@@ -44,11 +44,11 @@ The investor ("Subscriber") agrees to commit a set amount of capital to the Fund
 
 ## Risks / unusual terms
 
-*Flagged as observations for professional review — not legal conclusions.*
+*Flagged as observations for professional review, not legal conclusions.*
 
 | Item | Why it's worth noting |
 |------|----------------------|
-| Fee on **committed** capital | 2% is charged on committed (not invested) capital during the investment period — common in private funds, but increases effective cost early on |
+| Fee on **committed** capital | 2% is charged on committed (not invested) capital during the investment period: common in private funds, but increases effective cost early on |
 | GP discretion is broad | Extensions, accepting lesser commitments, and transfer consent are all "sole discretion" |
 | Indemnification by reference | Key indemnification terms live in the LPA, which is not included here |
 | Illiquidity | Transfers require GP consent that can be withheld; effectively a long-term, illiquid commitment |

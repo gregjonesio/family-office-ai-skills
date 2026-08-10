@@ -1,6 +1,6 @@
 # Manager Diligence Summarizer
 
-A skill that distills investment manager and fund materials — pitch books, DDQs, factsheets, call notes — into a consistent, diligence-ready summary an allocator can review and compare. It is a diligence summary, not a recommendation.
+A skill that distills investment manager and fund materials (pitch books, DDQs, factsheets, call notes) into a consistent, diligence-ready summary an allocator can review and compare. It is a diligence summary, not a recommendation.
 
 ## What it does
 
@@ -25,8 +25,8 @@ Allocators, investment analysts, RIAs, and operators running a manager diligence
 
 ## Files
 
-- [SKILL.md](SKILL.md) — the workflow contract.
-- [examples/sample-input.md](examples/sample-input.md) — fictional manager materials.
-- [examples/sample-output.md](examples/sample-output.md) — the diligence summary produced from them.
+- [SKILL.md](SKILL.md): the workflow contract.
+- [examples/sample-input.md](examples/sample-input.md): fictional manager materials.
+- [examples/sample-output.md](examples/sample-output.md): the diligence summary produced from them.
 
 *Output is a draft summary for human diligence. Not investment, legal, or tax advice. No recommendation to allocate is made or implied.*

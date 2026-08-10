@@ -3,8 +3,8 @@
 ## Our standard
 
 This is a professional, open-source project for family office and wealth management
-operators and the AI builders who serve them. We expect everyone who participates —
-in issues, pull requests, and discussions — to be respectful, constructive, and
+operators and the AI builders who serve them. We expect everyone who participates
+(in issues, pull requests, and discussions) to be respectful, constructive, and
 professional.
 
 ## Expected behavior
@@ -27,8 +27,8 @@ professional.
 
 ## Scope
 
-This Code of Conduct applies in all project spaces — the repository, issues, pull
-requests, and any other official channel — and when an individual is representing the
+This Code of Conduct applies in all project spaces: the repository, issues, pull
+requests, and any other official channel, and when an individual is representing the
 project in public spaces.
 
 ## Reporting

@@ -1,4 +1,4 @@
-# Sample Input — Principal Weekly Brief
+# Sample Input: Principal Weekly Brief
 
 *Fully fictional. No real people, entities, or data.*
 
@@ -7,10 +7,10 @@
 **Week of:** Monday, March 9 – Friday, March 13
 
 **Calendar items:**
-- Tue 10:00 — Call with prospective real estate co-investment sponsor (intro only)
-- Wed 14:00 — Quarterly review with outsourced CIO
-- Thu — Principal traveling to second residence (afternoon flight)
-- Fri 09:00 — Household staff annual review meeting
+- Tue 10:00: Call with prospective real estate co-investment sponsor (intro only)
+- Wed 14:00: Quarterly review with outsourced CIO
+- Thu: Principal traveling to second residence (afternoon flight)
+- Fri 09:00: Household staff annual review meeting
 
 **Open decisions:**
 - Whether to renew the property & casualty insurance program (renewal quote received, ~9% increase). Broker wants direction by Friday.

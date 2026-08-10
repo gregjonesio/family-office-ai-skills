@@ -14,7 +14,7 @@ This skill turns raw, messy meeting notes into a clean, structured record of wha
 - Immediately after a meeting, to turn notes into an owned action list.
 - Building a consistent record of decisions and follow-ups across meetings.
 - Preparing a follow-up summary for a person to review, edit, and send.
-- Capturing institutional memory — what was decided and why.
+- Capturing institutional memory: what was decided and why.
 
 ## Inputs
 
@@ -29,22 +29,22 @@ Provide whatever you have; the skill works with partial notes and flags gaps.
 
 Produce a record with these sections, in this order:
 
-1. **Decisions made** — table: decision, context, decided by.
-2. **Action items** — table: action, owner, deadline, dependencies, status.
-3. **Follow-up message draft** — an internal draft summarizing decisions and actions, for human review and sending.
-4. **Open questions** — items raised but not resolved.
-5. **Missing information** — actions without a stated owner or deadline.
+1. **Decisions made:** table: decision, context, decided by.
+2. **Action items:** table: action, owner, deadline, dependencies, status.
+3. **Follow-up message draft:** an internal draft summarizing decisions and actions, for human review and sending.
+4. **Open questions:** items raised but not resolved.
+5. **Missing information:** actions without a stated owner or deadline.
 
 Use the [action item template](../../templates/action-item-template.md) as the output structure.
 
 ## Instructions
 
 - Extract only what the notes support. Do not invent decisions, owners, deadlines, or actions.
-- Where the notes do not specify an **owner or deadline, mark it *(missing)*** — never assume one.
+- Where the notes do not specify an **owner or deadline, mark it *(missing)***, never assume one.
 - Distinguish **decisions** (settled) from **discussion** (raised but not concluded). Put unresolved items under *Open questions*.
 - Separate **confirmed facts** from **assumptions.** Mark inferred items *(assumption)*.
 - Keep action items concrete and verb-led ("Send X to Y," "Confirm Z with counsel").
-- The follow-up draft is **internal only** — clearly labeled as a draft for human review and editing before any send. The skill never sends.
+- The follow-up draft is **internal only:** clearly labeled as a draft for human review and editing before any send. The skill never sends.
 - Preserve confidentiality; do not add detail beyond the notes.
 
 ## Quality control

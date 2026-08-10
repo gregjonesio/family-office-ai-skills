@@ -52,12 +52,12 @@ When in doubt, the use case is prohibited until someone accountable approves it.
 
 ## 4a. Connector governance
 
-If you allow an AI system to retrieve context from your systems (calendars, document repositories, email, task managers, notes, CRM, knowledge bases), govern that access deliberately. Connectors are optional, are not required to use these workflows, and are a data-access risk — not a safety control. Govern them with:
+If you allow an AI system to retrieve context from your systems (calendars, document repositories, email, task managers, notes, CRM, knowledge bases), govern that access deliberately. Connectors are optional, are not required to use these workflows, and are a data-access risk, not a safety control. Govern them with:
 
 - **A connector inventory.** Maintain a list of what is connected, to which AI environment, with what scope.
 - **Approved data sources.** Define which systems may be connected at all; default is none until approved.
 - **Approved use cases.** Tie each connector to specific workflows, not general access.
-- **Prohibited data categories.** Name the data that must not be connected (e.g., credentials, identity documents, health, unredacted tax, privileged material) — see [connectors-and-context.md](connectors-and-context.md).
+- **Prohibited data categories.** Name the data that must not be connected (e.g., credentials, identity documents, health, unredacted tax, privileged material): see [connectors-and-context.md](connectors-and-context.md).
 - **Permission scope (least privilege).** Grant the minimum access a workflow needs, scoped to specific folders or sources.
 - **Read-only preference.** Prefer read-only access; treat write-, send-, or transaction-capable connectors as out of scope absent formal controls and review.
 - **Review and revocation cadence.** Review connector access on a regular cadence and on role changes; ensure access can be revoked quickly.
@@ -95,7 +95,7 @@ Keep a proportionate record so the office can answer "what did we use AI for, an
 
 ## 8. Staff training
 
-- Train every user on these boundaries before they use AI for office work — approved uses, prohibited uses, and the confidentiality rules.
+- Train every user on these boundaries before they use AI for office work: approved uses, prohibited uses, and the confidentiality rules.
 - Teach the **failure modes**: confident inaccuracy ("hallucination"), stale information, and the temptation to over-trust fluent output.
 - Make verification a habit, not a step people skip when busy.
 - Give the team a clear escalation path: when an AI suggestion touches investment, legal, tax, or compliance questions, route it to the appropriate professional rather than acting on it.

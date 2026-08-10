@@ -1,6 +1,6 @@
 # Principal Weekly Brief
 
-A skill that turns the week's scattered inputs — calendar, open decisions, investment updates, operational issues, travel, and follow-ups — into a single, concise briefing a family office principal can read in minutes and act on.
+A skill that turns the week's scattered inputs (calendar, open decisions, investment updates, operational issues, travel, and follow-ups) into a single, concise briefing a family office principal can read in minutes and act on.
 
 ## What it does
 
@@ -25,8 +25,8 @@ Chiefs of staff, executive assistants, and operators who prepare a recurring bri
 
 ## Files
 
-- [SKILL.md](SKILL.md) — the workflow contract.
-- [examples/sample-input.md](examples/sample-input.md) — a fictional set of weekly inputs.
-- [examples/sample-output.md](examples/sample-output.md) — the brief produced from them.
+- [SKILL.md](SKILL.md): the workflow contract.
+- [examples/sample-input.md](examples/sample-input.md): a fictional set of weekly inputs.
+- [examples/sample-output.md](examples/sample-output.md): the brief produced from them.
 
 *Output is a draft for human review. Not investment, legal, tax, or compliance advice.*

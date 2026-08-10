@@ -1,6 +1,6 @@
 # Investment Memo Screener
 
-A skill that converts raw opportunity material — a deal summary, pitch deck notes, a CIM excerpt, or a founder email — into a consistent first-pass investment memo. It standardizes the front of the deal-flow funnel and surfaces the right diligence questions. It is a screen, not a recommendation.
+A skill that converts raw opportunity material (a deal summary, pitch deck notes, a CIM excerpt, or a founder email) into a consistent first-pass investment memo. It standardizes the front of the deal-flow funnel and surfaces the right diligence questions. It is a screen, not a recommendation.
 
 ## What it does
 
@@ -25,8 +25,8 @@ Investment analysts, deal-flow managers, chiefs of staff, and operators triaging
 
 ## Files
 
-- [SKILL.md](SKILL.md) — the workflow contract.
-- [examples/sample-input.md](examples/sample-input.md) — a fictional founder email.
-- [examples/sample-output.md](examples/sample-output.md) — the screening memo produced from it.
+- [SKILL.md](SKILL.md): the workflow contract.
+- [examples/sample-input.md](examples/sample-input.md): a fictional founder email.
+- [examples/sample-output.md](examples/sample-output.md): the screening memo produced from it.
 
 *Output is a draft screen for human review. Not investment, legal, or tax advice. No recommendation to invest is made or implied.*

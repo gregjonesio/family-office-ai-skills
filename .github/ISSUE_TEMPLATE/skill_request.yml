@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for proposing a skill. This library is conservative by design: skills are
         read-only, human-in-the-loop, and provide no professional advice. Please describe
-        the workflow generically — **do not include any confidential or real information.**
+        the workflow generically. **Do not include any confidential or real information.**
   - type: input
     id: workflow-name
     attributes:
@@ -70,11 +70,12 @@ body:
   - type: dropdown
     id: read-only
     attributes:
-      label: Should this remain read-only?
-      description: Skills in this library do not act, send, approve, or transact.
+      label: Does this stay within the action authority model?
+      description: "Skills never move money, communicate externally, commit the office, decide an allocation, or change access. A skill may describe writing to a record only with a reviewable proposal, a named approver, and independent verification. See docs/action-authority-model.md."
       options:
-        - "Yes — read-only, judgment-support only"
-        - "Unsure — needs discussion"
+        - "Yes: reads and drafts only"
+        - "Yes: describes a record write, with proposal, named approver, and verification"
+        - "Unsure: needs discussion"
     validations:
       required: true
   - type: textarea

@@ -1,6 +1,6 @@
 # Case Study: Weekly Principal Brief
 
-How a lean family office turns a week of scattered inputs into one consistent principal briefing — drafted by AI, verified by a person, delivered by a person.
+How a lean family office turns a week of scattered inputs into one consistent principal briefing: drafted by AI, verified by a person, delivered by a person.
 
 > **Fictionalized and illustrative.** This is a sanitized, generalized example. It does not describe any actual family office, employer, client, principal, vendor, or operating environment. All names, scenarios, and figures are invented and directional. Nothing here is investment, legal, tax, accounting, compliance, or fiduciary advice.
 
@@ -8,11 +8,11 @@ How a lean family office turns a week of scattered inputs into one consistent pr
 
 ## Scenario
 
-A single operator supports a principal who wants a short Monday-morning read on the week ahead: what is on the calendar, what decisions are waiting, what moved on investments and operations, which vendor issues are open, and what is still owed from last week. The raw material is spread across a calendar, a task list, last week's meeting notes, and a handful of email threads. The principal does not want a data dump — they want a tight, consistent brief they can read in a few minutes.
+A single operator supports a principal who wants a short Monday-morning read on the week ahead: what is on the calendar, what decisions are waiting, what moved on investments and operations, which vendor issues are open, and what is still owed from last week. The raw material is spread across a calendar, a task list, last week's meeting notes, and a handful of email threads. The principal does not want a data dump: they want a tight, consistent brief they can read in a few minutes.
 
 ## Operating problem
 
-A lean office has no dedicated chief of staff with hours to assemble this by hand every week. The inputs are scattered, the format drifts from week to week, and the briefing competes with live work every Monday. When the operator is busy, the brief gets thinner or later — exactly when the principal most needs the overview. The difficulty is not judgment; it is the repeatable, structure-heavy assembly that crowds out higher-value work.
+A lean office has no dedicated chief of staff with hours to assemble this by hand every week. The inputs are scattered, the format drifts from week to week, and the briefing competes with live work every Monday. When the operator is busy, the brief gets thinner or later: exactly when the principal most needs the overview. The difficulty is not judgment; it is the repeatable, structure-heavy assembly that crowds out higher-value work.
 
 ## Traditional workflow
 
@@ -40,13 +40,13 @@ The AI assembles and structures; it does not decide what matters or send anythin
 
 ## Skills used
 
-- [Principal Weekly Brief](../skills/principal-weekly-brief/) — the core briefing
-- [Meeting Prep Pack](../skills/meeting-prep-pack/) — prep for the week's key meetings
-- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) — carrying last week's outcomes into this week's follow-ups
+- [Principal Weekly Brief](../skills/principal-weekly-brief/): the core briefing
+- [Meeting Prep Pack](../skills/meeting-prep-pack/): prep for the week's key meetings
+- [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): carrying last week's outcomes into this week's follow-ups
 
 ## Context sources
 
-Manual input first: the operator pastes the relevant items. As the workflow earns trust, an office may add scoped, read-only connectors — for example, an approved calendar or task list — to reduce copy-and-paste. Connectors are optional, least-privilege, and read-only; they improve context but do not replace review. See [connectors-and-context.md](../docs/connectors-and-context.md).
+Manual input first: the operator pastes the relevant items. As the workflow earns trust, an office may add scoped, read-only connectors (for example, an approved calendar or task list) to reduce copy-and-paste. Connectors are optional, least-privilege, and read-only; they improve context but do not replace review. See [connectors-and-context.md](../docs/connectors-and-context.md).
 
 ## Review gates
 
@@ -65,21 +65,21 @@ Manual input first: the operator pastes the relevant items. As the workflow earn
 
 How this workflow could be measured ([measurement framework](../docs/measurement-framework.md); figures are directional, not audited):
 
-- **Time saved** — preparation time avoided per brief versus assembling by hand.
-- **Cycle time reduced** — from "inputs available" to "reviewed brief ready."
-- **Review exceptions** — instances where a brief was used without the required review (driven toward zero).
-- **Follow-ups captured** — carried-over items surfaced rather than dropped.
-- **Decisions supported** — decisions-needed items the principal acted on.
-- **Documents summarized** — updates and notes folded into the brief.
-- **Action items created** — owned follow-ups produced for the week.
+- **Time saved:** preparation time avoided per brief versus assembling by hand.
+- **Cycle time reduced:** from "inputs available" to "reviewed brief ready."
+- **Review exceptions:** instances where a brief was used without the required review (driven toward zero).
+- **Follow-ups captured:** carried-over items surfaced rather than dropped.
+- **Decisions supported:** decisions-needed items the principal acted on.
+- **Documents summarized:** updates and notes folded into the brief.
+- **Action items created:** owned follow-ups produced for the week.
 
 ## Risks and controls
 
-- **Confidentiality** — the brief may touch sensitive matters; use only approved, non-confidential or fictional inputs in any public or unapproved tool, and an enterprise environment otherwise. See [privacy-and-confidentiality.md](../docs/privacy-and-confidentiality.md).
-- **Stale information** — carried-over items can be presented as current; the reviewer confirms status against source before delivery.
-- **Hallucination** — the AI may invent an update or a meeting not in the inputs; every fact is verified against source.
-- **Professional advice boundary** — the brief summarizes; it makes no investment, legal, tax, or compliance recommendation.
-- **Overreliance** — a fluent brief reads as authoritative; the reviewer treats it as an unverified draft, not a finished work product.
+- **Confidentiality:** the brief may touch sensitive matters; use only approved, non-confidential or fictional inputs in any public or unapproved tool, and an enterprise environment otherwise. See [privacy-and-confidentiality.md](../docs/privacy-and-confidentiality.md).
+- **Stale information:** carried-over items can be presented as current; the reviewer confirms status against source before delivery.
+- **Hallucination:** the AI may invent an update or a meeting not in the inputs; every fact is verified against source.
+- **Professional advice boundary:** the brief summarizes; it makes no investment, legal, tax, or compliance recommendation.
+- **Overreliance:** a fluent brief reads as authoritative; the reviewer treats it as an unverified draft, not a finished work product.
 
 ## What remains human
 
@@ -91,7 +91,7 @@ How this workflow could be measured ([measurement framework](../docs/measurement
 
 ## Takeaway
 
-The leverage is in consistency and recovered attention, not autonomy: the AI assembles a reliable draft every week so the operator spends their scarce time on judgment and framing, not on copying and reformatting — and a person still owns every fact and the final delivery.
+The leverage is in consistency and recovered attention, not autonomy: the AI assembles a reliable draft every week so the operator spends their scarce time on judgment and framing, not on copying and reformatting, and a person still owns every fact and the final delivery.
 
 ---
 
