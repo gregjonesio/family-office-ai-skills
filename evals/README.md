@@ -32,6 +32,8 @@ Across all skills, a passing response should:
 - [investment-memo-screener-evals.md](investment-memo-screener-evals.md)
 - [document-digest-evals.md](document-digest-evals.md)
 - [post-meeting-action-evals.md](post-meeting-action-evals.md)
+- [post-write-verification-evals.md](post-write-verification-evals.md)
+- [transfer-duplicate-review-evals.md](transfer-duplicate-review-evals.md)
 
 ## Important
 

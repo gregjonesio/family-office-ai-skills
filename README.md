@@ -69,7 +69,7 @@ This repository publishes generalized, sanitized versions of workflows that map 
 
 ```
 family-office-ai-skills/
-├── skills/        Seven structured AI workflows (SKILL.md + README + examples)
+├── skills/        Eleven structured AI workflows (SKILL.md + README + examples)
 ├── blueprints/    Composed, end-to-end system designs
 ├── playbooks/     How recurring operational responsibilities are executed
 ├── case-studies/  Fictional, worked end-to-end examples
@@ -78,7 +78,7 @@ family-office-ai-skills/
 └── docs/          Governance, privacy, implementation, and operating-model guidance
 ```
 
-- **`skills/`:** Seven workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output.
+- **`skills/`:** Eleven workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output.
 - **`blueprints/`:** Composed, end-to-end system designs that show how several skills, context sources, and review gates fit together.
 - **`playbooks/`:** How a lean family office runs its recurring operational responsibilities: the cadence, approvals, accountability, and review gates, and where AI reduces administrative burden without replacing judgment. See the [playbooks overview](playbooks/README.md).
 - **`case-studies/`:** Fictional, sanitized examples that walk one workflow from operating problem to follow-through.
@@ -96,6 +96,10 @@ family-office-ai-skills/
 | [Post-Meeting Action Extractor](skills/post-meeting-action-extractor/) | Converts raw meeting notes into decisions, owners, and deadlines | An operator turns a long meeting into a clean, owned action list |
 | [Vendor Review](skills/vendor-review/) | Evaluates vendor proposals, renewals, and service issues | An ops lead reviews a custodian or technology renewal before approval |
 | [Document Digest](skills/document-digest/) | Summarizes legal, insurance, trust, or operating documents into plain English | An operator gets a plain-English read of a subscription doc before it goes to counsel |
+| [Pre-Booking Gap Analysis](skills/pre-booking-gap-analysis/) | Establishes what a ledger already contains before entries are prepared, so the work covers only the genuine gap | A controller picking up a period someone else started finds what is genuinely unbooked |
+| [Transfer and Duplicate Review](skills/transfer-duplicate-review/) | Finds where one economic event has been represented more than once across accounts | A bookkeeper working feeds across several accounts finds a movement counted twice |
+| [Reconciliation Evidence Pack](skills/reconciliation-evidence-pack/) | Assembles reconciliation evidence as two separate assertions, completeness and validity | A controller sees that an account's zero net difference is produced by offsetting errors |
+| [Post-Write Verification](skills/post-write-verification/) | Tests whether an approved change actually landed, using evidence read back through a different path | An operator confirms a batch of approved entries reached the ledger instead of trusting the interface that reported success |
 
 ## Who it's for
 

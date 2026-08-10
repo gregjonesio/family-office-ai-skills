@@ -45,6 +45,11 @@ Notices carry account and commitment detail; use only approved environments.
 - Summarize the notice with [Document Digest](../skills/document-digest/): amount due, due date, the commitment it draws against, references to the governing documents, and precise questions for the administrator or counsel if anything is ambiguous: **without legal or tax advice**.
 - Turn the notice into an owned checklist with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) (used here as an obligation-to-action extractor): confirm amount and date, check the unfunded balance, confirm cash availability and lead time, obtain approvals, verify wiring independently, stage and release the wire under dual control, complete recordkeeping.
 - Surface the pending call, its due date, and its funding status in the [Principal Weekly Brief](../skills/principal-weekly-brief/) until it is closed.
+- Before recording the call, check what is already on the books with [Pre-Booking Gap Analysis](../skills/pre-booking-gap-analysis/). A call that was accrued when the notice arrived and again when the wire settled is booked twice, and the second entry looks correct on its own.
+- Where the cash is raised by moving funds between the office's own accounts first, run [Transfer and Duplicate Review](../skills/transfer-duplicate-review/) so the funding movement is not recorded as an expense alongside the call itself.
+- After the entries are recorded, confirm they landed with [Post-Write Verification](../skills/post-write-verification/). An unfunded-balance figure computed from an entry that never reached the ledger will overstate the remaining commitment.
+
+None of these authorize, fund, or release anything. The approvals, the independent wire verification, the dual-control release, and the recordkeeping remain exactly as described above, and remain human.
 
 AI summarizes, structures, and reminds. It does not approve, transcribe wiring details as verified, stage a payment, or initiate anything.
 
@@ -106,6 +111,9 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 - [Document Digest](../skills/document-digest/)
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/)
 - [Principal Weekly Brief](../skills/principal-weekly-brief/)
+- [Pre-Booking Gap Analysis](../skills/pre-booking-gap-analysis/)
+- [Transfer and Duplicate Review](../skills/transfer-duplicate-review/)
+- [Post-Write Verification](../skills/post-write-verification/)
 
 ## Related Blueprints
 

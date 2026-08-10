@@ -46,6 +46,12 @@ Statements and account detail are highly sensitive; provide them manually in app
 - Produce plain-English reads of statements, capital-activity notices, and supporting documents with [Document Digest](../skills/document-digest/): amounts, dates, obligations, and questions for review: **without performing accounting or rendering advice**.
 - Turn the close calendar and open items into an owned, tracked list with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) (used as a checklist-to-action extractor): owners, deadlines, and dependencies for each close task, including statements still outstanding and estimates awaiting true-up.
 - Surface close status, the deadline, and open items in the [Principal Weekly Brief](../skills/principal-weekly-brief/) until the close is signed off.
+- Establish what is already recorded, before anyone prepares entries, with [Pre-Booking Gap Analysis](../skills/pre-booking-gap-analysis/): a coverage classification of the period's source activity and a draft packet limited to the genuinely missing population.
+- Identify where one movement has been represented more than once across accounts with [Transfer and Duplicate Review](../skills/transfer-duplicate-review/), before the gap analysis counts a single event twice. Cross-entity movements are escalated to the controller, never resolved by the skill.
+- Assemble the evidence for each account reconciliation with [Reconciliation Evidence Pack](../skills/reconciliation-evidence-pack/): completeness and validity tested separately, with an aged reconciling-item schedule and gross movements stated before any net.
+- After entries are recorded, confirm they actually landed with [Post-Write Verification](../skills/post-write-verification/), using evidence read back through a path other than the one that recorded them.
+
+None of these reconcile, book, eliminate, or sign off. They prepare evidence and classify candidates. **The controller still performs the reconciliation, the reviewer still concludes, and the CFO still signs.** A pack that reports a zero difference has not reconciled anything, and an entry the platform reports as recorded is not recorded until it has been independently observed.
 
 AI reads, organizes, and reminds. It performs no reconciliation, books no entry, computes no balance as authoritative, eliminates no intercompany item, and renders no accounting or tax judgment.
 
@@ -105,6 +111,10 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 - [Document Digest](../skills/document-digest/)
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/)
 - [Principal Weekly Brief](../skills/principal-weekly-brief/)
+- [Pre-Booking Gap Analysis](../skills/pre-booking-gap-analysis/)
+- [Transfer and Duplicate Review](../skills/transfer-duplicate-review/)
+- [Reconciliation Evidence Pack](../skills/reconciliation-evidence-pack/)
+- [Post-Write Verification](../skills/post-write-verification/)
 
 ## Related Blueprints
 

@@ -9,7 +9,7 @@ This roadmap is directional and may change. Nothing here is a commitment or a ti
 ## Current focus
 
 - Defining where the line actually falls between assistance and action, via the [action authority model](docs/action-authority-model.md). "Read-only" was a proxy for human accountability; the model states the accountability requirement directly and draws the boundary at records versus resources.
-- Strengthening the structure, governance, and safety layer around the existing seven skills.
+- Strengthening the structure, governance, and safety layer around the existing skills.
 - Documentation that helps operators adopt AI responsibly: governance, privacy, threat model, evaluation, measurement, and the maturity model.
 - Keeping the library conservative, sanitized, and non-executable by default.
 
