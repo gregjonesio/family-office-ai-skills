@@ -4,6 +4,8 @@ The skills in this repository are the **workflow layer:** they define the work t
 
 Connectors can make workflows more useful by reducing manual copy/paste and allowing approved context retrieval. They also enlarge the risk surface. Treat them as a data-access decision to be governed, not a convenience to be switched on.
 
+**This document covers run context only:** what a workflow is given for a single task. It does not cover *standing context*, the conventions, structure, and decisions that are true across every run. The two are frequently confused, and connecting more systems does not supply the second one. See [standing-context.md](standing-context.md).
+
 ---
 
 ## Purpose

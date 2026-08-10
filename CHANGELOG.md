@@ -8,6 +8,39 @@ All notable changes to this repository are documented here. This project follows
 
 ### Added
 
+- **[Standing Context](docs/standing-context.md)** (`docs/`) and
+  **[accounting conventions template](templates/accounting-conventions-template.md)**
+  (`templates/`): the substrate the skills depend on, which the repository
+  previously assumed without naming.
+
+  Skills in this library repeatedly defer outward. They say *retrieve the
+  office's existing allocation policy rather than inventing one*, and they mark
+  output *(missing)* when no chart of accounts, matching tolerance, or
+  pending-item policy was provided. Those deferrals are deliberate, but they
+  create a dependency: an office that runs a structured workflow with no written
+  conventions gets *ask a person* on nearly every line and concludes the workflow
+  does not work. It worked as designed. The layer underneath was missing.
+
+  Distinguishes **run context** (what a workflow is given for one task, already
+  covered by connector governance) from **standing context** (conventions,
+  structure, decisions, and institutional memory, true across every run).
+  Connecting more systems supplies the first and never the second.
+
+  Covers the four categories, the minimum set the accounting routines actually
+  reach for, ownership and maintenance including effective-dating and stated
+  precedence, and how the substrate fails: conventions that live only in
+  someone's head, a house convention mistaken for a general truth, records that
+  capture intent instead of effect, summaries that go stale faster than the
+  documents beneath them, and documents that disagree without either knowing.
+
+  The closing method is the practical part: do not start by writing policy.
+  Run a workflow, collect everything it returned as *(missing)*, and that list is
+  the most accurate inventory of undocumented conventions an office is likely to
+  get.
+
+  Cross-referenced from the reference architecture's context layer, the
+  connector guidance, and all four ledger control skills.
+
 - **Ledger control workflows** (`skills/`): four accounting-control skills, made
   in scope by the action authority model. All are read-only and
   judgment-support: they analyze and draft, and a person records, reconciles,
