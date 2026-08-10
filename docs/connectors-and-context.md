@@ -1,6 +1,6 @@
 # Connectors and Context Access for Family Office AI Workflows
 
-The skills in this repository are the **workflow layer** (they define the work to be done. Connectors are a separate, optional **context-access layer**) they determine how information reaches the workflow. This document explains how connectors fit, what they improve, and the confidentiality, permissioning, governance, and review risk they add.
+The skills in this repository are the **workflow layer:** they define the work to be done. Connectors are a separate, optional **context-access layer:** they determine how information reaches the workflow. This document explains how connectors fit, what they improve, and the confidentiality, permissioning, governance, and review risk they add.
 
 Connectors can make workflows more useful by reducing manual copy/paste and allowing approved context retrieval. They also enlarge the risk surface. Treat them as a data-access decision to be governed, not a convenience to be switched on.
 
@@ -18,7 +18,7 @@ That usefulness is real, but it is conditional. Before adopting connectors, hold
 - **Connectors should be scoped, approved, and reviewed** before use, and revisited over time.
 - **Manual input is often best for early pilots.** Start by pasting fictional or approved, non-confidential input; add connectors only once a workflow has earned trust.
 
-Adding a connector does not change the repository's posture: the skills remain read-only, human-in-the-loop, and non-advisory. A connector that retrieves context does not authorize the AI to act.
+Adding a connector does not change the repository's posture: the skills remain human-in-the-loop and non-advisory. **A connector that retrieves context does not authorize the AI to act.** Read access and write access are separate decisions with separate controls; granting the first never implies the second. If an office chooses to grant write access to a system of record, that is a distinct governance decision governed by the [action authority model](action-authority-model.md), not a widening of a context connector.
 
 ## Operating model
 
@@ -31,7 +31,7 @@ Approved data sources → Connectors / context access → AI skill / workflow �
 - **Skills define the work to be done.** They are the workflow contracts in this repository.
 - **Connectors provide context.** They move approved information into the workflow so a person does not have to paste it by hand.
 - **Human review remains the control.** Context entering automatically does not reduce the need to verify the output; if anything, it raises it, because the person did not hand-select every input.
-- **Final actions remain outside the skill** unless explicitly reviewed and approved by a human. Retrieval is not action. Nothing here sends, writes, approves, or transacts on its own.
+- **Final actions remain outside the skill** unless explicitly reviewed and approved by a human. Retrieval is not action. Nothing here sends, writes, approves, or transacts on its own, and nothing sends, commits, moves money, or allocates at all.
 
 ## Connector maturity levels
 

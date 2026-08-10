@@ -13,7 +13,7 @@ The phrase is useful only if it stays disciplined. An "AI Workforce" is not a te
 - A **governed set** of reusable workflows (skills), supporting templates, and review practices.
 - A way to absorb **repeatable, structure-heavy work:** drafting, summarizing, organizing, preparing.
 - A system with **human review as its primary control** and measurement to improve over time.
-- **Model-agnostic and read-only by default**, run inside an approved environment.
+- **Model-agnostic and read-only by default**, run inside an approved environment. Where a workflow writes to a system of record, it does so only under the [action authority model](action-authority-model.md).
 
 ## What an AI Workforce is not
 

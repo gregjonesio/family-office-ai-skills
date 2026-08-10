@@ -1,6 +1,6 @@
 # From Prompts to Operating Systems: Skill Maturity Matrix
 
-How AI usage in a family office evolves, from a one-off prompt to a governed operating layer. The progression is about **structure, review, governance, measurement, and repeatability**, not autonomy. A more mature stage is more *reliable and reviewable*, not more independent. At every stage, a human remains accountable and the work stays read-only and non-advisory.
+How AI usage in a family office evolves, from a one-off prompt to a governed operating layer. The progression is about **structure, review, governance, measurement, and repeatability**, not autonomy. A more mature stage is more *reliable and reviewable*, not more independent. At every stage a human remains accountable, the work stays non-advisory, and any action that touches a system of record stays inside the [action authority model](action-authority-model.md).
 
 Use this matrix to locate where a given workflow sits today and what it would take to advance it deliberately.
 
@@ -15,7 +15,7 @@ Use this matrix to locate where a given workflow sits today and what it would ta
 | **2: Skill** | A workflow contract: inputs, output, instructions, quality control, prohibitions | [Meeting Prep Pack](../skills/meeting-prep-pack/) | Predictable, reviewable output; explicit limits | Guardrails are instructions, not controls; still needs review | Run it as a repeatable, reviewed process |
 | **3: Workflow** | A skill run the same way every time, with a defined review gate | [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) run after every meeting, reviewed before use | Repeatable; review built in; less ad hoc risk | Review can slip under pressure; context may be incomplete | Combine skills + context + review + measurement |
 | **4: System** | Multiple skills, context sources, and review gates composed for an end-to-end outcome | A weekly briefing system using [Principal Weekly Brief](../skills/principal-weekly-brief/) + [Meeting Prep Pack](../skills/meeting-prep-pack/) + [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) (see [blueprints](../blueprints/)) | End-to-end leverage; consistent across a process | More moving parts; broader context/permission risk | Add governance, measurement, and a maturity/review cadence |
-| **5 (Operating layer** | Systems running across functions under governance, measurement, and institutional memory | The [reference architecture](reference-architecture.md) realized across briefings, deal review, meetings, and vendors | Office-wide repeatability and institutional memory | Over-confidence at scale; autonomy creep; governance treated as "done" | Sustain it) review governance on a cadence; hold the human-in-the-loop line |
+| **5: Operating layer** | Systems running across functions under governance, measurement, and institutional memory | The [reference architecture](reference-architecture.md) realized across briefings, deal review, meetings, and vendors | Office-wide repeatability and institutional memory | Over-confidence at scale; autonomy creep; governance treated as "done" | Sustain it: review governance on a cadence; hold the human-in-the-loop line |
 
 ## Worked example: one task, five stages
 
@@ -29,6 +29,8 @@ Take meeting follow-through (a single recurring task) and watch it mature:
 - **Stage 5.** That system runs alongside others under shared governance and measurement, feeding institutional memory.
 
 Notice what did **not** change across the stages: the AI never gained authority to send, decide, or commit. What improved was structure, consistency, review, and memory.
+
+This is the point most often misread. Maturing a workflow does not mean loosening the approval; it means making the approval *more specific and better evidenced*. At stage 0 nobody approves anything because nothing consequential happens. By stage 5 a named person is approving an identified object against source evidence, and a separate step confirms the result. The gate does not weaken as the system matures. It sharpens.
 
 ## The principle
 

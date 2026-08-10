@@ -8,6 +8,7 @@ This roadmap is directional and may change. Nothing here is a commitment or a ti
 
 ## Current focus
 
+- Defining where the line actually falls between assistance and action, via the [action authority model](docs/action-authority-model.md). "Read-only" was a proxy for human accountability; the model states the accountability requirement directly and draws the boundary at records versus resources.
 - Strengthening the structure, governance, and safety layer around the existing seven skills.
 - Documentation that helps operators adopt AI responsibly: governance, privacy, threat model, evaluation, measurement, and the maturity model.
 - Keeping the library conservative, sanitized, and non-executable by default.
@@ -54,8 +55,9 @@ These are out of scope by design. They would conflict with the repository's safe
 - Transaction approval or commitment authority
 - Tax, legal, accounting, or compliance advice
 - Portfolio or allocation recommendations
-- Integrations with live or confidential systems
+- Shipped integrations, credentials, or endpoints for live or confidential systems. The repository may *document* the controls a workflow needs when an office connects one; it never provides the connection.
 - Executable code, scripts, or automation as a default part of the repository
+- Any AI-performed action that moves money or assets, sends external communication, commits the office contractually, decides an allocation, changes access or permission state, or destroys data irreversibly, with or without human approval
 - Anything that removes the human from a consequential decision
 
 If your need falls into this list, this library is intentionally not the right tool for it.

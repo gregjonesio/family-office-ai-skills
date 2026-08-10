@@ -47,6 +47,7 @@ New here? The [Quickstart](QUICKSTART.md) walks you through running one skill in
 
 This repository treats AI adoption as an operating-system problem, not a prompt-engineering problem. If you are designing an AI-native family office operating layer (as an RIA COO, chief of staff, or wealthtech builder) start here:
 
+- **[Action authority model](docs/action-authority-model.md)**: where assistance ends and action begins, and the controls required before an AI-assisted workflow writes to any system of record.
 - **[Reference architecture](docs/reference-architecture.md):** the six-layer model: context, connector governance, skills, review gates, outputs, measurement.
 - **[AI Workforce operating model](docs/ai-workforce-operating-model.md):** what an AI Workforce is, what stays human, and the vocabulary (prompt → skill → workflow → system).
 - **[Skill maturity matrix](docs/skill-maturity-matrix.md):** how usage matures from a one-off prompt to an operating layer (more structure and review, not more autonomy).
@@ -79,7 +80,7 @@ family-office-ai-skills/
 
 - **`skills/`:** Seven workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output.
 - **`blueprints/`:** Composed, end-to-end system designs that show how several skills, context sources, and review gates fit together.
-- **`playbooks/`** (How a lean family office runs its recurring operational responsibilities) the cadence, approvals, accountability, and review gates, and where AI reduces administrative burden without replacing judgment. See the [playbooks overview](playbooks/README.md).
+- **`playbooks/`:** How a lean family office runs its recurring operational responsibilities: the cadence, approvals, accountability, and review gates, and where AI reduces administrative burden without replacing judgment. See the [playbooks overview](playbooks/README.md).
 - **`case-studies/`:** Fictional, sanitized examples that walk one workflow from operating problem to follow-through.
 - **`templates/`:** Reusable markdown templates for weekly briefs, investment memos, manager diligence, meeting prep, and action items.
 - **`docs/`:** Practical guidance for running AI responsibly inside a family office or RIA: [governance](docs/ai-governance-for-family-offices.md), [privacy](docs/privacy-and-confidentiality.md), [implementation](docs/implementation-guide.md), and the [operating model](docs/operating-model.md).
@@ -123,13 +124,13 @@ For a full rollout (pilot selection, training, and review loops) see the [Implem
 
 Each skill ships with a fictional, end-to-end example so you can see exactly what goes in and what comes out.
 
-- **Investment Memo Screener** (*In:* a cold founder email raising a seed round. *Out:* a structured first-pass memo that separates the promoter's thesis from verified fact, lists specific diligence questions, and flags the missing financials and terms) making no recommendation to invest.
+- **Investment Memo Screener:** *In:* a cold founder email raising a seed round. *Out:* a structured first-pass memo that separates the promoter's thesis from verified fact, lists specific diligence questions, and flags the missing financials and terms: making no recommendation to invest.
   → [sample input](skills/investment-memo-screener/examples/sample-input.md) · [sample output](skills/investment-memo-screener/examples/sample-output.md)
 
 - **Post-Meeting Action Extractor:** *In:* raw, messy operations-review notes. *Out:* clean decisions, owners, and deadlines, with every missing owner or date explicitly flagged rather than guessed, plus an internal follow-up draft a person reviews and sends.
   → [sample input](skills/post-meeting-action-extractor/examples/sample-input.md) · [sample output](skills/post-meeting-action-extractor/examples/sample-output.md)
 
-- **Document Digest** (*In:* a dense fund subscription excerpt. *Out:* a plain-English summary, the key dates and obligations, unusual terms flagged for review, and the precise questions to put to counsel) without giving legal advice.
+- **Document Digest:** *In:* a dense fund subscription excerpt. *Out:* a plain-English summary, the key dates and obligations, unusual terms flagged for review, and the precise questions to put to counsel, without giving legal advice.
   → [sample input](skills/document-digest/examples/sample-input.md) · [sample output](skills/document-digest/examples/sample-output.md)
 
 Browse any skill's `examples/` folder for the rest.
@@ -146,7 +147,7 @@ Ten playbooks cover the work an office repeats: the [principal weekly review](pl
 
 The [`case-studies/`](case-studies/) folder shows how the skills, blueprints, review gates, and connector guidance fit together in realistic operating workflows: a weekly principal brief, a first-pass investment opportunity review, an insurance renewal review, capital call processing, and turning ambiguous meeting notes into an execution plan.
 
-They are **fictionalized, sanitized examples** (invented scenarios with no real names, employers, principals, vendors, investments, or documents) written to show how the skills apply in practice, not to describe any actual client or employer workflow. Each keeps the same read-only, human-in-the-loop, non-advisory posture as the rest of the repository.
+They are **fictionalized, sanitized examples:** invented scenarios with no real names, employers, principals, vendors, investments, or documents: written to show how the skills apply in practice, not to describe any actual client or employer workflow. Each keeps the same read-only, human-in-the-loop, non-advisory posture as the rest of the repository.
 
 → Start with the [case studies overview](case-studies/README.md).
 
@@ -154,6 +155,7 @@ They are **fictionalized, sanitized examples** (invented scenarios with no real 
 
 | Guide | What it covers |
 |-------|----------------|
+| [Action Authority Model](docs/action-authority-model.md) | Where assistance ends and action begins: the five states of an AI-assisted action, the records-versus-resources boundary, and how approval gates fail silently |
 | [AI Governance for Family Offices](docs/ai-governance-for-family-offices.md) | Approved and prohibited use cases, model selection, human review, recordkeeping, staff training, accountability |
 | [Privacy and Confidentiality](docs/privacy-and-confidentiality.md) | What must never be pasted into public tools, de-identification, failure modes, a pre-paste checklist |
 | [Implementation Guide](docs/implementation-guide.md) | A step-by-step rollout for a small office or RIA: pilot selection, training, review loops, measurement |
@@ -179,8 +181,9 @@ For AI builders: the machine-readable [skill catalog](skills/catalog.yaml) and i
 
 The short version of how this library is meant to be used:
 
-- **Skills are read-only by default:** they draft, summarize, and structure; they do not act.
-- **No skill grants transaction authority:** nothing here approves, executes, allocates, or sends.
+- **Skills are read-only by default.** They draft, summarize, and structure. Where a workflow does write to a system of record, it does so only under the [action authority model](docs/action-authority-model.md): a reviewable proposal, a named human approving that specific change, and independent verification that the change landed.
+- **No skill grants transaction authority.** Nothing here approves, executes, allocates, or sends. Money, external communication, contractual commitment, allocation decisions, access and permission changes, and irreversible deletion are never performed by an AI-assisted workflow, with or without approval.
+- **An unverified change is a failed change.** "No error was reported" is not evidence that something worked, and workflows that treat it that way fail quietly.
 - **Human review is required:** every output is an unverified draft for a competent person to verify.
 - **Guardrails are instructions, not guarantees:** a skill's rules are written instructions to the AI, not enforceable controls; human review is the real control.
 - **Connectors are a data-access risk, not a safety control:** connectors may improve context, but they should be approved, scoped, and treated as a data-access risk, not a safety control.

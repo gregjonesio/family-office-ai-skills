@@ -4,7 +4,9 @@ These are durable instructions for any Claude Code (or other AI coding agent) se
 
 ## Repository purpose
 
-`family-office-ai-skills` is a **public, open-source** library of structured AI skills, prompts, workflow templates, and governance documentation for lean single-family offices, multi-family offices, registered investment advisers (RIAs), and wealth operators. The skills are read-only, judgment-support workflows that produce drafts for human review. The repository is **non-executable by default:** documentation and markdown, not running code.
+`family-office-ai-skills` is a **public, open-source** library of structured AI skills, prompts, workflow templates, and governance documentation for lean single-family offices, multi-family offices, registered investment advisers (RIAs), and wealth operators. The skills are judgment-support workflows that produce drafts for human review; no workflow takes a consequential action without a named human approving that specific change. The repository is **non-executable by default**: documentation and markdown, not running code.
+
+Note the distinction between what this repository **contains** and what it **describes**. It contains no code, credentials, or integrations, and that does not change. It may describe workflows that write to a system of record under the conditions set out in [docs/action-authority-model.md](docs/action-authority-model.md).
 
 ## Repo identity
 
@@ -14,7 +16,7 @@ This repository should remain:
 - public-facing
 - operator-led
 - model-agnostic
-- read-only by default
+- read-only by default, with any write governed by the [action authority model](docs/action-authority-model.md)
 - human-in-the-loop
 - non-advisory
 - useful without private context
@@ -56,7 +58,9 @@ Professional, understated, practical, operator-led. Avoid hype, buzzwords, and e
 
 ## Safety rules
 
-- **Read-only by default.** Skills support judgment; they never decide, transact, approve, or send.
+- **Read-only by default.** A skill reads and drafts unless it explicitly documents otherwise. Skills never decide, transact, or send.
+- **No unreviewed consequential action.** A workflow may describe writing to a *record* (ledger entry, note, task, document metadata) only at the approved-execution state defined in [docs/action-authority-model.md](docs/action-authority-model.md): a rendered proposal, a named human approving that specific object, and independent verification afterward. Writes to *resources* (money, external communication, contractual commitment, allocation, access and permission state, irreversible deletion) stay prohibited regardless of approval.
+- **Verification is part of the workflow, not an optional extra.** Any workflow that describes a write must also describe how the change is confirmed through a read path different from the write path, and must treat an unverified change as failed rather than successful.
 - **Human review is required.** Every output is an unverified draft for a competent person to verify.
 - **Guardrails are instructions, not guarantees.** Never imply that a skill's `Do not` list or quality-control checks are enforceable controls. They are prompt-level instructions an AI may not follow perfectly. Human review is the real control.
 - **Do not imply AI outputs are reliable.** Do not describe output as "safe," "compliant," "accurate," or "verified."
@@ -73,7 +77,8 @@ Professional, understated, practical, operator-led. Avoid hype, buzzwords, and e
 - Anything that approves, executes, or recommends a transaction or allocation.
 - Anything that sends communications automatically.
 - Anything that provides professional advice (investment, legal, tax, accounting, compliance, fiduciary, cybersecurity).
-- Anything that connects to live systems or stores credentials.
+- Anything that connects to live systems or stores credentials. The repository documents patterns; it never ships a connection, a credential, or an endpoint.
+- Any write workflow described without its approval gate and its verification step. A documented write with no documented confirmation is worse than no documentation at all.
 - Scripts, GitHub Actions, package manifests, or other executable code: **unless the user explicitly approves it.** The repository is non-executable by default.
 
 ## File conventions
@@ -118,7 +123,8 @@ Confirm all of the following before proposing a commit:
 - [ ] No client-specific or proprietary data.
 - [ ] No live credentials, keys, tokens, or endpoints.
 - [ ] No investment, legal, tax, accounting, compliance, or fiduciary advice.
-- [ ] No transaction authority, autonomous actions, or live integrations.
+- [ ] No transaction authority, autonomous actions, or shipped live integrations.
+- [ ] If the material describes a write to a system of record, it stays within *records* (never money, sending, commitment, allocation, access, or deletion), and it documents the proposal, the named approver, and the independent verification step.
 - [ ] No executable code added without explicit user approval.
 - [ ] All sample data is fictional.
 - [ ] Disclaimers preserved and present on new material.
