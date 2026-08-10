@@ -44,6 +44,8 @@ A row wrongly identified as a duplicate disappears from the work and is never mi
 - [Reconciliation Evidence Pack](../reconciliation-evidence-pack/): run after recording, to test whether the resulting balances hold.
 - [Action Authority Model](../../docs/action-authority-model.md): why identifying a duplicate is analysis, not an action.
 
+- [Standing Context](../../docs/standing-context.md): the conventions and structure this skill defers to. Where they are not written down, its output degrades to "ask a person" no matter how good the inputs are.
+
 ## Files
 
 - [SKILL.md](SKILL.md): the workflow contract.

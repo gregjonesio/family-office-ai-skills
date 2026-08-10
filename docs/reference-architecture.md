@@ -36,6 +36,8 @@ Read it as a pipeline with a control gate in the middle:
 
 **Review / control requirements.** Use an approved environment with acceptable data terms; minimize and de-identify; never paste highly sensitive material into public tools. See [privacy-and-confidentiality.md](privacy-and-confidentiality.md).
 
+**A second kind of context sits alongside this one.** The examples above are *run context*: what a workflow is given for a single task. Separately, an office carries *standing context*: the conventions, structure, decisions, and institutional memory that are true across every run. Skills defer to it constantly, and where it has not been written down they return *(missing)* rather than inventing an answer. An office with rich data access and no written conventions still cannot get a resolved answer out of a workflow. See [standing-context.md](standing-context.md).
+
 ## Layer 2: Connector Governance Layer
 
 **Purpose.** Govern how (and whether) context is retrieved automatically rather than pasted by hand. This layer decides what may be connected, at what scope, and under what approval.

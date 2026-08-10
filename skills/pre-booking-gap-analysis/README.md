@@ -36,6 +36,8 @@ Controllers, bookkeepers, family office operators, and anyone picking up a perio
 - [Transfer and Duplicate Review](../transfer-duplicate-review/): use first when the source population spans several accounts, so one economic event is not counted twice.
 - [Action Authority Model](../../docs/action-authority-model.md): where this sits in the five states, and why a draft packet is not an action.
 
+- [Standing Context](../../docs/standing-context.md): the conventions and structure this skill defers to. Where they are not written down, its output degrades to "ask a person" no matter how good the inputs are.
+
 ## Files
 
 - [SKILL.md](SKILL.md): the workflow contract.

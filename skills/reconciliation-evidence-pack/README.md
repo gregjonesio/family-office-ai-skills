@@ -49,6 +49,8 @@ Controllers, bookkeepers, and reviewers preparing to sign off on an account.
 - [Pre-Booking Gap Analysis](../pre-booking-gap-analysis/): run before entries are prepared, to establish what is already recorded.
 - [Quarter-End Close](../../playbooks/quarter-end-close.md): where this sits in a period close, and why the reconciliation and sign-off stay human.
 
+- [Standing Context](../../docs/standing-context.md): the conventions and structure this skill defers to. Where they are not written down, its output degrades to "ask a person" no matter how good the inputs are.
+
 ## Files
 
 - [SKILL.md](SKILL.md): the workflow contract.

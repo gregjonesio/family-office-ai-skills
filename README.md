@@ -48,6 +48,7 @@ New here? The [Quickstart](QUICKSTART.md) walks you through running one skill in
 This repository treats AI adoption as an operating-system problem, not a prompt-engineering problem. If you are designing an AI-native family office operating layer (as an RIA COO, chief of staff, or wealthtech builder) start here:
 
 - **[Action authority model](docs/action-authority-model.md)**: where assistance ends and action begins, and the controls required before an AI-assisted workflow writes to any system of record.
+- **[Standing context](docs/standing-context.md)**: the conventions, structure, and decisions an office has to write down before any workflow can resolve anything. Skills defer to it constantly; where it is absent they return *(missing)* rather than guessing.
 - **[Reference architecture](docs/reference-architecture.md):** the six-layer model: context, connector governance, skills, review gates, outputs, measurement.
 - **[AI Workforce operating model](docs/ai-workforce-operating-model.md):** what an AI Workforce is, what stays human, and the vocabulary (prompt → skill → workflow → system).
 - **[Skill maturity matrix](docs/skill-maturity-matrix.md):** how usage matures from a one-off prompt to an operating layer (more structure and review, not more autonomy).
@@ -82,7 +83,7 @@ family-office-ai-skills/
 - **`blueprints/`:** Composed, end-to-end system designs that show how several skills, context sources, and review gates fit together.
 - **`playbooks/`:** How a lean family office runs its recurring operational responsibilities: the cadence, approvals, accountability, and review gates, and where AI reduces administrative burden without replacing judgment. See the [playbooks overview](playbooks/README.md).
 - **`case-studies/`:** Fictional, sanitized examples that walk one workflow from operating problem to follow-through.
-- **`templates/`:** Reusable markdown templates for weekly briefs, investment memos, manager diligence, meeting prep, and action items.
+- **`templates/`:** Reusable markdown templates for weekly briefs, investment memos, manager diligence, meeting prep, action items, and accounting conventions.
 - **`docs/`:** Practical guidance for running AI responsibly inside a family office or RIA: [governance](docs/ai-governance-for-family-offices.md), [privacy](docs/privacy-and-confidentiality.md), [implementation](docs/implementation-guide.md), and the [operating model](docs/operating-model.md).
 
 ## The skills
@@ -160,6 +161,7 @@ They are **fictionalized, sanitized examples:** invented scenarios with no real 
 | Guide | What it covers |
 |-------|----------------|
 | [Action Authority Model](docs/action-authority-model.md) | Where assistance ends and action begins: the five states of an AI-assisted action, the records-versus-resources boundary, and how approval gates fail silently |
+| [Standing Context](docs/standing-context.md) | The conventions, structure, and decisions an office has to write down before a workflow can resolve anything, and the ways that substrate fails |
 | [AI Governance for Family Offices](docs/ai-governance-for-family-offices.md) | Approved and prohibited use cases, model selection, human review, recordkeeping, staff training, accountability |
 | [Privacy and Confidentiality](docs/privacy-and-confidentiality.md) | What must never be pasted into public tools, de-identification, failure modes, a pre-paste checklist |
 | [Implementation Guide](docs/implementation-guide.md) | A step-by-step rollout for a small office or RIA: pilot selection, training, review loops, measurement |
