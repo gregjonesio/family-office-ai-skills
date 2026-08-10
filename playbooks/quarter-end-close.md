@@ -4,6 +4,8 @@ How a family office runs a controlled, on-time close across a multi-entity struc
 
 > **Fictionalized and illustrative.** This is a generalized operating pattern. It does not describe any actual family office, entity, ledger, statement, or account. Nothing here is accounting, tax, audit, or financial advice, performs no reconciliation, and books no entry. Every AI output described is an unverified draft requiring human review.
 
+> **This playbook builds on [Month-End Close](month-end-close.md) and does not repeat it.** The monthly cadence carries the transaction queues, the account reconciliations, the intercompany tie-out, and the reviewer gate. What follows is what a quarter *adds*: investment values arriving on a lag, consolidation and elimination across the entity structure, the family reporting package, and the heavier independent review. An office whose months are closed treats the quarter as a review. An office whose months are not closed treats the quarter as an investigation, and the sections below will understate the work involved.
+
 ---
 
 ## Objective
@@ -20,7 +22,7 @@ The period-end date and the office's close calendar, plus the arrival of the qua
 
 ## Frequency
 
-Quarterly, with a monthly variant in many offices and a heavier annual close that feeds tax and the audit or review.
+Quarterly, layered on the monthly cadence in [Month-End Close](month-end-close.md), with a heavier annual close that feeds tax and the audit or review. Offices that close only quarterly carry three months of unresolved queues into every close; the monthly cadence is the cheaper path to the same result.
 
 ## Primary Stakeholders
 

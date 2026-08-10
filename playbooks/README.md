@@ -67,7 +67,8 @@ Architecture and governance set the frame. Blueprints design composed systems. P
 | [Executive Travel Coordination](executive-travel-coordination.md) | Plan, brief, and track principal and executive travel | Executive assistant |
 | [Insurance Renewal Management](insurance-renewal-management.md) | Read renewals for changes and gaps before binding | COO / operations |
 | [Vendor Onboarding & Review](vendor-onboarding-and-review.md) | Onboard and periodically review service providers | Operations lead |
-| [Quarter-End Close](quarter-end-close.md) | Run a controlled, on-time financial close and reporting cycle | Controller / CFO |
+| [Month-End Close](month-end-close.md) | Keep the books current month by month, so the quarter is a review | Bookkeeper / controller |
+| [Quarter-End Close](quarter-end-close.md) | Add lagged values, consolidation, and reporting on top of the monthly cadence | Controller / CFO |
 | [Entity Governance Calendar](entity-governance-calendar.md) | Keep entity filings, resolutions, and obligations current | COO / general counsel liaison |
 | [Document Review for Counsel](document-review-for-counsel.md) | Make documents legible and route the right questions to counsel | Operations / chief of staff |
 

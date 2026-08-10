@@ -8,6 +8,41 @@ All notable changes to this repository are documented here. This project follows
 
 ### Added
 
+- **[Month-End Close](playbooks/month-end-close.md)** (`playbooks/`): the monthly
+  operating rhythm, and the base the quarterly close now builds on. The library
+  previously documented only a quarter-end close, which quietly implied that
+  quarterly closing is the norm. Most lean offices close monthly, and an office
+  that defers turns the quarter into an investigation rather than a review.
+
+  Its thesis is that the monthly close is where an office either stays current
+  or falls behind without being told. Queues get emptied rather than resolved.
+  Transactions land in the month they were noticed rather than the month they
+  occurred. Recurring entries keep posting after the arrangement behind them
+  changed. Intercompany drifts because nobody ties it until quarter end. None of
+  that raises an error, so the books look processed.
+
+  Six review gates, including a **resolution gate** (an item cleared to empty a
+  queue has not been resolved), an **intercompany gate** requiring each entity
+  pair to tie both ways in the same session, and a **preparer and reviewer gate**
+  requiring the review to run against source evidence rather than the preparer's
+  own summary. Eight common failure points, each with its control.
+
+  Composes the four ledger control skills and depends on written conventions;
+  where those do not exist the routine escalates rather than infers. See
+  [standing-context.md](docs/standing-context.md).
+
+### Changed
+
+- **[Quarter-End Close](playbooks/quarter-end-close.md)** now nests on the
+  monthly cadence instead of running parallel to it. It states plainly that it
+  does not repeat the transaction queues, account reconciliations, intercompany
+  tie-out, or reviewer gate, and covers only what a quarter adds: lagged
+  investment values, consolidation and elimination, the family reporting
+  package, and the heavier independent review. Playbook count updated from ten
+  to eleven.
+
+### Added
+
 - **[Standing Context](docs/standing-context.md)** (`docs/`) and
   **[accounting conventions template](templates/accounting-conventions-template.md)**
   (`templates/`): the substrate the skills depend on, which the repository
