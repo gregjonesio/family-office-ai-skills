@@ -8,7 +8,7 @@ How a family office gives an inbound private opportunity a fast, structured firs
 
 ## Scenario
 
-A family office receives an unsolicited private investment opportunity (a deck excerpt and a founder's email describing a raise. The principal will ask, "Is this worth a closer look?" The office needs a consistent first-pass read that separates what the promoter is claiming from what has actually been verified, and that lists the questions a real diligence process would have to answer) before anyone spends hours on it.
+A family office receives an unsolicited private investment opportunity: a deck excerpt and a founder's email describing a raise. The principal will ask, "Is this worth a closer look?" The office needs a consistent first-pass read that separates what the promoter is claiming from what has actually been verified, and that lists the questions a real diligence process would have to answer, before anyone spends hours on it.
 
 ## Operating problem
 

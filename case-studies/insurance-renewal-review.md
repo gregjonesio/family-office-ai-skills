@@ -8,7 +8,7 @@ How a family office reads an insurance renewal for changes, coverage questions, 
 
 ## Scenario
 
-A family office receives a renewal package from its insurance broker (a renewal proposal and a declarations page for a policy that covers the family's property and liability. Premiums, limits, and a few endorsements appear to have changed from last year. Before the renewal call, the operator wants a clear read of what changed, what questions to ask, and where coverage might have gaps) so the broker conversation is productive rather than a first read of the document in real time.
+A family office receives a renewal package from its insurance broker: a renewal proposal and a declarations page for a policy that covers the family's property and liability. Premiums, limits, and a few endorsements appear to have changed from last year. Before the renewal call, the operator wants a clear read of what changed, what questions to ask, and where coverage might have gaps, so the broker conversation is productive rather than a first read of the document in real time.
 
 ## Operating problem
 
