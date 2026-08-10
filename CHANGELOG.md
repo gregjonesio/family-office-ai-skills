@@ -6,6 +6,30 @@ All notable changes to this repository are documented here. This project follows
 
 ## [Unreleased]
 
+### Added
+
+- **Ledger control workflows** (`skills/`): the first two of a planned set of
+  accounting-control skills, made in scope by the action authority model. Both
+  are read-only and judgment-support: they analyze and draft, and a person
+  records, reconciles, and signs.
+  - **[Pre-Booking Gap Analysis](skills/pre-booking-gap-analysis/)**: establishes
+    what a ledger already contains before entries are prepared. The default
+    failure when AI assists with bookkeeping is additive, preparing entries
+    because source activity exists without checking what is already recorded.
+    Classifies every source item as already booked, partially booked, covered by
+    an aggregate entry, pending, a duplicate representation, genuinely missing,
+    or ambiguous, and drafts entries only for the genuinely missing population.
+  - **[Post-Write Verification](skills/post-write-verification/)**: tests whether
+    an approved change actually landed, comparing it field by field against
+    evidence read back through a path different from the one that wrote it.
+    Classifies each result as verified, absent, altered, duplicated, or
+    indeterminate, and treats indeterminate as a failure. A success response or
+    a returned identifier is never accepted as evidence of presence.
+
+  Neither skill reconciles, books, eliminates intercompany items, or signs off a
+  close, consistent with the [quarter-end close playbook](playbooks/quarter-end-close.md).
+  Catalog entries added; skill count updated from seven to nine.
+
 ### Changed
 
 - **Action authority replaces blanket read-only as the safety posture.** The repository

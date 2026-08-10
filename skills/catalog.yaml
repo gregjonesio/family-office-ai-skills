@@ -349,3 +349,111 @@ skills:
       An operator gets a plain-English read of a subscription document before it
       goes to counsel.
     path: skills/document-digest/
+
+  - id: pre-booking-gap-analysis
+    display_name: Pre-Booking Gap Analysis
+    category: operations
+    description: >-
+      Compares a period's source activity against what a ledger already
+      contains and classifies every item as already booked, partially booked,
+      covered by an aggregate entry, pending, a duplicate representation,
+      genuinely missing, or ambiguous. Produces a coverage table and a draft
+      entry packet limited to the genuinely missing population.
+    intended_users:
+      - controller
+      - bookkeeper
+      - family-office-operator
+    input_types:
+      - source-transaction-population
+      - ledger-activity-extract
+      - period-boundaries
+      - matching-tolerances
+    output_types:
+      - coverage-analysis
+      - draft-entry-packet
+    risk_level: high
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+      - account-numbers-or-identifiers-not-required-by-the-task
+    prohibited_actions:
+      - execute-transactions
+      - record-or-post-entries
+      - reconcile-accounts
+      - select-accounting-treatment
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Establishes what is already recorded so that preparation covers only the
+      genuine gap. Books no entry, reconciles no account, closes no period, and
+      selects no accounting treatment or account code. Ambiguous and partially
+      matched items are routed to a person rather than resolved by inference.
+    example_use_case: >-
+      A controller picking up a period someone else started establishes what is
+      genuinely unbooked before preparing any entries.
+    path: skills/pre-booking-gap-analysis/
+
+  - id: post-write-verification
+    display_name: Post-Write Verification
+    category: operations
+    description: >-
+      Tests independently whether an approved change actually landed in a system
+      of record, comparing the intended change field by field against evidence
+      read back through a different path and classifying the result as verified,
+      absent, altered, duplicated, or indeterminate.
+    intended_users:
+      - controller
+      - bookkeeper
+      - family-office-operator
+      - operations-lead
+    input_types:
+      - intended-change
+      - approval-record
+      - read-back-evidence
+      - reported-result
+    output_types:
+      - verification-report
+    risk_level: high
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+      - account-numbers-or-identifiers-not-required-by-the-task
+    prohibited_actions:
+      - execute-transactions
+      - record-or-post-entries
+      - correct-or-reverse-entries
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Reports whether a change that a person already approved and recorded is
+      actually present and correct. Records nothing, corrects nothing, reverses
+      nothing, and never treats a success response or returned identifier as
+      evidence of presence. An indeterminate result is reported as a failure.
+    example_use_case: >-
+      An operator confirms that a batch of approved entries reached the ledger,
+      rather than trusting the interface that reported success.
+    path: skills/post-write-verification/
