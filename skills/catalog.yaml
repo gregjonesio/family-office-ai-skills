@@ -410,9 +410,10 @@ skills:
     category: operations
     description: >-
       Tests independently whether an approved change actually landed in a system
-      of record, comparing the intended change field by field against evidence
-      read back through a different path and classifying the result as verified,
-      absent, altered, duplicated, or indeterminate.
+      of record, comparing the intended change against evidence read back through
+      a different path and classifying each result as verified, absent, altered,
+      duplicated, withdrawn, or indeterminate. Where the change was a
+      remediation, also tests whether the balance reached its target state.
     intended_users:
       - controller
       - bookkeeper
@@ -420,11 +421,14 @@ skills:
       - operations-lead
     input_types:
       - intended-change
+      - direction-of-intent
       - approval-record
       - read-back-evidence
       - reported-result
+      - prior-and-expected-state
     output_types:
       - verification-report
+      - scope-confirmation
     risk_level: high
     tool_permissions: none
     context_sources:

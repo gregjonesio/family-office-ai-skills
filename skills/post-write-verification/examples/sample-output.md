@@ -11,7 +11,18 @@
 
 ---
 
-## 1. Verification summary
+## 1. Scope confirmation
+
+| | |
+|---|---|
+| Scope requested | Operating account, April 1 to April 30 |
+| Scope the evidence actually covered | Operating account only, April 1 to April 30, as-of April 3 09:15 |
+| Rows returned | 4, all belonging to the Operating account |
+| Scope shortfall | The approved batch also touches **Accrued liabilities** and a **March** date. Neither is covered. |
+
+Every returned row was checked to belong to the intended account. One approved item falls outside the evidence entirely and is classified accordingly in section 4.
+
+## 2. Verification summary
 
 | Outcome | Count | Amount |
 |---|---|---|
@@ -24,7 +35,7 @@
 
 **Only one of five entries is verified.** The reported status was `recorded` for all five.
 
-## 2. Field-by-field comparison
+## 3. Field-by-field comparison
 
 **E-1, insurance expense**
 
@@ -66,17 +77,23 @@ No row bearing identifier R-8802 appears in evidence covering the correct accoun
 | Date | 03/31 | outside evidence scope | not testable |
 | Account | Accrued liabilities | outside evidence scope | not testable |
 
-## 3. Outcome classification
+## 4. Outcome classification
 
-| Ref | Outcome | Evidence |
-|-----|---------|----------|
-| E-1 | **Verified** | Present, matching on every approved field |
-| E-2 | **Absent** | Reported `recorded` with identifier R-8802; no corresponding row in evidence that covers the correct account and period |
-| E-3 | **Altered** | Present under the correct reference at 2,204.00 against an approved 2,240.00 |
-| E-4 | **Duplicated** | One approval produced two records, R-8804 and R-8804-2, overstating the account by 288.00 |
-| E-5 | **Indeterminate** | The evidence covers only the Operating account for April. E-5 is dated 03/31 and credits Accrued liabilities, so it falls outside the scope in both dimensions. Its absence here is **not** evidence of anything. |
+All five items were intended to be **created**. No removal was intended, so absence is a failure in every case below and no item can be classified *withdrawn*.
 
-## 4. Independence assessment
+| Ref | Intent | Outcome | Evidence |
+|-----|--------|---------|----------|
+| E-1 | Create | **Verified** | Present, matching on every approved field |
+| E-2 | Create | **Absent** | Reported `recorded` with identifier R-8802; no corresponding row in evidence that covers the correct account and period |
+| E-3 | Create | **Altered** | Present under the correct reference at 2,204.00 against an approved 2,240.00 |
+| E-4 | Create | **Duplicated** | One approval produced two records, R-8804 and R-8804-2, overstating the account by 288.00 |
+| E-5 | Create | **Indeterminate** | The evidence covers only the Operating account for April. E-5 is dated 03/31 and credits Accrued liabilities, so it falls outside the scope in both dimensions. Its absence here is **not** evidence of anything. |
+
+## 5. Target state
+
+Not applicable. This batch is a set of fresh entries, not a remediation, and no prior or expected balance was specified. Had one been, the entries verifying individually would still not establish that the account reached it.
+
+## 6. Independence assessment
 
 The evidence came from the reporting module, while the entries were recorded through the entry interface. Those are different paths within the same platform, so the verification is **partially independent**.
 
@@ -84,7 +101,7 @@ What that limits: a defect in the platform's shared storage layer would be invis
 
 Fully independent evidence would come from outside the platform, for example a statement from the institution or an export consumed by a separate system.
 
-## 5. Items requiring action
+## 7. Items requiring action
 
 In this order.
 
@@ -95,7 +112,7 @@ In this order.
 
 **Systemic note.** Two of five entries failed silently while the interface reported success for all five. The pattern is worth investigating beyond these entries: any change recorded through this interface without independent read-back may carry the same defect.
 
-## 6. Gaps and assumptions
+## 8. Gaps and assumptions
 
 - **Scope of evidence is narrower than the batch** *(missing)*. One entry could not be tested at all. A verification run should request evidence covering every account and period the batch touches.
 - **R-8804-2 origin is inferred** *(assumption)*. The identifier suggests a retry or resubmission of R-8804, but the evidence does not show what created it. Confirm before assuming a retry rather than a second approved entry.

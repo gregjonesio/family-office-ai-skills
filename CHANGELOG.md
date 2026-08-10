@@ -6,6 +6,37 @@ All notable changes to this repository are documented here. This project follows
 
 ## [Unreleased]
 
+### Changed
+
+- **[Post-Write Verification](skills/post-write-verification/) revised after first
+  use against a live ledger.** The skill was written from experience but had
+  never been run as a workflow. Running it retrospectively against a known
+  remediation, where the correct answer was already established, confirmed the
+  method and exposed three defects in the contract.
+
+  **Direction of intent is now a required input, and *withdrawn* is a new
+  outcome.** The original five outcomes could not distinguish an object that is
+  absent because it never landed from one that is absent because it was
+  deliberately archived or reversed. Those are the same observation with opposite
+  meanings, and the earlier version would have reported a successful cleanup as a
+  failure.
+
+  **The contract no longer assumes intent exists as a retrievable structured
+  object.** In practice it is often a written description. That is workable, but
+  it cannot support a field-by-field comparison, and the skill now says so rather
+  than implying a precision it does not have.
+
+  **Remediations are handled explicitly.** A fresh write asks whether the change
+  landed. A remediation asks whether it landed *and* whether the balance reached
+  its target. Every entry can verify while the account still misses. Prior,
+  expected, and observed state are now inputs and a reported section.
+
+  Also strengthened, from the same session: a quality-control rule that a keyword
+  or fuzzy account search can silently widen to several accounts, returning a
+  large plausible result set containing rows from none of the account intended. A
+  confident result set is more dangerous than an empty one, because nothing
+  prompts a check. Scope confirmation is now the first section of the output.
+
 ### Added
 
 - **[Month-End Close](playbooks/month-end-close.md)** (`playbooks/`): the monthly

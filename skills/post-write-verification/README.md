@@ -10,7 +10,13 @@ The rule this skill enforces: **an unverified change is a failed change, not a n
 
 ## What it does
 
-Compares each approved change field by field against read-back evidence and classifies the result as verified, absent, altered, duplicated, or indeterminate. It also assesses whether the evidence was genuinely independent of the write path, because a system that recorded something incorrectly will describe it incorrectly when asked about its own work.
+Compares each approved change against read-back evidence and classifies the result as verified, absent, altered, duplicated, withdrawn, or indeterminate. It also assesses whether the evidence was genuinely independent of the write path, because a system that recorded something incorrectly will describe it incorrectly when asked about its own work.
+
+## Two things it needs that are easy to skip
+
+**The direction of intent for each item:** created, modified, or removed. An absent object is a failure under the first two and a success under the third, and nothing in the evidence tells you which. That is the difference between *absent* and *withdrawn*, and a verification that cannot separate them will report successful cleanups as failures.
+
+**The target state, when you are verifying a remediation.** A fresh write asks *did this land*. A remediation asks *did this land and did the balance reach where it was supposed to go*. Every entry can verify while the account still misses its target.
 
 ## Who uses it
 
@@ -30,6 +36,12 @@ Controllers, bookkeepers, operators, and anyone who has recorded changes through
 - It will not report *verified* on the basis of a success response, a returned identifier, or a status field.
 - It will not treat *indeterminate* as acceptable.
 - It will not fill in an unobserved field with what it should have been.
+
+## A note on scope
+
+Before trusting any read-back, confirm what the query actually looked at rather than what you asked it to look at. Account searches by name or number can silently resolve to several accounts, and a truncated result can contain rows from none of the one you meant while looking completely plausible.
+
+A large confident result set is more dangerous than an empty one. An empty result prompts you to check. A full one does not.
 
 ## A note on independence
 
