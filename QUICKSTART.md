@@ -10,7 +10,7 @@ A practical, operator-built starter kit of reusable AI **workflows** for lean fa
 
 - It is **not** a decision-maker. It drafts and structures; it does not decide, recommend, transact, or send.
 - It is **not** professional advice. Nothing here is investment, legal, tax, accounting, compliance, or fiduciary advice.
-- It is **not** a live integration or an automation. It is read-only and human-in-the-loop by design.
+- It is **not** a live integration or an automation. It reads and drafts; nothing here acts on its own.
 
 > **Warning: confidentiality.** Do not paste confidential family, investment, legal, tax, health, account, entity, or personally identifiable information into public or unapproved AI tools. For your first run, use the fictional sample below or your own clearly non-confidential, de-identified input. See [Privacy and Confidentiality](docs/privacy-and-confidentiality.md).
 

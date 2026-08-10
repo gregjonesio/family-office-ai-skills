@@ -84,7 +84,7 @@ Higher is not automatically better. A Level 1 office with good confidentiality d
 
 **Governance posture.** Mature and actively maintained, with the explicit principle that AI absorbs structure-heavy work while humans keep judgment, relationships, and risk. Guardrails are understood as instructions, not enforceable controls.
 
-**Example workflows.** The operating model in [operating-model.md](operating-model.md), realized across layers, still read-only, still human-in-the-loop.
+**Example workflows.** The operating model in [operating-model.md](operating-model.md), realized across layers, still human-in-the-loop, with any write to a system of record governed by the [action authority model](action-authority-model.md).
 
 **Next step.** Sustain it. Re-examine governance on a regular cadence; resist autonomy creep; keep human review and confidentiality discipline as the load increases.
 
@@ -95,7 +95,7 @@ Higher is not automatically better. A Level 1 office with good confidentiality d
 - **Locate yourself honestly.** Most offices are at 0–1. That is fine.
 - **Advance one level at a time.** Skipping governance to chase capability is how offices get into trouble.
 - **Let governance lead, not trail.** The right time to write the rules is before you scale, not after an incident.
-- **Remember the ceiling.** Even a Level 4 "AI-native family office" is read-only and human-in-the-loop. AI never holds judgment, authority, or professional responsibility.
+- **Remember the ceiling.** Even a Level 4 "AI-native family office" keeps a named human accountable for every consequential change, and never lets AI move money, communicate externally, commit the office, decide an allocation, or alter access. Maturity sharpens the approval; it does not remove it. See the [action authority model](action-authority-model.md). AI never holds judgment, authority, or professional responsibility.
 
 ---
 

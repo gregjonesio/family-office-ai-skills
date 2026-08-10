@@ -70,10 +70,11 @@ body:
   - type: dropdown
     id: read-only
     attributes:
-      label: Should this remain read-only?
-      description: Skills in this library do not act, send, approve, or transact.
+      label: Does this stay within the action authority model?
+      description: "Skills never move money, communicate externally, commit the office, decide an allocation, or change access. A skill may describe writing to a record only with a reviewable proposal, a named approver, and independent verification. See docs/action-authority-model.md."
       options:
-        - "Yes: read-only, judgment-support only"
+        - "Yes: reads and drafts only"
+        - "Yes: describes a record write, with proposal, named approver, and verification"
         - "Unsure: needs discussion"
     validations:
       required: true

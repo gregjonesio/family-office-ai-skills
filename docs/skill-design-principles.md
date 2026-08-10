@@ -10,7 +10,9 @@ A skill is a contract, not a sentence. It specifies inputs, an output structure,
 
 ## 2. Read-only by default
 
-Skills support judgment; they do not act. A skill never executes a transaction, approves a commitment, sends a communication, or connects to a live system. If a workflow would require any of those, it does not belong here in that form.
+A skill reads and drafts unless it explicitly documents otherwise. It never executes a transaction, approves a commitment, sends a communication, moves money, decides an allocation, changes access or permission state, or connects to a live system. If a workflow would require any of those, it does not belong here in that form.
+
+Where a skill does describe writing to a system of record, such as a ledger entry, a note, or a task, it must document three things: the reviewable proposal, the named human approving that specific change, and the independent verification that the change landed. A described write with no described confirmation is worse than no description at all. See the [action authority model](action-authority-model.md).
 
 ## 3. Human review is required
 
