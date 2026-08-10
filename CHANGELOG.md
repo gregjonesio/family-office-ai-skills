@@ -8,10 +8,10 @@ All notable changes to this repository are documented here. This project follows
 
 ### Added
 
-- **Ledger control workflows** (`skills/`): the first two of a planned set of
-  accounting-control skills, made in scope by the action authority model. Both
-  are read-only and judgment-support: they analyze and draft, and a person
-  records, reconciles, and signs.
+- **Ledger control workflows** (`skills/`): four accounting-control skills, made
+  in scope by the action authority model. All are read-only and
+  judgment-support: they analyze and draft, and a person records, reconciles,
+  and signs.
   - **[Pre-Booking Gap Analysis](skills/pre-booking-gap-analysis/)**: establishes
     what a ledger already contains before entries are prepared. The default
     failure when AI assists with bookkeeping is additive, preparing entries
@@ -26,9 +26,37 @@ All notable changes to this repository are documented here. This project follows
     indeterminate, and treats indeterminate as a failure. A success response or
     a returned identifier is never accepted as evidence of presence.
 
-  Neither skill reconciles, books, eliminates intercompany items, or signs off a
-  close, consistent with the [quarter-end close playbook](playbooks/quarter-end-close.md).
-  Catalog entries added; skill count updated from seven to nine.
+  - **[Transfer and Duplicate Review](skills/transfer-duplicate-review/)**: finds
+    where one economic event has been represented more than once across
+    accounts. Money moving between accounts the office controls is one event
+    that arrives as several source rows. Distinguishes a duplicate source
+    *representation* from an accounting *leg*, since one event still requires
+    both a debit and a credit. Cross-entity movements are escalated rather than
+    resolved: how a movement between legal entities is recorded follows the
+    office's agreements and policy.
+  - **[Reconciliation Evidence Pack](skills/reconciliation-evidence-pack/)**:
+    assembles what a person needs to reconcile an account, testing completeness
+    and validity as two separate assertions rather than producing one difference
+    figure. Gross movements are always stated before any net, because a zero net
+    difference can be produced by offsetting errors. Ledger-derived evidence is
+    never treated as independent of the ledger, so a roll-forward of the ledger
+    using ledger activity does not count as a second direction.
+
+  No skill reconciles, books entries, eliminates intercompany items, or signs off
+  a close, consistent with the [quarter-end close playbook](playbooks/quarter-end-close.md).
+
+- **Evaluation examples** (`evals/`): non-executable red-team scenarios for
+  [post-write verification](evals/post-write-verification-evals.md) (the system
+  reports success with no evidence, the ghost entry, scope mistaken for absence,
+  same-path verification presented as independent, and being asked to fix what
+  was found) and for [transfer and duplicate review](evals/transfer-duplicate-review-evals.md)
+  (the triple-count, same amount on consecutive days but unrelated, a
+  cross-entity movement framed as cleanup, a confident conclusion from missing
+  accounts, and an amount difference used to break a real pending-and-settled
+  pair).
+
+  Catalog entries added and validated against the manifest schema. Skill count
+  updated from seven to eleven.
 
 ### Changed
 

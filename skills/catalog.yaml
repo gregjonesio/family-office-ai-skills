@@ -457,3 +457,113 @@ skills:
       An operator confirms that a batch of approved entries reached the ledger,
       rather than trusting the interface that reported success.
     path: skills/post-write-verification/
+
+  - id: transfer-duplicate-review
+    display_name: Transfer and Duplicate Review
+    category: operations
+    description: >-
+      Groups related source rows across accounts to identify where one economic
+      event has been represented more than once, classifying each group as an
+      internal transfer, an inter-entity transfer, a transfer plus fee, a
+      pending and settled pair, a genuine external flow, or unmatched.
+    intended_users:
+      - controller
+      - bookkeeper
+      - family-office-operator
+    input_types:
+      - source-rows-across-accounts
+      - account-and-entity-map
+      - settlement-window
+      - amount-tolerances
+    output_types:
+      - transfer-grouping
+      - duplicate-representation-list
+    risk_level: high
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+      - account-numbers-or-identifiers-not-required-by-the-task
+    prohibited_actions:
+      - execute-transactions
+      - record-or-post-entries
+      - exclude-or-delete-source-rows
+      - determine-intercompany-treatment
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Identifies duplicate source representations of a single economic event. It
+      suppresses nothing, books nothing, and never removes an accounting leg,
+      since one event still requires both a debit and a credit. Cross-entity
+      movements are escalated, never resolved: how a movement between legal
+      entities is recorded follows the office's agreements and policy.
+    example_use_case: >-
+      A bookkeeper working feeds across several accounts finds where one
+      movement has been counted twice before preparing any entries.
+    path: skills/transfer-duplicate-review/
+
+  - id: reconciliation-evidence-pack
+    display_name: Reconciliation Evidence Pack
+    category: analytics-and-reporting
+    description: >-
+      Assembles the evidence a person needs to reconcile an account, testing
+      completeness and validity as two separate assertions against independently
+      obtained source evidence, and producing an aged reconciling-item schedule
+      that separates timing differences from unexplained ones.
+    intended_users:
+      - controller
+      - bookkeeper
+      - family-office-operator
+    input_types:
+      - ledger-balance-and-activity
+      - independent-source-evidence
+      - prior-reconciling-items
+      - outstanding-items
+    output_types:
+      - reconciliation-evidence-pack
+      - aged-reconciling-item-schedule
+    risk_level: high
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+      - account-numbers-or-identifiers-not-required-by-the-task
+    prohibited_actions:
+      - execute-transactions
+      - record-or-post-entries
+      - reconcile-or-sign-off-accounts
+      - propose-plug-entries
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+    advice_boundary: >-
+      Assembles evidence for a person to reconcile. It does not reconcile the
+      account, conclude that a balance ties, or sign off. Gross movements are
+      always stated before any net, because a zero net difference can be
+      produced by offsetting errors. Ledger-derived evidence is never treated as
+      independent of the ledger.
+    example_use_case: >-
+      A controller preparing to sign off an account sees that its zero net
+      difference is produced by three offsetting errors.
+    path: skills/reconciliation-evidence-pack/
