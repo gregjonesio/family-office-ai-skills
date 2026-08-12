@@ -63,7 +63,7 @@ These are the conditions, not a maturity path. An office that cannot meet them s
 
 **The approved object is the executed object.** Record an immutable fingerprint of the proposal at approval, and confirm at execution that the fingerprint still matches. Without this, a proposal can change between review and execution and nobody would know.
 
-**Verification through a different path.** Confirm the change through a report, export, or separate read interface, not through the response of the call that made it, and not through the same interface that wrote it. An interface that reported a change incorrectly will report it incorrectly again when asked to confirm its own work.
+**Verification through a different path.** Confirm the change through a report, export, or separate read interface, not through the response of the call that made it, and not through the same interface that wrote it. An interface that reported a change incorrectly may report it incorrectly again when asked to confirm its own work, and its answer cannot tell you which case you are in.
 
 **Verification is classified, not binary.** The outcomes are: verified, absent despite reported success, present but altered, duplicated, and indeterminate. *Indeterminate is treated as failure.* A workflow that can only say "success" or "error" cannot detect the failures that matter.
 
