@@ -24,6 +24,39 @@ All notable changes to this repository are documented here. This project follows
   No conclusion or control changes; the verification requirement, the
   independence assessment, and the eval's pass criteria all stand as written.
 
+- **Corrected "human review is the real control" across the repository.** Seven
+  places asserted that human review is *the* control. That repeats, one sentence
+  later, the exact category error the surrounding passage warns about: it treats
+  a stated practice as an enforcing mechanism. A review gate enforces nothing
+  unless something requires it. A gate nobody is obliged to pass is one more
+  instruction, which is the same objection the repository already makes about a
+  skill's `Do not` list.
+
+  The corrected formulation, now consistent throughout: human review is what
+  catches an unsafe output, and review is a control only where something
+  requires it. What enforces is design, meaning access never granted, outputs
+  that are drafts by construction, and a step the workflow cannot complete
+  without.
+
+  This aligns the older safety language with
+  [action-authority-model.md](docs/action-authority-model.md), which already
+  states the corrected position ("An approval gate is a control only if
+  something enforces it"; "If a workflow can complete without reading the gate,
+  there is no gate"; "Scope limits that are enforced, not intended"). The
+  guidance itself does not change and nothing becomes more permissive. Human
+  review is still required for every output, and this repository is still
+  non-executable and enforces nothing on your behalf.
+
+  Corrected in [CLAUDE.md](CLAUDE.md), [README.md](README.md) (two places),
+  [SECURITY.md](SECURITY.md), [case-studies/README.md](case-studies/README.md),
+  [playbooks/README.md](playbooks/README.md),
+  [threat-model.md](docs/threat-model.md), and
+  [ai-workforce-operating-model.md](docs/ai-workforce-operating-model.md).
+
+  Left as written: `docs/threat-model.md` "Human review is the primary control
+  in this repository." That claim is scoped to a non-executable documentation
+  repository, where it is accurate.
+
 - **[Post-Write Verification](skills/post-write-verification/) revised after first
   use against a live ledger.** The skill was written from experience but had
   never been run as a workflow. Running it retrospectively against a known

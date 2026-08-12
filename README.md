@@ -191,7 +191,7 @@ The short version of how this library is meant to be used:
 - **No skill grants transaction authority.** Nothing here approves, executes, allocates, or sends. Money, external communication, contractual commitment, allocation decisions, access and permission changes, and irreversible deletion are never performed by an AI-assisted workflow, with or without approval.
 - **An unverified change is a failed change.** "No error was reported" is not evidence that something worked, and workflows that treat it that way fail quietly.
 - **Human review is required:** every output is an unverified draft for a competent person to verify.
-- **Guardrails are instructions, not guarantees:** a skill's rules are written instructions to the AI, not enforceable controls; human review is the real control.
+- **Guardrails are instructions, not guarantees:** a skill's rules are written instructions to the AI, not enforceable controls. Human review is what catches an unsafe output, and review is a control only where something requires it; design is what enforces.
 - **Connectors are a data-access risk, not a safety control:** connectors may improve context, but they should be approved, scoped, and treated as a data-access risk, not a safety control.
 - **You are responsible for professional review and compliance:** these materials are not investment, legal, tax, accounting, compliance, cybersecurity, or fiduciary advice, and create no professional relationship.
 
@@ -205,7 +205,7 @@ AI tools introduce real confidentiality and governance risk if used carelessly. 
 - **Keep a human in the loop.** These skills support judgment; they do not replace it. Nothing here should approve, commit, transact, or send on its own.
 - **Govern your usage.** Define approved and prohibited use cases, model selection, review requirements, and recordkeeping before you scale. See [AI Governance for Family Offices](docs/ai-governance-for-family-offices.md).
 - **Verify every fact.** AI output can be confidently wrong. Treat all figures, dates, names, and claims as unverified until a human confirms them against source documents.
-- **Guardrails are instructions, not guarantees.** The rules inside each skill (its *Do not* list and quality-control checks) are written instructions to the AI, not technical controls. A model may not follow them perfectly. Human review, not the prompt, is the real control that keeps an unsafe output from becoming an unsafe action.
+- **Guardrails are instructions, not guarantees.** The rules inside each skill (its *Do not* list and quality-control checks) are written instructions to the AI, not technical controls. A model may not follow them perfectly. Human review, not the prompt, is what keeps an unsafe output from becoming an unsafe action. Review is itself a control only where something requires it, because a gate nobody is obliged to pass is one more instruction. What enforces is design: access never granted, outputs that are drafts by construction, and a step the workflow cannot complete without.
 
 See [SECURITY.md](SECURITY.md) for how to report a concern.
 

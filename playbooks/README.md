@@ -81,7 +81,7 @@ Architecture and governance set the frame. Blueprints design composed systems. P
 
 ## A note on AI's role
 
-AI is one component of how a sophisticated family office operates, not the operating system itself. In every playbook here, AI reduces manual reading, drafting, and tracking so scarce attention reaches the work that needs judgment. It does not decide, transact, approve, send, or advise. Guardrails written into a skill are instructions to an AI, not enforceable controls; human review at the gates is the real control. See the [AI Governance](../docs/ai-governance-for-family-offices.md), [Threat Model](../docs/threat-model.md), and [AI Workforce Operating Model](../docs/ai-workforce-operating-model.md) for the posture that holds across all of them.
+AI is one component of how a sophisticated family office operates, not the operating system itself. In every playbook here, AI reduces manual reading, drafting, and tracking so scarce attention reaches the work that needs judgment. It does not decide, transact, approve, send, or advise. Guardrails written into a skill are instructions to an AI, not enforceable controls. Human review at the gates is what catches an unsafe output, and it is a control only where something requires it. See the [AI Governance](../docs/ai-governance-for-family-offices.md), [Threat Model](../docs/threat-model.md), and [AI Workforce Operating Model](../docs/ai-workforce-operating-model.md) for the posture that holds across all of them.
 
 ---
 

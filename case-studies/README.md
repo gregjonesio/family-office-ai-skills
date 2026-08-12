@@ -17,7 +17,7 @@ Worked, end-to-end examples of how the skills, blueprints, governance concepts, 
 - **Not actual client or employer workflows.** They are generalized patterns, not a published operating system, and not affiliated with any office.
 - **Not advice.** They make no investment, legal, tax, insurance, or compliance recommendation, rank no opportunities, and approve no payments.
 - **Not automation.** They describe how a person would use these skills, with review gates intact. There are no live integrations, no executable code, and no autonomous actions.
-- **Not a guarantee.** Guardrails described here are instructions to an AI, not enforceable controls. Human review is the real control.
+- **Not a guarantee.** Guardrails described here are instructions to an AI, not enforceable controls. Human review is what catches an unsafe output, and it is a control only where something requires it.
 
 ## The case studies
 

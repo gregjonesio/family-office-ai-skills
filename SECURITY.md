@@ -6,7 +6,7 @@ This repository contains **documentation, markdown templates, and structured AI 
 
 That design is intentional. The skills are read-only, judgment-support workflows, with **no live integrations and no credentials** anywhere in the repository. The security surface of the repository itself is therefore small. The meaningful risk is not in the files: it is in **how you use them**. For a fuller treatment of the risks and the practices that reduce them, see the [Threat Model](docs/threat-model.md).
 
-**Prompt guardrails are not security controls.** The `Do not` lists and quality-control checks inside each skill are written instructions to an AI model. They are not enforced by code, cannot be relied upon to prevent unsafe output, and must never be treated as a security boundary. Human review is the control.
+**Prompt guardrails are not security controls.** The `Do not` lists and quality-control checks inside each skill are written instructions to an AI model. They are not enforced by code, cannot be relied upon to prevent unsafe output, and must never be treated as a security boundary. Human review is what catches an unsafe output, and review is a control only where something requires it. A gate nobody must pass is one more instruction.
 
 ## Using these materials safely
 
