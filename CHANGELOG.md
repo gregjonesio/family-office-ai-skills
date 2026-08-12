@@ -8,6 +8,22 @@ All notable changes to this repository are documented here. This project follows
 
 ### Changed
 
+- **Narrowed an overstated claim about same-path verification.** Four files
+  asserted that an interface which recorded a change incorrectly *will* describe
+  it incorrectly when asked about its own work. That is not true, and the
+  repository should not assert it. The same interface may well report the bad
+  write correctly. The defensible claim, and the one that actually supports the
+  independence requirement, is that it *may* repeat the error and its answer
+  cannot tell you which case you are in. Uncertainty about the report is the
+  reason a second path is needed; a guaranteed repeat would not require one.
+
+  Corrected in [action-authority-model.md](docs/action-authority-model.md),
+  [post-write-verification/SKILL.md](skills/post-write-verification/SKILL.md),
+  its README, and
+  [post-write-verification-evals.md](evals/post-write-verification-evals.md).
+  No conclusion or control changes; the verification requirement, the
+  independence assessment, and the eval's pass criteria all stand as written.
+
 - **[Post-Write Verification](skills/post-write-verification/) revised after first
   use against a live ledger.** The skill was written from experience but had
   never been run as a workflow. Running it retrospectively against a known

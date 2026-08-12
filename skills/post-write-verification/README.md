@@ -10,7 +10,7 @@ The rule this skill enforces: **an unverified change is a failed change, not a n
 
 ## What it does
 
-Compares each approved change against read-back evidence and classifies the result as verified, absent, altered, duplicated, withdrawn, or indeterminate. It also assesses whether the evidence was genuinely independent of the write path, because a system that recorded something incorrectly will describe it incorrectly when asked about its own work.
+Compares each approved change against read-back evidence and classifies the result as verified, absent, altered, duplicated, withdrawn, or indeterminate. It also assesses whether the evidence was genuinely independent of the write path, because a system that recorded something incorrectly may describe it incorrectly when asked about its own work, and its answer cannot tell you which case you are in.
 
 ## Two things it needs that are easy to skip
 

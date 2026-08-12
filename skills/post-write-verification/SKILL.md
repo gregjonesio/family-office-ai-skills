@@ -86,7 +86,7 @@ Where a **remediation** was verified, also report:
 
 ## Quality control
 
-- **Independence is the whole point.** An interface that recorded a change incorrectly will describe it incorrectly when asked about its own work. If independence cannot be established, the verification is weak and must say so.
+- **Independence is the whole point.** An interface that recorded a change incorrectly may describe it incorrectly when asked about its own work, and its answer cannot tell you which case you are in. If independence cannot be established, the verification is weak and must say so.
 - **Staleness:** if the evidence's as-of time precedes the recording, it cannot verify anything. Check this before comparing.
 - **Scope errors look like passes.** Evidence drawn from the wrong account, entity, or period will show nothing and read as a clean absence. Confirm the evidence covers the right scope, and report the scope you checked.
 - **A keyword or fuzzy account search will silently widen.** Asking for one account by name or number can resolve to many, and a truncated result set may contain rows from none of the account you asked about while looking entirely plausible. Read back the identifiers the query actually resolved to and confirm each returned row belongs to the intended scope. A large, confident result set is not evidence that the query was correctly aimed, and it is more dangerous than an empty one because nothing prompts you to check.
