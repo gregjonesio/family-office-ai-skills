@@ -41,7 +41,7 @@ Higher on this ladder means **more structure, review, governance, and repeatabil
 
 ## The role of human review
 
-Human review is the control that makes the whole model safe. It scales with consequence: spot-check for low-stakes drafts; verify facts for principal-facing work; a named reviewer for anything feeding a decision; and for external communication, a person writes or approves and sends. The reviewer owns the output as if they produced it.
+Human review is what makes the whole model safe, and it is a control only where something requires it rather than where it is merely intended. It scales with consequence: spot-check for low-stakes drafts; verify facts for principal-facing work; a named reviewer for anything feeding a decision; and for external communication, a person writes or approves and sends. The reviewer owns the output as if they produced it.
 
 ## The role of connectors / context
 

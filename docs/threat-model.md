@@ -1,6 +1,6 @@
 # Threat Model
 
-A practical threat model for using and contributing to a public library of family office AI skills. The aim is to be useful to an operator and a contributor, not exhaustive or academic. It describes what can go wrong, why, and the practices that reduce the risk. None of these mitigations are technical controls; the repository is non-executable by default and the real control is human judgment.
+A practical threat model for using and contributing to a public library of family office AI skills. The aim is to be useful to an operator and a contributor, not exhaustive or academic. It describes what can go wrong, why, and the practices that reduce the risk. None of these mitigations are technical controls; the repository is non-executable by default, so what reduces the risk is human judgment, applied where your own design requires it rather than where it happens to occur.
 
 ---
 
