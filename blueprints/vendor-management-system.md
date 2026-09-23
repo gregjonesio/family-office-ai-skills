@@ -58,6 +58,7 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 - Vendor reviews completed before renewal deadlines
 - Human-review completion rate (target: 100%)
+- Correction rate: share of reviewed drafts that needed a fix before use, with the number reviewed and the number with no answer recorded (trend)
 - Renewals reviewed vs. auto-renewed unintentionally (target: zero unintentional)
 - Estimated time saved (directional)
 

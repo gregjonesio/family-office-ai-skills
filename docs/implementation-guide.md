@@ -101,6 +101,8 @@ Track a few simple, honest measures so you can decide whether to expand:
 | Adoption | Is the team actually using it, or quietly avoiding it? |
 | Principal/stakeholder feedback | Is the output genuinely useful and well-framed? |
 
+Record review burden as one answer per reviewed draft: did it need a fix before it could be used, yes or no. Report the share marked yes with the number reviewed and the number where no answer was recorded. The [measurement framework](measurement-framework.md) sets out what counts as a fix and how to read the figure.
+
 A workflow is working when it saves meaningful time, needs steadily less correction, and the team reaches for it without being told to.
 
 ## Step 6: Expand deliberately
@@ -111,6 +113,7 @@ Once the pilot is delivering value with an acceptable review burden:
 - **Standardize the artifacts.** Adopt the [templates](../templates/) so output is consistent across the team.
 - **Raise the stakes gradually.** Move toward higher-consequence workflows (diligence, screening) only after review habits are strong.
 - **Document your house versions.** As you tune skills to your office, keep your adapted versions under version control with the same confidentiality discipline.
+- **Keep counting corrections.** The review-burden measure from Step 5 stays on the list after the pilot. A measurement set that records whether review happened but not what it changed looks the same whether the reviewer fixed nothing or three things.
 
 ## A realistic first 30 days
 

@@ -67,6 +67,7 @@ How this workflow could be measured ([measurement framework](../docs/measurement
 - **Time saved:** review and prep time avoided per renewal.
 - **Cycle time reduced:** from "renewal received" to "ready for the broker call."
 - **Review exceptions:** digests used without the required verification (driven toward zero).
+- **Correction rate:** share of reviewed digests that needed a fix before they could be used, with the number reviewed and the number where no answer was recorded (a review that changed nothing and one that fixed three things look the same without it).
 - **Follow-ups captured:** questions and post-call actions recorded rather than lost.
 - **Decisions supported:** renewal decisions the office made with the broker (decisions the office owns, informed by licensed advice).
 - **Documents summarized:** renewal proposals and dec pages read into plain English.

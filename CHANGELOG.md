@@ -8,6 +8,32 @@ All notable changes to this repository are documented here. This project follows
 
 ### Changed
 
+- **Carried the correction rate into every measurement list.** Nine documents
+  end with a list of what to measure: the four blueprints and the five case
+  studies. All nine tracked whether the required review happened. Only one,
+  the weekly principal briefing blueprint, tracked whether the reviewer had
+  to fix anything, even though the
+  [measurement framework](docs/measurement-framework.md) has carried
+  "Correction rate" in its governance table since the first draft and the
+  [implementation guide](docs/implementation-guide.md) asks the question for
+  a pilot's first thirty days. The other eight lists counted work done and
+  time saved, and looked the same whether the reviewer changed nothing or
+  fixed three things. Found on 2026-09-23 by rereading the nine lists for a
+  published piece on measurement; the maintainer wrote all nine and had not
+  noticed.
+
+  Every list now carries the same measure: the share of reviewed drafts that
+  needed a fix before they could be used, reported with the number reviewed
+  and the number where no answer was recorded. The framework gains a short
+  section on recording it (agree what counts in advance, one yes-or-no answer
+  per reviewed draft, blanks reported rather than dropped, the reviewer
+  decides rather than the AI) and on its limits (it counts only what the
+  reviewer caught, a rising rate does not tell you the cause, a falling rate
+  is equally consistent with reviewers who stopped recording). The guide now
+  says how to record review burden and keeps it on the list after the pilot.
+  No control, gate, or conclusion changes; the measure was already in the
+  framework and is now carried where the worked examples said to look.
+
 - **Narrowed an overstated claim about same-path verification.** Four files
   asserted that an interface which recorded a change incorrectly *will* describe
   it incorrectly when asked about its own work. That is not true, and the

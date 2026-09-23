@@ -37,10 +37,19 @@ Group metrics into activity, efficiency, quality/governance, and value. Activity
 |--------|------------|
 | Human-review completion rate | Share of outputs that received required human review before use |
 | Review exceptions | Outputs used without the required review (should trend to zero) |
-| Correction rate | Share of drafts needing material correction in review |
+| Correction rate | Share of reviewed drafts that needed a fix before they could be used, reported with the number reviewed and the number with no answer recorded (see below) |
 | Confidentiality incidents | Instances of sensitive data handled in an unapproved tool (target: zero) |
 
 The governance metrics matter most. A workflow that "saves time" while skipping review is not a success: it is an unmanaged risk.
+
+### Recording the correction rate
+
+Human-review completion and review exceptions record whether the required review happened. Neither records what the review changed. A reviewer can open a draft, correct a wrong figure, pass it on, and leave no trace of having done it; the finished document and the quarterly report both look the same whether the review changed nothing or fixed three things. The correction rate is the measure that tells them apart, so it belongs on every workflow's list, not only the pilot's.
+
+- **Agree in advance what counts.** A fix is a change the reviewer had to make before the work could be used: a wrong figure, a missing item, a passage that would have misled the reader. A phrase the reviewer would have written differently is not a fix.
+- **Record one answer per reviewed draft.** Yes or no. Report the share marked yes, the number of drafts reviewed, and the number where nobody recorded an answer. The blanks are part of the measure, and at first most drafts will have no answer at all.
+- **The reviewer decides.** An AI can add up the answers and lay out the report. Whether a change counted as a fix is the reviewer's call, not the AI's, and an AI's opinion of its own draft is not evidence.
+- **Read it with its limits.** The count includes only what the reviewer caught, never what was missed. A rising rate does not tell you the cause: the inputs may have changed, the work may have drifted into cases the workflow was never set up for, a new reviewer may apply a different standard, or the drafts may be worse. A falling rate is equally consistent with reviewers who stopped recording. Report it next to hours saved, not instead of it, and use it to decide where to look, not to grade the tool.
 
 ### Value metrics (handle with care)
 
@@ -69,7 +78,7 @@ State these caveats wherever the figure appears. A clean number with no caveat i
 ## How to use this framework
 
 1. **Start small.** Track a few metrics for your pilot workflow rather than all of them.
-2. **Prioritize governance metrics.** Human-review completion and confidentiality incidents are the ones that protect the office.
+2. **Prioritize governance metrics.** Human-review completion, correction rate, and confidentiality incidents are the ones that protect the office.
 3. **Estimate conservatively.** When in doubt, understate hours saved and value.
 4. **Review the trend, not the point.** Direction over time is more useful than any single figure.
 5. **Keep value figures internal and caveated.** Do not put an uncaveated dollar figure in front of a principal, client, or the public.
