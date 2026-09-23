@@ -37,19 +37,19 @@ Group metrics into activity, efficiency, quality/governance, and value. Activity
 |--------|------------|
 | Human-review completion rate | Share of outputs that received required human review before use |
 | Review exceptions | Outputs used without the required review (should trend to zero) |
-| Correction rate | Share of reviewed drafts that needed a fix before they could be used, reported with the number reviewed and the number with no answer recorded (see below) |
+| Correction rate | Share of reviewed drafts with a recorded outcome that needed a material correction before use, reported with the total reviewed and the number with no answer recorded (see the section below) |
 | Confidentiality incidents | Instances of sensitive data handled in an unapproved tool (target: zero) |
 
 The governance metrics matter most. A workflow that "saves time" while skipping review is not a success: it is an unmanaged risk.
 
 ### Recording the correction rate
 
-Human-review completion and review exceptions record whether the required review happened. Neither records what the review changed. A reviewer can open a draft, correct a wrong figure, pass it on, and leave no trace of having done it; the finished document and the quarterly report both look the same whether the review changed nothing or fixed three things. The correction rate is the measure that tells them apart, so it belongs on every workflow's list, not only the pilot's.
+Human-review completion and review exceptions show whether the required review happened. They cannot show whether the review changed anything: a review that changed nothing and one that corrected a wrong figure count the same. Correction rate is the measure that tells them apart, so it belongs on every workflow's list, not only the pilot's.
 
-- **Agree in advance what counts.** A fix is a change the reviewer had to make before the work could be used: a wrong figure, a missing item, a passage that would have misled the reader. A phrase the reviewer would have written differently is not a fix.
-- **Record one answer per reviewed draft.** Yes or no. Report the share marked yes, the number of drafts reviewed, and the number where nobody recorded an answer. The blanks are part of the measure, and at first most drafts will have no answer at all.
-- **The reviewer decides.** An AI can add up the answers and lay out the report. Whether a change counted as a fix is the reviewer's call, not the AI's, and an AI's opinion of its own draft is not evidence.
-- **Read it with its limits.** The count includes only what the reviewer caught, never what was missed. A rising rate does not tell you the cause: the inputs may have changed, the work may have drifted into cases the workflow was never set up for, a new reviewer may apply a different standard, or the drafts may be worse. A falling rate is equally consistent with reviewers who stopped recording. Report it next to hours saved, not instead of it, and use it to decide where to look, not to grade the tool.
+- **Agree in advance what counts.** A material correction is a change needed before the work could be used: a wrong figure corrected, a required item added, misleading wording removed. A change made only for stylistic preference does not count. Define the output being counted before recording begins, and count each output's initial review once.
+- **Record one answer per reviewed draft.** Yes, no, or not recorded. Mark yes when the reviewer identified a material correction, including when the draft was rejected rather than revised. The correction rate for a period is the number marked yes divided by the number marked yes or no. Report it with the total reviewed and the number with no answer recorded; if no answers were recorded, report the rate as unavailable rather than as zero.
+- **The reviewer decides.** An AI may help tally the recorded answers and lay out the report. Whether a material correction was needed is the reviewer's determination, and an AI's assessment of its own draft does not replace it.
+- **Read it with its limits.** The rate reflects only the corrections reviewers identified, never what was missed, and it records whether a correction was needed, not how much rework it took. A change in the rate may reflect differences in inputs, task difficulty, review standards, recording practice, or draft quality. Read it alongside the unrecorded count and review burden; a lower rate alone does not establish better quality.
 
 ### Value metrics (handle with care)
 

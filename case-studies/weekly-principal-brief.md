@@ -68,7 +68,7 @@ How this workflow could be measured ([measurement framework](../docs/measurement
 - **Time saved:** preparation time avoided per brief versus assembling by hand.
 - **Cycle time reduced:** from "inputs available" to "reviewed brief ready."
 - **Review exceptions:** instances where a brief was used without the required review (driven toward zero).
-- **Correction rate:** share of reviewed briefs that needed a fix before they could be used, with the number reviewed and the number where no answer was recorded (a review that changed nothing and one that fixed three things look the same without it).
+- **Correction rate:** share of reviewed briefs with a recorded outcome that needed a material correction before use; report the total reviewed and the number with no answer recorded.
 - **Follow-ups captured:** carried-over items surfaced rather than dropped.
 - **Decisions supported:** decisions-needed items the principal acted on.
 - **Documents summarized:** updates and notes folded into the brief.

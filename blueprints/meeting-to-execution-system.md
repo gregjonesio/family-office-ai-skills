@@ -59,7 +59,7 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 - Meetings with prep produced
 - Action items captured with owner and deadline
 - Human-review completion rate (target: 100%)
-- Correction rate: share of reviewed drafts that needed a fix before use, with the number reviewed and the number with no answer recorded (trend)
+- Correction rate: share of drafts with a recorded review outcome that needed a material correction before use; report the total reviewed and the number with no answer recorded (trend)
 - Follow-ups closed vs. carried over
 - Estimated time saved (directional)
 
