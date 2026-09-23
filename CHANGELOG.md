@@ -8,6 +8,29 @@ All notable changes to this repository are documented here. This project follows
 
 ### Changed
 
+- **Standardized correction-rate reporting across the workflow measurement
+  lists.** The [measurement framework](docs/measurement-framework.md) lists
+  "Correction rate" among its governance metrics, and the
+  [implementation guide](docs/implementation-guide.md) asks how much
+  correction each draft needs during a pilot, but only one of the nine
+  blueprint and case-study measurement lists carried the measure. The other
+  eight recorded whether the required review happened and could not show
+  whether the review changed anything.
+
+  The measure is now on all nine lists in the same wording: the share of
+  drafts with a recorded review outcome that needed a material correction
+  before use, reported with the total reviewed and the number with no answer
+  recorded. The framework defines what counts as a material correction, the
+  calculation, how unanswered reviews are reported, and the limits on reading
+  the figure. The implementation guide distinguishes it from review burden
+  and keeps it on the list after the pilot. Required review and approval
+  steps are unchanged.
+
+  Changed: the four [blueprints](blueprints/), the five
+  [case studies](case-studies/),
+  [measurement-framework.md](docs/measurement-framework.md), and
+  [implementation-guide.md](docs/implementation-guide.md).
+
 - **Narrowed an overstated claim about same-path verification.** Four files
   asserted that an interface which recorded a change incorrectly *will* describe
   it incorrectly when asked about its own work. That is not true, and the

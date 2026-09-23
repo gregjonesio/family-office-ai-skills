@@ -67,6 +67,7 @@ How this workflow could be measured ([measurement framework](../docs/measurement
 - **Time saved:** processing and summarization time avoided per call.
 - **Cycle time reduced:** from "notice received" to "ready for approval," excluding the human control steps.
 - **Review exceptions:** instances where a control gate was skipped (target: zero: these gates are non-negotiable).
+- **Correction rate:** share of reviewed summaries and checklists with a recorded outcome that needed a material correction before use; report the total reviewed and the number with no answer recorded.
 - **Follow-ups captured:** checklist items and recordkeeping steps tracked to completion.
 - **Decisions supported:** approvals routed and recorded (the approval is the approver's, not the AI's).
 - **Documents summarized:** capital call notices read into plain English.

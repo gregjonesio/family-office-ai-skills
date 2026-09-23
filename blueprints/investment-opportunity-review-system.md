@@ -59,6 +59,7 @@ Manual input first; approved read-only connectors where appropriate. Possible so
 
 - Opportunities screened in a consistent format
 - Human-review completion rate (target: 100%)
+- Correction rate: share of drafts with a recorded review outcome that needed a material correction before use; report the total reviewed and the number with no answer recorded (trend)
 - Share of opportunities with a complete missing-information list before advancing
 - Estimated analyst time saved (directional)
 

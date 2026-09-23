@@ -66,6 +66,7 @@ How this workflow could be measured ([measurement framework](../docs/measurement
 - **Time saved:** reconciliation and write-up time avoided per meeting.
 - **Cycle time reduced:** from "meeting ends" to "reviewed execution plan ready."
 - **Review exceptions:** plans acted on without the required confirmation (driven toward zero).
+- **Correction rate:** share of reviewed plans with a recorded outcome that needed a material correction before use; report the total reviewed and the number with no answer recorded.
 - **Follow-ups captured:** real commitments tracked rather than lost in the notes.
 - **Decisions supported:** ambiguous items correctly escalated for confirmation instead of being assumed.
 - **Documents summarized:** sets of raw notes turned into structured plans.

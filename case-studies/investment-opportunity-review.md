@@ -67,6 +67,7 @@ How this workflow could be measured ([measurement framework](../docs/measurement
 - **Time saved:** screening time avoided per opportunity.
 - **Cycle time reduced:** from "materials received" to "first-pass read ready for the principal."
 - **Review exceptions:** memos used without the required review (driven toward zero).
+- **Correction rate:** share of reviewed memos with a recorded outcome that needed a material correction before use; report the total reviewed and the number with no answer recorded.
 - **Follow-ups captured:** diligence questions and next steps recorded rather than lost.
 - **Decisions supported:** "look closer / pass for now" triage decisions the principal made (decisions the office owns, not the AI).
 - **Documents summarized:** decks, emails, and manager materials read into a consistent format.

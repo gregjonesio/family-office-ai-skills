@@ -37,10 +37,19 @@ Group metrics into activity, efficiency, quality/governance, and value. Activity
 |--------|------------|
 | Human-review completion rate | Share of outputs that received required human review before use |
 | Review exceptions | Outputs used without the required review (should trend to zero) |
-| Correction rate | Share of drafts needing material correction in review |
+| Correction rate | Share of reviewed drafts with a recorded outcome that needed a material correction before use, reported with the total reviewed and the number with no answer recorded (see the section below) |
 | Confidentiality incidents | Instances of sensitive data handled in an unapproved tool (target: zero) |
 
 The governance metrics matter most. A workflow that "saves time" while skipping review is not a success: it is an unmanaged risk.
+
+### Recording the correction rate
+
+Human-review completion and review exceptions show whether the required review happened. They cannot show whether the review changed anything: a review that changed nothing and one that corrected a wrong figure count the same. Correction rate is the measure that tells them apart, so it belongs on every workflow's list, not only the pilot's.
+
+- **Agree in advance what counts.** A material correction is a change needed before the work could be used: a wrong figure corrected, a required item added, misleading wording removed. A change made only for stylistic preference does not count. Define the output being counted before recording begins, and count each output's initial review once.
+- **Record one answer per reviewed draft.** Yes, no, or not recorded. Mark yes when the reviewer identified a material correction, including when the draft was rejected rather than revised. The correction rate for a period is the number marked yes divided by the number marked yes or no. Report it with the total reviewed and the number with no answer recorded; if no answers were recorded, report the rate as unavailable rather than as zero.
+- **The reviewer decides.** An AI may help tally the recorded answers and lay out the report. Whether a material correction was needed is the reviewer's determination, and an AI's assessment of its own draft does not replace it.
+- **Read it with its limits.** The rate reflects only the corrections reviewers identified, never what was missed, and it records whether a correction was needed, not how much rework it took. A change in the rate may reflect differences in inputs, task difficulty, review standards, recording practice, or draft quality. Read it alongside the unrecorded count and review burden; a lower rate alone does not establish better quality.
 
 ### Value metrics (handle with care)
 
@@ -69,7 +78,7 @@ State these caveats wherever the figure appears. A clean number with no caveat i
 ## How to use this framework
 
 1. **Start small.** Track a few metrics for your pilot workflow rather than all of them.
-2. **Prioritize governance metrics.** Human-review completion and confidentiality incidents are the ones that protect the office.
+2. **Prioritize governance metrics.** Human-review completion, correction rate, and confidentiality incidents are the ones that protect the office.
 3. **Estimate conservatively.** When in doubt, understate hours saved and value.
 4. **Review the trend, not the point.** Direction over time is more useful than any single figure.
 5. **Keep value figures internal and caveated.** Do not put an uncaveated dollar figure in front of a principal, client, or the public.
