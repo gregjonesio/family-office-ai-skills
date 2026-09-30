@@ -1,6 +1,8 @@
 # Answer key
 
-Written before any AI saw the test documents. Keep it away from the model you are testing: give the AI only the skill and documents 1 to 3.
+Written together with the test documents, before any run, and withheld from every session that was tested. Keep it away from the model you are testing: give the AI only the skill and documents 1 to 3.
+
+This key is a benchmark, not a complete list of every difference. It scores nine planted changes the letter does not mention. A good comparison will also list the other differences on the pages (below); they are real, but they are not scored.
 
 ## What the cover letter mentions (3)
 
@@ -8,7 +10,7 @@ Written before any AI saw the test documents. Keep it away from the model you ar
 - Dwelling limit (Coverage A): $6,200,000 to $6,510,000, under the 5% inflation guard.
 - All other perils deductible: $10,000 to $25,000.
 
-These follow from the changes above and are not counted separately: other structures and contents rise with Coverage A; the policy number suffix and the policy period roll forward; the premium split by section changes.
+Other differences on the pages, outside the benchmark and not scored: other structures and contents rise 5% (in step with Coverage A); the policy number suffix and the policy period roll forward; each section's premium changes; the forms list gains PC-290.
 
 ## What changed on the pages but is not in the letter (9)
 

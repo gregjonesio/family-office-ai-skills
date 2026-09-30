@@ -23,6 +23,8 @@ The [test kit](test-kit/) is a fictional renewal with a known answer: the broker
 
 ## What it will not do
 
+These are instructions to the AI, not guarantees. Check every output.
+
 - It will not provide insurance, legal, or tax advice, or judge whether coverage is adequate.
 - It will not recommend accepting, declining, or changing a renewal, or moving to another carrier.
 - It will not interpret policy wording it was not given, or invent limits, conditions, or reasons for a change.

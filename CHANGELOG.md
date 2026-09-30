@@ -13,17 +13,18 @@ All notable changes to this repository are documented here. This project follows
   checks the broker's cover letter against what changed: a change table with
   both years' terms and whether the letter mentions each change, a check of
   the letter's statements, derived figures with their arithmetic shown, what
-  the documents cannot show, questions for the broker, and action items. It
-  judges no coverage and recommends nothing. Catalog entry, sample input and
+  the documents cannot show, questions for the broker, and action items. Its
+  instructions tell the AI not to judge coverage or recommend a renewal
+  decision; output still needs human review. Catalog entry, sample input and
   sample output included; linked from the
   [insurance renewal playbook](playbooks/insurance-renewal-management.md) and
   [case study](case-studies/insurance-renewal-review.md).
 - **Test kits.** A skill may now ship a `test-kit/`: fictional documents, an
-  answer key written before any AI saw them, a scoring rule, and a results
-  table. The first is the
+  answer key written before any run and withheld from the sessions tested, a
+  scoring rule, and a results table. The first is the
   [Insurance Renewal Comparison test kit](skills/insurance-renewal-comparison/test-kit/),
   a fictional renewal whose cover letter mentions three changes while the
-  pages hold nine more. Documented in [CLAUDE.md](CLAUDE.md) and the
+  pages hold nine more that it does not. Documented in [CLAUDE.md](CLAUDE.md) and the
   [evals guide](evals/README.md).
 
 ### Changed

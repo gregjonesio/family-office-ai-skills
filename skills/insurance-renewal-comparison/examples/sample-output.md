@@ -1,365 +1,408 @@
 # Sample output: Insurance Renewal Comparison
 
-The unedited output of a fresh AI session that was given only [SKILL.md](../SKILL.md) and the three fictional documents in [sample-input.md](sample-input.md) (the same documents as the [test kit](../test-kit/)), on 2026-09-30. It found all nine changes the letter leaves out; see the [test kit results](../test-kit/README.md#results-so-far). It is shown as produced, including its own date note about the letter, except for a final line in which the session confirmed which files it had read. It is an unverified draft for human review, not insurance, legal, or tax advice.
+The output of a fresh AI session given [SKILL.md](../SKILL.md) and the three fictional documents in [sample-input.md](sample-input.md) (the same documents as the [test kit](../test-kit/)), on 2026-09-30, reproduced verbatim. The exact prompt is in the [test kit README](../test-kit/README.md#the-prompt-used). The session was instructed to read only those four files; it was not technically prevented from reading others.
+
+**Known flaws in this output**, found when it was scored against the [answer key](../test-kit/answer-key.md), and left in place rather than edited out:
+
+- C13 and C16 label the removed wristwatch and the new theft condition as "not in the documents provided" for one year. Both documents were provided: the watch was removed and the condition was added, as each row's direction line correctly says. The skill's instruction on that label was clarified after this run.
+- L11 names nine of the sixteen changes the letter does not mention; the full count is correct in section 2.
+
+It found all nine benchmark changes, and no figure checked was wrong. It is an unverified draft for human review, not insurance, legal, or tax advice.
 
 ```text
-INSURANCE RENEWAL COMPARISON
-[Family] Residence Trust, private client homeowners policy PCH-4418-2207
-Expiring term November 1, 2025 to November 1, 2026, compared with the renewal term November 1, 2026 to November 1, 2027
-This is a draft for the operations team's renewal call and must be verified against the documents. It is not insurance, legal or tax advice.
+RENEWAL COMPARISON: [Family] Residence Trust, private client homeowners policy
+Expiring policy PCH-4418-2207-03 (Nov 1, 2025 to Nov 1, 2026) compared with renewal PCH-4418-2207-04 (Nov 1, 2026 to Nov 1, 2027)
+This is a draft for the broker call. A person must check it against the documents. It is not insurance, legal or tax advice.
 
 ======================================================================
 1. DOCUMENTS COMPARED
 ======================================================================
-
 Provided:
-- Last year's declarations page, policy PCH-4418-2207-03. It includes the jewelry schedule, conditions, forms list and premium by section.
-- This year's renewal declarations page, policy PCH-4418-2207-04. It has the same sections.
-- The broker's cover letter, dated October 2, 2026. Today's date is September 30, 2026, so the letter is dated two days from now. Check the date on the copy you received.
+- Last year's declarations page, PCH-4418-2207-03. It covers Section I and II limits, deductibles, additional coverages and endorsements, the jewelry schedule, conditions, the forms list and premium by section.
+- This year's renewal declarations page, PCH-4418-2207-04, with the same sections.
+- The broker's cover letter from [Broker], dated October 2, 2026, signed by [Account Executive].
 
 Not provided:
-- Policy forms for either year. This includes both editions of PCH-100 (04/23 and 04/25), PC-290, SP-300, PC-210 and PC-215. Without them, no change in wording can be compared.
-- Any carrier notice describing coverage changes at this renewal.
-- Loss history, and the premium or rating breakdown.
-- Any record of changes in the family's circumstances, such as whether the wristwatch removed from the schedule was sold.
+- The policy forms for either year (PCH-100, PC-210 through PC-290, SP-300). Only form numbers and edition dates are available, so no policy wording can be compared.
+- A rating worksheet, or any premium breakdown below the section level.
+- A loss history or claims report.
+- Any record of instructions the office gave the broker for this renewal.
+
+Notes:
+- The letter is dated October 2, 2026, which is two days after today (September 30, 2026). The office should confirm it is the final version.
+- Each document carries a label calling it a fictional test document. As you instructed, they are treated as real. Nothing in the documents tried to direct or change this task.
 
 ======================================================================
 2. CHANGE TABLE
 ======================================================================
+Terms are quoted as printed. "Letter" means whether the broker's letter mentions the change.
+In total there are 21 changes. The letter mentions 4, partly mentions 1 and does not mention 16.
 
-The documents show 21 changes. The letter mentions 4, partly mentions 1 and does not mention 16. Terms are quoted exactly as the declarations state them.
-
+POLICY
 C1  Policy number
-    Last year: "PCH-4418-2207-03"
-    This year: "PCH-4418-2207-04"
-    Direction: the term suffix went up by one (administrative).
-    Letter: partly mentioned (it cites "PCH-4418-2207" without the suffix).
+    Last year: "PCH-4418-2207-03"   This year: "PCH-4418-2207-04"
+    Direction: the suffix moved from -03 to -04.
+    Letter: partly mentioned. It cites "PCH-4418-2207" without the suffix.
 
 C2  Policy period
     Last year: "November 1, 2025 to November 1, 2026"
     This year: "November 1, 2026 to November 1, 2027"
-    Direction: the next annual term.
+    Direction: moved forward one year.
     Letter: mentioned.
 
-C3  Coverage A, Dwelling
-    Last year: "$6,200,000"
-    This year: "$6,510,000"
-    Direction: up $310,000 (5.00%).
+SECTION I: PROPERTY COVERAGES
+C3  A Dwelling
+    Last year: "$6,200,000"   This year: "$6,510,000"
+    Direction: rose $310,000 (5.0%).
     Letter: mentioned.
 
 C4  Extended replacement cost
-    Last year: "150% of Coverage A"
-    This year: "125% of Coverage A"
-    Direction: the percentage fell by 25 points. In dollars it went from $9,300,000 to $8,137,500 (derived, D3).
+    Last year: "150% of Coverage A"   This year: "125% of Coverage A"
+    Direction: the percentage fell from 150% to 125%. The dollar effect is in D1.
     Letter: not mentioned.
 
-C5  Coverage B, Other structures
-    Last year: "$620,000"
-    This year: "$651,000"
-    Direction: up $31,000 (5.00%).
+C5  B Other structures
+    Last year: "$620,000"   This year: "$651,000"
+    Direction: rose $31,000 (5.0%).
     Letter: not mentioned.
 
-C6  Coverage C, Contents
-    Last year: "$3,100,000"
-    This year: "$3,255,000"
-    Direction: up $155,000 (5.00%).
+C6  C Contents
+    Last year: "$3,100,000"   This year: "$3,255,000"
+    Direction: rose $155,000 (5.0%).
     Letter: not mentioned.
 
-C7  Coverage D, Loss of use
+C7  D Loss of use
     Last year: "Actual loss sustained (no time limit)"
     This year: "Actual loss sustained up to 24 months"
-    Direction: a 24-month time limit now applies. Last year's page said there was no time limit.
+    Direction: last year stated no time limit. This year has a 24-month limit.
     Letter: not mentioned.
 
-C8  Deductible, all other perils
-    Last year: "$10,000"
-    This year: "$25,000"
-    Direction: up $15,000 (150%).
+DEDUCTIBLES
+C8  All other perils
+    Last year: "$10,000"   This year: "$25,000"
+    Direction: rose $15,000 (150%).
     Letter: mentioned.
 
-C9  Deductible, windstorm or hail, including named storm
-    Last year: "$10,000"
-    This year: "2% of Coverage A ($130,200)"
-    Direction: a flat dollar deductible was replaced by a percentage of Coverage A. The stated amount rose $120,200, to 13.02 times last year's (derived, D6).
+C9  Windstorm or hail, including named storm
+    Last year: "$10,000"   This year: "2% of Coverage A ($130,200)"
+    Direction: changed from a flat dollar amount to a percentage of Coverage A. The printed dollar figure rose $120,200 (see D4).
     Letter: not mentioned.
 
-C10 PC-210, Water backup and sump overflow
-    Last year: "Included to full Coverage A limit"
-    This year: "$50,000"
-    Direction: the full Coverage A limit ($6,200,000 last year) became a stated $50,000 limit (derived, D5). The form edition did not change: PC-210 (ed. 04/23) both years.
+ADDITIONAL COVERAGES AND ENDORSEMENTS
+C10 PC-210 Water backup and sump overflow
+    Last year: "Included to full Coverage A limit"   This year: "$50,000"
+    Direction: changed from the full Coverage A limit to a stated $50,000 (see D3). The form edition is unchanged at 04/23.
     Letter: not mentioned.
 
-C11 PC-215, Ordinance or law
-    Last year: "100% of Coverage A"
-    This year: "25% of Coverage A"
-    Direction: the percentage fell from 100% to 25%. In dollars it went from $6,200,000 to $1,627,500 (derived, D4). The form edition did not change: PC-215 (ed. 04/23).
+C11 PC-215 Ordinance or law
+    Last year: "100% of Coverage A"   This year: "25% of Coverage A"
+    Direction: the percentage fell from 100% to 25% (see D2). The form edition is unchanged at 04/23.
     Letter: not mentioned.
 
-C12 Jewelry schedule, valuation basis
-    Last year: "Valuation basis: AGREED VALUE."
-    This year: "Valuation basis: STATED VALUE."
-    Direction: the basis changed from agreed value to stated value. The form edition did not change: SP-300 (ed. 04/23).
+SCHEDULED PERSONAL PROPERTY: JEWELRY
+C12 Valuation basis
+    Last year: "AGREED VALUE"   This year: "STATED VALUE"
+    Direction: the basis changed. The SP-300 form edition is unchanged at 04/23.
     Letter: not mentioned. The letter says only that jewelry coverage continues.
 
-C13 Jewelry schedule, items
-    Last year: 6 items, including "Item 4 Gentleman's wristwatch, perpetual calendar $38,000"
-    This year: 5 items. The wristwatch does not appear.
-    Direction: one item was removed and the rest renumbered.
-    - Items 1 to 3 are unchanged.
-    - Last year's Item 5, "Pearl strand with diamond clasp $74,000", is now Item 4.
-    - Last year's Item 6, "Emerald cocktail ring $72,000", is now Item 5.
-    - All five continuing values are unchanged.
+C13 Gentleman's wristwatch
+    Last year: "Item 4  Gentleman's wristwatch, perpetual calendar  $38,000"
+    This year: not on the renewal schedule (not in the documents provided).
+    Direction: removed from the schedule. The item count fell from 6 to 5.
     Letter: not mentioned.
 
-C14 Jewelry schedule, total
-    Last year: "$480,000"
-    This year: "$442,000"
-    Direction: down $38,000 (7.92%), which equals the removed wristwatch.
+C14 Item numbering
+    Last year: "Item 5  Pearl strand with diamond clasp  $74,000" and "Item 6  Emerald cocktail ring  $72,000"
+    This year: "Item 4  Pearl strand with diamond clasp  $74,000" and "Item 5  Emerald cocktail ring  $72,000"
+    Direction: renumbered. Descriptions and values are unchanged. "Item 4" now refers to a different piece.
     Letter: not mentioned.
 
-C15 Conditions
-    Last year: "Standard policy conditions apply per form PCH-100."
-    This year: the same line, plus "Protective device condition (PC-290): coverage for theft applies only if the central station burglar alarm is in working order and set whenever the residence premises is unoccupied."
-    Direction: a new condition on theft coverage was added. The premises section on both pages shows "Central station alarm: yes (fire and burglar)".
+C15 Schedule total
+    Last year: "$480,000"   This year: "$442,000"
+    Direction: fell $38,000 (7.9%).
     Letter: not mentioned.
 
-C16 Form PCH-100, Private Client Homeowners Policy
-    Last year: "PCH-100 (ed. 04/23)"
-    This year: "PCH-100 (ed. 04/25)"
-    Direction: new edition date. The wording may have changed, and the declarations cannot show how. The "standard policy conditions" line now points to the new edition.
+CONDITIONS AND FORMS
+C16 Protective device condition, PC-290
+    Last year: not in the documents provided. Conditions read only "Standard policy conditions apply per form PCH-100." PC-290 is not on the forms list.
+    This year: "Protective device condition (PC-290): coverage for theft applies only if the central station burglar alarm is in working order and set whenever the residence premises is unoccupied." The forms list adds "PC-290 (ed. 04/25) Protective Device Condition".
+    Direction: condition added. The forms list grew from 9 forms to 10.
     Letter: not mentioned.
 
-C17 Forms list
-    Last year: 9 forms, with no PC-290
-    This year: 10 forms, adding "PC-290 (ed. 04/25) Protective Device Condition"
-    Direction: one form added (see C15).
+C17 Base policy form
+    Last year: "PCH-100 (ed. 04/23)"   This year: "PCH-100 (ed. 04/25)"
+    Direction: the edition date changed. The wording may have changed, and the declarations cannot show how.
     Letter: not mentioned.
 
-C18 Premium, Section I
-    Last year: "$31,850"
-    This year: "$36,050"
-    Direction: up $4,200 (13.19%).
-    Letter: not mentioned. The letter gives the total only.
+PREMIUM
+C18 Section I
+    Last year: "$31,850"   This year: "$36,050"
+    Direction: rose $4,200 (13.2%).
+    Letter: not mentioned. The letter gives only the total.
 
-C19 Premium, Section II
-    Last year: "$2,140"
-    This year: "$2,210"
-    Direction: up $70 (3.27%), with the liability limits unchanged.
+C19 Section II
+    Last year: "$2,140"   This year: "$2,210"
+    Direction: rose $70 (3.3%). The Section II limits (E and F) are unchanged on the declarations.
     Letter: not mentioned.
 
-C20 Premium, scheduled personal property
-    Last year: "$7,210"
-    This year: "$6,640"
-    Direction: down $570 (7.91%).
+C20 Scheduled personal property
+    Last year: "$7,210"   This year: "$6,640"
+    Direction: fell $570 (7.9%).
     Letter: not mentioned.
 
-C21 Premium, total annual
-    Last year: "$41,200"
-    This year: "$44,900"
-    Direction: up $3,700 (8.98%).
+C21 Total annual premium
+    Last year: "$41,200"   This year: "$44,900"
+    Direction: rose $3,700 (9.0%).
     Letter: mentioned.
 
-Checked and unchanged:
-- Transaction ("Renewal"), named insured, trustees, producer.
-- Residence premises details: masonry veneer, built 2009, protection class 3, 0.8 miles to coast, central station alarm (fire and burglar).
-- Coverage E "$1,000,000" each occurrence and Coverage F "$25,000" each person.
-- Earthquake "Not covered".
-- PC-230 "$50,000", PC-240 "Included", PC-250 "5% annual", PC-260 "Additional 5% of Coverage A", PC-270 "$50,000".
-- Jewelry deductible "none".
-- Form editions for PC-210, PC-215, PC-230, PC-240, PC-250, PC-260, PC-270 and SP-300.
+UNCHANGED ON BOTH PAGES (checked line by line)
+- Transaction type ("Renewal").
+- Named insured and trustees.
+- Residence premises: masonry veneer, built 2009, protection class 3, 0.8 miles to coast, central station alarm "yes (fire and burglar)".
+- Producer.
+- E Personal liability, each occurrence: $1,000,000.
+- F Medical payments, each person: $25,000.
+- Earthquake: "Not covered".
+- PC-230: $50,000. PC-240: "Included". PC-250: "5% annual". PC-260: "Additional 5% of Coverage A". PC-270: $50,000.
+- Jewelry Items 1 to 3: ring $142,000, necklace $96,000, earrings $58,000.
+- Jewelry "Deductible: none."
+- The conditions line "Standard policy conditions apply per form PCH-100."
+- Edition dates for PC-210 and PC-215 (04/23), PC-230 through PC-270 (01/22) and SP-300 (04/23).
 
 ======================================================================
 3. LETTER CHECK
 ======================================================================
-
 L1  "Enclosed is the renewal for the homeowners policy, effective November 1, 2026."
-    Matches. The renewal period starts November 1, 2026.
+    MATCHES (C2).
 
-L2  "The renewal premium is $44,900, an increase of about 9% over the expiring $41,200."
-    True but incomplete. The figures match: up $3,700, or 8.98%. What the total leaves out:
-    - It combines a Section I increase of $4,200 (13.19%) and a Section II increase of $70 with a $570 drop in jewelry premium. The jewelry drop follows the removal of the $38,000 watch.
-    - Without the jewelry schedule, Sections I and II together rose 12.56% (D11).
+L2  "Re: ... policy PCH-4418-2207"
+    MATCHES the base number. The renewal carries the suffix -04 (C1).
 
-L3  "The increase reflects higher reconstruction costs and rate filings by [Carrier] for coastal homes this year."
-    Cannot be checked from these documents. The distance to coast (0.8 miles) is unchanged.
+L3  "The renewal premium is $44,900, an increase of about 9% over the expiring $41,200."
+    MATCHES: +$3,700, or 8.98% (C21).
+    TRUE BUT INCOMPLETE: the sections moved differently. Section I rose 13.2%, Section II rose 3.3% and scheduled property fell 7.9% (C18 to C20).
 
-L4  "Your dwelling limit has increased 5% to $6,510,000 under the policy's inflation guard"
-    True but incomplete.
-    - The figure matches ($310,000, 5.00%), and it fits PC-250 "5% annual" on both pages.
-    - Coverages B and C also rose 5%, which the letter does not say.
-    - Extended replacement cost fell from 150% to 125% of Coverage A. In dollars it fell from $9,300,000 to $8,137,500 (D3).
-    - Ordinance or law and water backup were both measured against Coverage A last year, and both were reduced (C10, C11).
+L4  "The increase reflects higher reconstruction costs and rate filings by [Carrier] for coastal homes this year."
+    CANNOT BE CHECKED from these documents.
+    The premises details, including distance to coast (0.8 miles), are unchanged on the declarations. Several terms changed in the same renewal (C4, C7, C8, C9, C10, C11, C12, C13, C16). The documents do not show how any of these affected the premium.
 
-L5  "which keeps the limit in step with building costs"
-    Cannot be checked from these documents.
+L5  "Your dwelling limit has increased 5% to $6,510,000"
+    MATCHES (C3).
 
-L6  "To help offset the increase, we have moved the all other perils deductible from $10,000 to $25,000."
-    True but incomplete.
-    - The deductible figures match.
-    - The windstorm or hail deductible also changed, from "$10,000" to "2% of Coverage A ($130,200)". The letter does not mention this (C9).
-    - Whether the change offset any premium cannot be checked, because the pages show no credit.
-    - "We have moved" does not say who authorized the change.
+L6  "under the policy's inflation guard"
+    CANNOT BE CHECKED. It is consistent with PC-250 "5% annual", which appears in both years, but the declarations do not say where the increase came from.
 
-L7  "We believe this is a sensible trade given the family's claims history, which remains clean."
-    Cannot be checked. It is an opinion, and the claims history is not in these documents.
+L7  "which keeps the limit in step with building costs"
+    CANNOT BE CHECKED. The PC-250 wording was not provided.
 
-L8  "Your liability coverage ... continue[s] on renewal."
-    Matches. Coverages E and F are unchanged. The Section II premium rose $70.
+    The dwelling paragraph (L5 to L7) as a whole is TRUE BUT INCOMPLETE. It leaves out four things:
+    - Extended replacement cost fell from 150% to 125% of Coverage A (C4). By the derived figures in D1, the total fell from $9,300,000 to $8,137,500.
+    - Coverages B and C also rose 5% (C5, C6).
+    - Ordinance or law fell from 100% to 25% of Coverage A (C11).
+    - Water backup changed from the full Coverage A limit to $50,000 (C10).
 
-L9  "identity fraud ... continue[s] on renewal."
-    Matches. PC-230 is "$50,000" on the same (ed. 01/22) form in both years.
+L8  "To help offset the increase, we have moved the all other perils deductible from $10,000 to $25,000."
+    The deductible figures MATCH (C8).
+    "To help offset the increase" CANNOT BE CHECKED. The documents show no premium for the $10,000 option.
+    TRUE BUT INCOMPLETE: the windstorm or hail deductible also changed, from "$10,000" to "2% of Coverage A ($130,200)" (C9), and the letter does not mention it.
+    Nothing in the documents shows whether the office asked for or approved the change.
 
-L10 "domestic staff ... continue[s] on renewal."
-    Matches. PC-240 is "Included" on the same (ed. 01/22) form in both years.
+L9  "We believe this is a sensible trade given the family's claims history, which remains clean."
+    This is the broker's opinion. The claims history CANNOT BE CHECKED from these documents.
 
-L11 "jewelry coverage continue[s] on renewal."
-    True but incomplete. It leaves out:
-    - the schedule going from 6 items to 5, with the $38,000 wristwatch removed;
-    - the total going from $480,000 to $442,000;
-    - the valuation basis changing from "AGREED VALUE" to "STATED VALUE";
-    - the new PC-290 theft condition, which may affect jewelry (this cannot be determined without the form).
+L10 "Your liability coverage, identity fraud, domestic staff and jewelry coverage continue on renewal."
+    - Liability: MATCHES as to limits (E $1,000,000 and F $25,000 are unchanged). The base form edition changed (C17), so the wording cannot be confirmed.
+    - Identity fraud: MATCHES (PC-230, $50,000, edition 01/22 in both years).
+    - Domestic staff: MATCHES (PC-240, "Included", edition 01/22 in both years).
+    - Jewelry: TRUE BUT INCOMPLETE. The schedule continues, but:
+      - the valuation basis changed from AGREED VALUE to STATED VALUE (C12);
+      - the wristwatch ($38,000) is no longer scheduled (C13);
+      - the items were renumbered (C14);
+      - the total fell from $480,000 to $442,000 (C15);
+      - a new theft condition, PC-290, was added (C16). The documents do not show whether it applies to the jewelry.
 
-The letter does not mention these changes at all: C4, C5, C6, C7, C9, C10, C11, C12, C13, C14, C15, C16, C17, and the section premiums C18 to C20.
+L11 Overall: the letter mentions 4 of the 21 changes. It does not mention C4, C7, C9, C10, C11, C12, C13, C16 or C17.
 
 ======================================================================
-4. DERIVED FIGURES
+4. DERIVED FIGURES (none of these is stated on the pages)
 ======================================================================
+D1  Extended replacement cost in dollars (derived)
+    Last year: 150% x $6,200,000 = $9,300,000
+    This year: 125% x $6,510,000 = $8,137,500
+    Change: $8,137,500 - $9,300,000 = -$1,162,500 (-12.5%)
+    Amount above Coverage A:
+    - Last year: $9,300,000 - $6,200,000 = $3,100,000
+    - This year: $8,137,500 - $6,510,000 = $1,627,500
+    - Change: -$1,472,500 (-47.5%)
+    Assumption: "X% of Coverage A" means the total dwelling amount available, including Coverage A. If it means an amount on top of Coverage A, the "amount above Coverage A" lines do not apply (see G4).
 
-D1  Coverage A change (derived): $6,510,000 - $6,200,000 = $310,000. $310,000 / $6,200,000 = 5.00%.
+D2  Ordinance or law in dollars (derived)
+    Last year: 100% x $6,200,000 = $6,200,000
+    This year: 25% x $6,510,000 = $1,627,500
+    Change: -$4,572,500 (-73.75%)
 
-D2  Coverages B and C (derived):
-    - B is 10% of A in both years ($620,000 / $6,200,000 and $651,000 / $6,510,000). B rose $31,000 / $620,000 = 5.00%.
-    - C is 50% of A in both years ($3,100,000 / $6,200,000 and $3,255,000 / $6,510,000). C rose $155,000 / $3,100,000 = 5.00%.
+D3  Water backup (derived)
+    Last year: "full Coverage A limit" = $6,200,000
+    This year: $50,000 (stated)
+    Change: -$6,150,000
+    The $50,000 is 0.77% of this year's Coverage A ($50,000 / $6,510,000).
 
-D3  Extended replacement cost in dollars (derived):
-    - Last year: 150% x $6,200,000 = $9,300,000.
-    - This year: 125% x $6,510,000 = $8,137,500.
-    - Change: -$1,162,500 (-12.5%).
-    Assumption: the declarations do not say whether this percentage is the total available for the dwelling, including Coverage A (see G2). If it is, the amount available above Coverage A was $9,300,000 - $6,200,000 = $3,100,000 last year and is $8,137,500 - $6,510,000 = $1,627,500 this year, a drop of $1,472,500.
+D4  Windstorm or hail deductible
+    Check of the printed figure: 2% x $6,510,000 = $130,200, which matches the declarations.
+    Change: $130,200 - $10,000 = +$120,200. $130,200 / $10,000 = 13.02 times last year's figure.
+    Last year's $10,000 was 0.16% of that year's Coverage A ($10,000 / $6,200,000).
+    Next term (derived): $6,510,000 x 1.05 = $6,835,500, and 2% of that = $136,710. This assumes PC-250 raises Coverage A by 5% at the next renewal and the 2% term does not change.
 
-D4  Ordinance or law in dollars (derived):
-    - Last year: 100% x $6,200,000 = $6,200,000.
-    - This year: 25% x $6,510,000 = $1,627,500.
-    - Change: -$4,572,500 (-73.75%).
+D5  Debris removal, "Additional 5% of Coverage A" (derived)
+    5% x $6,200,000 = $310,000 last year
+    5% x $6,510,000 = $325,500 this year (+$15,500)
+    The term is unchanged. The dollar amount moves with Coverage A.
 
-D5  Water backup (derived):
-    - Last year's "full Coverage A limit" was $6,200,000. This year's limit is $50,000, a difference of -$6,150,000.
-    - $50,000 is 0.77% of this year's Coverage A ($50,000 / $6,510,000).
+D6  Coverages A, B and C (derived)
+    - A: $6,510,000 / $6,200,000 = 1.05
+    - B: $651,000 / $620,000 = 1.05
+    - C: $3,255,000 / $3,100,000 = 1.05
+    In both years B is 10% of A and C is 50% of A. The declarations do not say that B or C is set as a percentage of A.
 
-D6  Windstorm or hail deductible (derived):
-    - 2% x $6,510,000 = $130,200, which matches the stated figure.
-    - Change from last year: $130,200 - $10,000 = +$120,200. $130,200 / $10,000 = 13.02 times.
-    - Next year, assuming the 2% term and PC-250 "5% annual" both continue and Coverage A rises 5% at the next renewal: Coverage A = $6,510,000 x 1.05 = $6,835,500, and the deductible = 2% x $6,835,500 = $136,710.
+D7  Premium by section (derived)
+    - Section I: $36,050 - $31,850 = +$4,200, and $4,200 / $31,850 = +13.2%
+    - Section II: $2,210 - $2,140 = +$70, and $70 / $2,140 = +3.3%
+    - Scheduled property: $6,640 - $7,210 = -$570, and -$570 / $7,210 = -7.9%
+    - Total: $44,900 - $41,200 = +$3,700, and $3,700 / $41,200 = +8.98%
+    Reconciliation: $4,200 + $70 - $570 = $3,700.
+    The sections add up to the stated totals in both years:
+    - Last year: $31,850 + $2,140 + $7,210 = $41,200
+    - This year: $36,050 + $2,210 + $6,640 = $44,900
+    The Section I increase ($4,200) is larger than the total increase ($3,700).
 
-D7  All other perils deductible (derived): $25,000 - $10,000 = +$15,000 (+150%).
+D8  Scheduled property premium per $100 of scheduled value (derived)
+    Last year: $7,210 / $480,000 x 100 = $1.502
+    This year: $6,640 / $442,000 x 100 = $1.502
+    The declarations do not say how this premium is calculated. This is a ratio only, not an explanation of why the premium changed.
 
-D8  Debris removal in dollars (derived). The term is unchanged, but the dollar amount moves with Coverage A:
-    - Last year: 5% x $6,200,000 = $310,000.
-    - This year: 5% x $6,510,000 = $325,500 (+$15,500).
-
-D9  Jewelry schedule (derived):
-    - Last year: $142,000 + $96,000 + $58,000 + $38,000 + $74,000 + $72,000 = $480,000, which matches the stated total.
-    - This year: $142,000 + $96,000 + $58,000 + $74,000 + $72,000 = $442,000, which also matches.
-    - The difference, $38,000, equals the wristwatch. $38,000 / $480,000 = 7.92%.
-
-D10 Jewelry premium per $100 of scheduled value (derived):
-    - Last year: $7,210 / ($480,000 / 100) = $1.502.
-    - This year: $6,640 / ($442,000 / 100) = $1.502.
-    - At that rate, the watch's share of premium is $38,000 x 1.502% = $570.79, which is close to the $570 decrease.
-    The documents do not say how the jewelry premium is calculated.
-
-D11 Premium by section (derived):
-    - Section I: +$4,200 / $31,850 = +13.19%.
-    - Section II: +$70 / $2,140 = +3.27%.
-    - Jewelry: -$570 / $7,210 = -7.91%.
-    - Total: +$3,700 / $41,200 = +8.98%. Check: $4,200 + $70 - $570 = $3,700.
-    - Sections I and II without the jewelry schedule: $33,990 to $38,260, which is +$4,270, or +12.56%.
+D9  Jewelry schedule recount (derived)
+    Last year, 6 items: $142,000 + $96,000 + $58,000 + $38,000 + $74,000 + $72,000 = $480,000, which matches the stated total.
+    This year, 5 items: $142,000 + $96,000 + $58,000 + $74,000 + $72,000 = $442,000, which matches the stated total.
+    The $38,000 difference equals the wristwatch's scheduled value.
 
 ======================================================================
 5. WHAT THE DOCUMENTS DO NOT SHOW
 ======================================================================
+G1  No policy forms for either year. PCH-100 moved from edition 04/23 to 04/25. The base policy's definitions, exclusions, conditions and settlement terms may have changed, and the declarations cannot show how. The letter's statements that coverage "continue[s]" cannot be checked against the wording.
 
-G1  No policy forms were provided for either year. What changed between PCH-100 ed. 04/23 and ed. 04/25 cannot be seen. That includes coverage grants, exclusions, definitions, loss settlement, and the "standard policy conditions" the declarations point to. The PC-290 wording beyond the one-sentence summary on the declarations is also not shown.
+G2  The PC-290 wording was not provided.
+    - "Unoccupied", "in working order" and "set" are not defined.
+    - It is not shown whether "coverage for theft" includes the scheduled jewelry under SP-300, theft away from the residence premises, or theft while domestic staff are present.
+    - It is not shown what proof the carrier would need that the alarm was set.
 
-G2  Extended replacement cost: the documents do not say whether "125% of Coverage A" is the total available for the dwelling or an amount on top of Coverage A. Any conditions attached to it are not shown.
+G3  "AGREED VALUE" and "STATED VALUE" are not defined in the documents, and the SP-300 wording (edition 04/23 in both years) was not provided. How a loss to a scheduled item would be settled under either basis cannot be shown. The basis changed on the declarations while the form edition did not.
 
-G3  Loss of use: when the 24 months begins, whether there is any dollar cap, and what "actual loss sustained" covers are not shown.
+G4  Extended replacement cost. It is not shown whether "150% / 125% of Coverage A" is the total available or an amount on top of Coverage A, or what conditions apply to it. D1 depends on the answer.
 
-G4  Windstorm or hail deductible: the documents do not show
-    - whether it applies per occurrence;
-    - whether it is fixed at $130,200 for the term or recalculated if Coverage A changes during the term;
-    - whether it applies to losses under Coverages B, C and D, the additional coverages, and the jewelry schedule, which states "Deductible: none".
+G5  Loss of use, "up to 24 months". It is not shown when the 24 months starts or what it covers.
 
-G5  Water backup $50,000: whether it is per occurrence or an annual aggregate, and which deductible applies, are not shown.
+G6  Deductibles.
+    - Wind: for "2% of Coverage A ($130,200)", it is not shown whether Coverage A is measured at the start of the term or at the date of loss.
+    - It is not shown whether the wind deductible applies per occurrence, per named storm or per policy period, or which Section I coverages it applies to.
+    - "Named storm" is not defined.
+    - It is not shown whether the all other perils deductible applies per occurrence.
+    - The jewelry schedule explicitly says "Deductible: none." in both years, so that point is answered.
 
-G6  Ordinance or law 25%: whether it is in addition to Coverage A or part of it, and how it works with extended replacement cost, are not shown.
+G7  It is not stated whether these limits are per occurrence or aggregate, or whether they sit inside Coverage A or on top of it: the PC-210 $50,000, PC-215 25%, PC-230 $50,000, PC-270 $50,000 and PC-260 "Additional 5%" (the word "Additional" is printed only on PC-260).
 
-G7  Agreed value and stated value are not defined on the declarations. SP-300 was not provided, so how a scheduled item would be settled under either basis cannot be determined.
+G8  PC-250 "5% annual". It is not shown whether it applies only at renewal or also during the term, or whether it applies to Coverages B and C. B and C each rose exactly 5%, but no reason is stated.
 
-G8  PC-290: "unoccupied", "in working order" and "set" are not defined. The documents do not show whether the condition reaches scheduled jewelry or property away from the premises, or how an alarm failure the insured did not know about would be treated.
+G9  Premium. The pages show premium by section only. There is no premium by coverage or deductible, no rating detail, and no figure for the renewal on last year's terms.
 
-G9  The documents do not say why the wristwatch was removed, or at whose request.
+G10 The letter's explanations (reconstruction costs, carrier rate filings, a clean claims history, and the deductible change as an offset) do not appear in the declarations.
 
-G10 Premium: the documents do not break the increase into rate filings, the limit increase, and credits for the changed terms. Claims history is not in the documents.
+G11 Authorization. Nothing shows whether the office asked for or approved any of the changes: the all other perils deductible, the wind deductible, water backup, ordinance or law, extended replacement cost, loss of use, the valuation basis, or removing the wristwatch.
 
-G11 Inflation guard: the documents do not show whether PC-250 drove the increases to B and C as well as A, or whether it adjusts limits during the term or only at renewal.
+G12 The documents do not say why the wristwatch was removed or whether it is insured elsewhere.
 
 ======================================================================
 6. QUESTIONS FOR THE BROKER
 ======================================================================
+THE LETTER AND CHANGES OVERALL
+Q1  (L11; C4, C7, C9, C10, C11, C12, C13, C16, C17) Please give us, in writing, a complete list of every change between the expiring policy and the renewal, including wording changes in the forms.
 
-Dwelling and rebuilding
-Q1 (C4, G2) Extended replacement cost changed from "150% of Coverage A" to "125% of Coverage A", and the letter does not mention it. Why was it changed, and was it a carrier requirement? Is the percentage the total available for the dwelling, or an amount on top of Coverage A? What conditions apply to it?
-Q2 (C11, G6) Ordinance or law changed from "100% of Coverage A" to "25% of Coverage A". Why? Is it in addition to Coverage A or part of it, and how does it interact with extended replacement cost?
-Q3 (C3, C5, C6, G11) Coverages A, B and C each rose exactly 5%. Were all three increased under PC-250? Does the inflation guard adjust limits only at renewal, or also during the term?
+Q2  (G11) For each change, was it required by the carrier or proposed by you? Were any of them made on an instruction from the office? If so, when was it given and by whom?
 
-Loss of use
-Q4 (C7, G3) Loss of use changed from "(no time limit)" to "up to 24 months". Why? When does the 24 months begin, and is there a dollar cap?
+PREMIUM
+Q3  (C18 to C21; L4; G9) Please provide the rating detail behind each section's change: Section I +$4,200, Section II +$70, scheduled property -$570. What documentation supports the reconstruction cost and rate filing explanation?
 
-Deductibles
-Q5 (C9) The windstorm or hail deductible changed from "$10,000" to "2% of Coverage A ($130,200)", and the letter does not mention it. Why, and was it a carrier requirement? What other deductible options did the carrier offer, and at what premium?
-Q6 (C9, G4) Does the 2% deductible apply per occurrence? Is it fixed at $130,200 for the term or recalculated if Coverage A changes? Does it apply to Coverages B, C and D, the additional coverages, and the jewelry schedule?
-Q7 (C8, L6) The letter says "we have moved" the all other perils deductible to $25,000 "to help offset the increase". What premium credit did that produce, and what would the premium be at $10,000? Was the change made on the office's instruction, because the carrier required it, or on the broker's own initiative?
+Q4  (C8; L8) What would the premium be with the all other perils deductible at $10,000, and is that option available?
 
-Water backup
-Q8 (C10, G5) Water backup changed from "Included to full Coverage A limit" to "$50,000", while the PC-210 edition stayed "(ed. 04/23)". Why? Is the $50,000 per occurrence or an annual aggregate, and which deductible applies? What higher limits are available, and at what premium?
+Q5  (C4, C7, C9, C10, C11, C12, C16; G9) For each of these items, what would the premium be on last year's terms, and can each item be priced separately?
 
-Jewelry schedule
-Q9 (C12, G7) Why did the valuation basis change from "AGREED VALUE" to "STATED VALUE"? How does SP-300 settle a loss to a scheduled item under each basis?
-Q10 (C13, C14, G9) The "Gentleman's wristwatch, perpetual calendar" ($38,000) is not on the renewal schedule. Who asked for it to be removed, and when? If the family still owns it, how would it be covered on renewal?
+Q6  (L9) Can you provide the carrier's loss history report behind the statement that the claims history "remains clean"?
 
-Theft condition
-Q11 (C15, C17, G8) Why was PC-290 added?
-- How does the policy define "unoccupied", "in working order" and "set"?
-- Does the condition apply to scheduled jewelry, and to theft away from the premises?
-- How is theft coverage affected if the alarm or its monitoring fails without the insured knowing?
-- What records would the carrier expect after a theft claim?
+PROPERTY COVERAGES
+Q7  (C4; D1; G4) Why did extended replacement cost change from 150% to 125% of Coverage A? Is the percentage the total available for the dwelling or an amount on top of Coverage A, and what conditions apply?
 
-Forms
-Q12 (C16, G1) What changed between PCH-100 ed. 04/23 and ed. 04/25? Please send both editions, or the carrier's summary of changes, along with PC-290 (ed. 04/25), SP-300 (ed. 04/23), PC-210 and PC-215.
-Q13 (G1) Did the carrier issue a notice describing coverage changes with this renewal? If so, please send it.
+Q8  (C7; G5) Why was a 24-month limit added to loss of use, and when does the 24 months start?
 
-Premium
-Q14 (C18, C21, G10) Please break down the Section I increase ($4,200, 13.19%) into rate filings, the 5% limit increase, and any credits for the changed terms. What would the renewal premium be on the expiring terms? Those are: 150% extended replacement cost, water backup to the full Coverage A limit, 100% ordinance or law, no loss of use time limit, $10,000 deductibles, and agreed value.
-Q15 (C19) The Section II premium rose $70 (3.27%) with unchanged limits. What drove it?
-Q16 (L7, G10) The letter says the claims history "remains clean". Please send the loss history the carrier used for this renewal.
-Q17 (all rows) Please confirm in writing the complete list of changes between the expiring and renewal terms.
+Q9  (C11; D2; G7) Why did ordinance or law change from 100% to 25% of Coverage A? Is it inside Coverage A or on top of it? Is it per occurrence or aggregate?
+
+Q10 (C10; D3; G7) Why did water backup change from the full Coverage A limit to $50,000? Is the $50,000 per occurrence or an annual aggregate? PC-210 kept the 04/23 edition: did only the declarations limit change?
+
+Q11 (C3, C5, C6; D6; G8) Are the 5% increases to B and C also from PC-250? Does PC-250 adjust limits only at renewal, or also during the term?
+
+DEDUCTIBLES
+Q12 (C9; D4; G6) Why did the windstorm or hail deductible change from $10,000 to 2% of Coverage A?
+    - Is Coverage A measured at the start of the term or at the date of loss?
+    - Does the deductible apply per occurrence, per named storm or per policy period, and to which Section I coverages?
+    - How is "named storm" defined?
+    - Is a flat-dollar option available, and at what premium?
+    - Does the all other perils deductible apply per occurrence?
+
+JEWELRY
+Q13 (C12; G3; D8) Why did the valuation basis change from AGREED VALUE to STATED VALUE? How would a total loss of a scheduled item be settled under each basis, and where is that defined, given SP-300 kept the 04/23 edition? Did the change affect the scheduled property rate?
+
+Q14 (C13, C15; G12) Why was the Gentleman's wristwatch, perpetual calendar ($38,000) removed from the schedule? What instruction, if any, did you receive to remove it?
+
+Q15 (C14) Please confirm that renumbering the pearl strand and the emerald cocktail ring is the only change to those two entries.
+
+CONDITIONS AND FORMS
+Q16 (C16; G2) Please send PC-290 (edition 04/25).
+    - Why was it added?
+    - Does it apply to scheduled jewelry under SP-300, and to theft away from the residence premises?
+    - How are "unoccupied", "in working order" and "set" defined?
+    - Is the residence "unoccupied" when domestic staff are there but the family is away?
+    - What records would the carrier expect as proof that the alarm was set?
+
+Q17 (C17; G1; L10) Please send PCH-100 in both the 04/23 and 04/25 editions, with a list of every wording change between them (a redline if one exists). Does any change affect the liability coverage the letter says continues?
 
 ======================================================================
 7. ACTION ITEMS FOR THE OFFICE
 ======================================================================
+A1  Before the call, have a person check this comparison line by line against the original declarations pages, including every derived figure.
 
-1. Have a person check this comparison line by line against both declarations pages before the call, and confirm the date on the letter as received.
-2. Ask the broker for the forms and notice in Q12 and Q13 before the call, so the wording can be reviewed.
-3. Confirm with whoever manages the family's jewelry, or with the principals, whether the perpetual calendar wristwatch is still owned. Also confirm whether anyone asked for it to come off the schedule.
-4. Confirm with whoever manages the residence, and with the alarm monitoring company, that central station burglar monitoring is active. Find out how the alarm is set when the house is unoccupied, including what staff do.
-5. Check the office's records for any instruction to the broker to change the all other perils deductible.
-6. Make sure the trustees ([Trustee A] and [Trustee B], the named insured) or whoever decides on the renewal sees the 16 changes the letter does not mention (section 2).
-7. Schedule the broker call well before the November 1, 2026 effective date, leaving time to review any forms received. A person, not this draft, sends the questions.
-8. After the call, file the checked comparison and the broker's written answers with the policy file.
+A2  Have a person request in writing from the broker:
+    - PCH-100 (both editions), PC-290, SP-300, PC-210, PC-215 and PC-250;
+    - rating detail by section;
+    - the complete list of changes (Q1);
+    - the loss history report;
+    - confirmation that the letter dated October 2, 2026 is the final version.
+
+A3  Search the office's own records (email and meeting notes) for any instruction to the broker about the deductibles, the jewelry valuation basis or removing the wristwatch. Note what you find before the call.
+
+A4  Confirm with whoever manages the family's jewelry what happened to the Gentleman's wristwatch, perpetual calendar (still owned, sold, gifted or moved), and whether it is insured anywhere else.
+
+A5  Confirm with whoever manages the residence:
+    - that the central station burglar alarm is monitored and working;
+    - how and by whom it is set when the residence is unoccupied, including when staff are on site but the family is away;
+    - whether the monitoring company keeps arming records.
+    Share the PC-290 wording with them once it arrives.
+
+A6  Update any internal jewelry records that use schedule item numbers. Item 4 is now the pearl strand, Item 5 is the emerald cocktail ring, and there is no Item 6.
+
+A7  Share this comparison and the questions with the trustees ([Trustee A] and [Trustee B]) or whoever decides on the renewal. Schedule the broker call well before the November 1, 2026 effective date.
+
+A8  After the call, record the broker's answers against each question number, and file this comparison with the policy record for PCH-4418-2207-04.
 
 ----------------------------------------------------------------------
-This comparison is a draft to make the renewal easier to read before the broker call. It is not insurance, legal or tax advice. It does not judge whether coverage is adequate, and it does not recommend accepting, declining or changing the renewal. A competent person must check it against the documents.
+This comparison makes the renewal easier to read before the broker call. It is not insurance, legal or tax advice. It does not judge whether coverage is adequate, and it does not recommend accepting, declining or changing the renewal. A competent person must check it against the documents. Have the broker, and counsel where needed, review the coverage questions before anyone acts. Using it creates no professional or fiduciary relationship.
 ```
 
 *Sample output is an unverified AI draft on fictional documents, shown to model the skill's conservative behavior. It is not insurance, legal, or tax advice. A competent person must verify any comparison against the source documents.*
