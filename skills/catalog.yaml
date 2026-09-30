@@ -571,3 +571,59 @@ skills:
       A controller preparing to sign off an account sees that its zero net
       difference is produced by three offsetting errors.
     path: skills/reconciliation-evidence-pack/
+
+  - id: insurance-renewal-comparison
+    display_name: Insurance Renewal Comparison
+    category: document-management
+    description: >-
+      Compares an insurance renewal against the expiring policy line by line
+      and checks the broker's cover letter against what changed. Produces a
+      change table with both years' terms and whether the letter mentions each
+      change, a check of the letter's statements, derived figures with their
+      arithmetic, what the documents cannot show, and questions for the broker.
+    intended_users:
+      - family-office-operator
+      - chief-of-staff
+      - executive-assistant
+    input_types:
+      - expiring-declarations-pages
+      - renewal-declarations-pages
+      - broker-cover-letter
+      - policy-forms-if-available
+    output_types:
+      - renewal-change-table
+      - broker-question-list
+    risk_level: medium
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+      - provide-insurance-advice
+      - judge-coverage-adequacy
+      - recommend-accepting-or-declining-a-renewal
+      - contact-broker-or-carrier
+    advice_boundary: >-
+      Makes a renewal legible by listing what changed and what the documents
+      cannot show, and frames coverage concerns as questions for the broker.
+      Does not judge whether coverage is adequate, does not recommend
+      accepting, declining, or changing a renewal, and is not insurance, legal,
+      or tax advice.
+    example_use_case: >-
+      An operator preparing for a renewal call finds nine changes on the
+      declarations pages that the broker's cover letter does not mention.
+    path: skills/insurance-renewal-comparison/

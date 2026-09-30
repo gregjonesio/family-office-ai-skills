@@ -87,6 +87,7 @@ Professional, understated, practical, operator-led. Avoid hype, buzzwords, and e
 skills/<skill-id>/SKILL.md          Workflow contract (YAML front matter + standard sections)
 skills/<skill-id>/README.md         Plain-English overview
 skills/<skill-id>/examples/         sample-input.md and sample-output.md (fictional)
+skills/<skill-id>/test-kit/         Optional: fictional test documents, an answer key written before any run, and recorded results
 skills/catalog.yaml                 Machine-readable catalog of all skills
 schemas/                            JSON schema documentation (no enforcement scripts)
 templates/                          Reusable markdown artifact templates
@@ -114,6 +115,7 @@ If you add a file that could be mistaken for advice or for an authoritative cont
 5. Add a corresponding entry to `skills/catalog.yaml` with conservative metadata (`tool_permissions: none`, `human_review_required: true`, complete `prohibited_actions`).
 6. Confirm the entry validates against `schemas/skill-manifest.schema.json`.
 7. Follow [docs/skill-design-principles.md](docs/skill-design-principles.md).
+8. Where the skill's job has a checkable answer, add a `test-kit/`: fictional documents, an answer key written before any AI sees them, a scoring rule, and a results table recording each run honestly (one run on invented documents is not evidence of reliability). Run the skill against its own kit before proposing it; a skill that has never been run is a hypothesis.
 
 ## Review checklist before any commit
 

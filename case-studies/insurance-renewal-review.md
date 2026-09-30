@@ -40,6 +40,7 @@ Every coverage observation is framed as a question for the broker or counsel, ne
 
 - [Vendor Review](../skills/vendor-review/): the broker relationship and renewal review
 - [Document Digest](../skills/document-digest/): the plain-English read of the renewal and questions for broker/counsel
+- [Insurance Renewal Comparison](../skills/insurance-renewal-comparison/): the line-by-line change list against the expiring policy, and a check of the broker's cover letter
 - [Meeting Prep Pack](../skills/meeting-prep-pack/): prep for the renewal call
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): capturing follow-ups after the call
 
