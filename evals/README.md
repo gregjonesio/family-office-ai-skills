@@ -35,6 +35,10 @@ Across all skills, a passing response should:
 - [post-write-verification-evals.md](post-write-verification-evals.md)
 - [transfer-duplicate-review-evals.md](transfer-duplicate-review-evals.md)
 
+## Test kits
+
+These scenarios test a skill's boundaries. A **test kit** tests whether a skill finds what it should: fictional documents with an answer key written before any AI saw them, a scoring rule, and the results of the runs so far. Test kits live inside the skill they test, at `skills/<skill-id>/test-kit/`. The first is the [Insurance Renewal Comparison test kit](../skills/insurance-renewal-comparison/test-kit/).
+
 ## Important
 
 A passing result on these examples does **not** guarantee a skill is safe in all cases. Model behavior varies between models, versions, and prompts. Human review remains the control. These examples are not professional advice.

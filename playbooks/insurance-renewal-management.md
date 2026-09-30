@@ -42,6 +42,7 @@ Policy documents, schedules, and asset detail are highly sensitive; provide them
 ## AI-Assisted Activities
 
 - Produce a plain-English read of the renewal and policy with [Document Digest](../skills/document-digest/): key dates, limits, exclusions, endorsements, obligations, unusual terms flagged, and precise questions for the broker or counsel: **without giving insurance advice**.
+- Compare the renewal against the expiring policy line by line with [Insurance Renewal Comparison](../skills/insurance-renewal-comparison/): every change with both years' terms, whether the broker's cover letter mentions it, and what the documents cannot show, framed as questions for the broker.
 - Structure a renewal review with [Vendor Review](../skills/vendor-review/): terms, changes from the expiring policy, premium considerations, and questions, with a recommended process next step (not a coverage recommendation).
 - Prepare for the broker call with [Meeting Prep Pack](../skills/meeting-prep-pack/) and capture follow-ups with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/).
 
@@ -102,6 +103,7 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 ## Related Skills
 
 - [Document Digest](../skills/document-digest/)
+- [Insurance Renewal Comparison](../skills/insurance-renewal-comparison/)
 - [Vendor Review](../skills/vendor-review/)
 - [Meeting Prep Pack](../skills/meeting-prep-pack/)
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/)
