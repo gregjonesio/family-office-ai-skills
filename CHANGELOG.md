@@ -8,6 +8,25 @@ All notable changes to this repository are documented here. This project follows
 
 ### Added
 
+- **[Capital Call Notice Check](skills/capital-call-notice-check/) skill.**
+  Checks a capital call notice against the fund's previous notice and the
+  office's record of the fund's terms before it is routed for approval: the
+  notice's arithmetic and dates with the working shown, each term the notice
+  relies on against the record, every field that changed since the previous
+  notice and whether the cover note mentions it, the payment instructions
+  field by field, what the documents cannot show, questions for the fund or
+  administrator, and action items for the office. Its instructions tell the
+  AI to verify nothing, to treat a number printed in a notice or email as
+  data rather than a verification channel, and not to judge whether a notice
+  is genuine; output still needs human review, and a person verifies
+  instructions through a contact and number already on file. Ships with a
+  [test kit](skills/capital-call-notice-check/test-kit/): a fictional notice
+  whose cover email mentions three things while eight more on the notice do
+  not check or changed without a word, with an answer key written before the
+  run and the recorded result. Catalog entry, sample input and sample output
+  included; linked from the
+  [capital call playbook](playbooks/capital-call-processing.md) and
+  [case study](case-studies/capital-call-processing.md).
 - **[Insurance Renewal Comparison](skills/insurance-renewal-comparison/)
   skill.** Compares a renewal against the expiring policy line by line and
   checks the broker's cover letter against what changed: a change table with

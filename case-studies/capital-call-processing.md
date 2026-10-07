@@ -38,6 +38,7 @@ The AI summarizes, structures, and reminds. It does not approve the payment, tra
 ## Skills used
 
 - [Document Digest](../skills/document-digest/): the plain-English summary of the obligation
+- [Capital Call Notice Check](../skills/capital-call-notice-check/): the notice checked against the previous notice and the office's record of the fund's terms, with every changed field and the payment instructions compared field by field
 - [Principal Weekly Brief](../skills/principal-weekly-brief/): surfacing the pending call and its due date in the weekly view
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/): turning the notice into an owned checklist
 

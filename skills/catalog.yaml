@@ -627,3 +627,67 @@ skills:
       An operator preparing for a renewal call finds nine changes on the
       declarations pages that the broker's cover letter does not mention.
     path: skills/insurance-renewal-comparison/
+
+  - id: capital-call-notice-check
+    display_name: Capital Call Notice Check
+    category: operations
+    description: >-
+      Checks a capital call notice against the fund's previous notice and the
+      office's record of the fund's terms before it is routed for approval:
+      the notice's arithmetic and dates with the working shown, each term the
+      notice relies on against the record, every field that changed since the
+      previous notice and whether the cover note mentions it, the payment
+      instructions field by field, what the documents cannot show, questions
+      for the fund or administrator, and action items for the office.
+    intended_users:
+      - family-office-operator
+      - chief-of-staff
+      - controller
+      - executive-assistant
+    input_types:
+      - capital-call-notice
+      - previous-capital-call-notice
+      - fund-terms-record
+      - cover-email
+      - capital-account-record
+    output_types:
+      - notice-check
+      - fund-question-list
+    risk_level: high
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+      - full-account-or-routing-numbers-not-required-by-the-task
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+      - approve-or-pay-capital-calls
+      - stage-or-release-wires
+      - verify-payment-instructions
+      - judge-whether-a-notice-is-genuine
+      - contact-fund-administrator-or-bank
+    advice_boundary: >-
+      Makes a capital call notice legible by checking its arithmetic, dates
+      and terms against the record and listing what changed and what the
+      documents cannot show. Verifies no payment instruction, pays nothing,
+      does not judge whether a notice is genuine, and is not legal, tax,
+      investment, or accounting advice. A person verifies instructions through
+      a contact and number already on file.
+    example_use_case: >-
+      An operator finds, before a notice reaches approval, that every payment
+      instruction field changed since the last notice without a word in the
+      cover email, and that the printed total does not equal its own lines.
+    path: skills/capital-call-notice-check/
