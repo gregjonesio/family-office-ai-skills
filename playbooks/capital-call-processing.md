@@ -43,6 +43,7 @@ Notices carry account and commitment detail; use only approved environments.
 ## AI-Assisted Activities
 
 - Summarize the notice with [Document Digest](../skills/document-digest/): amount due, due date, the commitment it draws against, references to the governing documents, and precise questions for the administrator or counsel if anything is ambiguous: **without legal or tax advice**.
+- Check the notice against the previous notice and the office's record of the fund's terms with [Capital Call Notice Check](../skills/capital-call-notice-check/): the arithmetic and dates with the working shown, each term the notice relies on, every field that changed and whether the cover note mentions it, and the payment instructions field by field. It verifies nothing; a person verifies instructions through a contact and number already on file.
 - Turn the notice into an owned checklist with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) (used here as an obligation-to-action extractor): confirm amount and date, check the unfunded balance, confirm cash availability and lead time, obtain approvals, verify wiring independently, stage and release the wire under dual control, complete recordkeeping.
 - Surface the pending call, its due date, and its funding status in the [Principal Weekly Brief](../skills/principal-weekly-brief/) until it is closed.
 - Before recording the call, check what is already on the books with [Pre-Booking Gap Analysis](../skills/pre-booking-gap-analysis/). A call that was accrued when the notice arrived and again when the wire settled is booked twice, and the second entry looks correct on its own.
@@ -109,6 +110,7 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 ## Related Skills
 
 - [Document Digest](../skills/document-digest/)
+- [Capital Call Notice Check](../skills/capital-call-notice-check/)
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/)
 - [Principal Weekly Brief](../skills/principal-weekly-brief/)
 - [Pre-Booking Gap Analysis](../skills/pre-booking-gap-analysis/)

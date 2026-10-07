@@ -70,7 +70,7 @@ This repository publishes generalized, sanitized versions of workflows that map 
 
 ```
 family-office-ai-skills/
-├── skills/        Twelve structured AI workflows (SKILL.md + README + examples)
+├── skills/        Thirteen structured AI workflows (SKILL.md + README + examples)
 ├── blueprints/    Composed, end-to-end system designs
 ├── playbooks/     How recurring operational responsibilities are executed
 ├── case-studies/  Fictional, worked end-to-end examples
@@ -79,7 +79,7 @@ family-office-ai-skills/
 └── docs/          Governance, privacy, implementation, and operating-model guidance
 ```
 
-- **`skills/`:** Twelve workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output. Where a skill's job has a checkable answer, it also ships a `test-kit/`: fictional documents and an answer key for checking the skill before you rely on it.
+- **`skills/`:** Thirteen workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output. Where a skill's job has a checkable answer, it also ships a `test-kit/`: fictional documents and an answer key for checking the skill before you rely on it.
 - **`blueprints/`:** Composed, end-to-end system designs that show how several skills, context sources, and review gates fit together.
 - **`playbooks/`:** How a lean family office runs its recurring operational responsibilities: the cadence, approvals, accountability, and review gates, and where AI reduces administrative burden without replacing judgment. See the [playbooks overview](playbooks/README.md).
 - **`case-studies/`:** Fictional, sanitized examples that walk one workflow from operating problem to follow-through.
@@ -98,6 +98,7 @@ family-office-ai-skills/
 | [Vendor Review](skills/vendor-review/) | Evaluates vendor proposals, renewals, and service issues | An ops lead reviews a custodian or technology renewal before approval |
 | [Document Digest](skills/document-digest/) | Summarizes legal, insurance, trust, or operating documents into plain English | An operator gets a plain-English read of a subscription doc before it goes to counsel |
 | [Insurance Renewal Comparison](skills/insurance-renewal-comparison/) | Compares a renewal against the expiring policy line by line and checks the broker's cover letter against what changed | An operator preparing for a renewal call finds changes on the declarations pages that the cover letter does not mention |
+| [Capital Call Notice Check](skills/capital-call-notice-check/) | Checks a capital call notice against the previous notice and the office's record of the fund's terms: arithmetic, dates, fee basis, and every field that changed | An operator finds, before a notice reaches approval, that every payment instruction field changed and the total does not equal its own lines |
 | [Pre-Booking Gap Analysis](skills/pre-booking-gap-analysis/) | Establishes what a ledger already contains before entries are prepared, so the work covers only the genuine gap | A controller picking up a period someone else started finds what is genuinely unbooked |
 | [Transfer and Duplicate Review](skills/transfer-duplicate-review/) | Finds where one economic event has been represented more than once across accounts | A bookkeeper working feeds across several accounts finds a movement counted twice |
 | [Reconciliation Evidence Pack](skills/reconciliation-evidence-pack/) | Assembles reconciliation evidence as two separate assertions, completeness and validity | A controller sees that an account's zero net difference is produced by offsetting errors |
@@ -141,6 +142,9 @@ Each skill ships with a fictional, end-to-end example so you can see exactly wha
 
 - **Insurance Renewal Comparison:** *In:* last year's declarations page, this year's renewal, and the broker's cover letter. *Out:* every change with both years' terms, whether the letter mentions it, what the documents cannot show, and questions for the broker, without judging coverage. It ships with a **test kit**: the same fictional renewal with an answer key, so you can check the skill in your own AI tool before relying on it.
   → [sample input](skills/insurance-renewal-comparison/examples/sample-input.md) · [sample output](skills/insurance-renewal-comparison/examples/sample-output.md) · [test kit](skills/insurance-renewal-comparison/test-kit/)
+
+- **Capital Call Notice Check:** *In:* the office's record of a fund's terms, the previous capital call notice, the new notice, and its cover email. *Out:* the notice's arithmetic and dates checked with the working shown, each term checked against the record, every field that changed and whether the email mentions it, the payment instructions field by field, and questions for the fund, without verifying anything or deciding whether to pay. It ships with a **test kit**: the same fictional notice with an answer key.
+  → [sample input](skills/capital-call-notice-check/examples/sample-input.md) · [sample output](skills/capital-call-notice-check/examples/sample-output.md) · [test kit](skills/capital-call-notice-check/test-kit/)
 
 Browse any skill's `examples/` folder for the rest.
 
