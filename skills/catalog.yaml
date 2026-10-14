@@ -691,3 +691,67 @@ skills:
       instruction field changed since the last notice without a word in the
       cover email, and that the printed total does not equal its own lines.
     path: skills/capital-call-notice-check/
+
+  - id: contract-renewal-check
+    display_name: Contract Renewal Check
+    category: operations
+    description: >-
+      Reads a service agreement that renews automatically, with every
+      amendment, against the provider's renewal letter and recent invoices
+      before anyone decides whether to renew: the renewal, notice and price
+      terms as they read after every amendment, the term's end date and the
+      notice deadline with the working shown, how notice must be given, a
+      check of each statement in the renewal letter against the agreement, a
+      check of current charges against the fee schedule, what the documents
+      cannot show, questions for the provider and counsel, and action items.
+    intended_users:
+      - family-office-operator
+      - chief-of-staff
+      - office-manager
+      - controller
+    input_types:
+      - service-agreement
+      - contract-amendment
+      - renewal-letter
+      - vendor-invoice
+    output_types:
+      - renewal-check
+      - provider-question-list
+      - counsel-question-list
+    risk_level: medium
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+      - recommend-renewing-or-terminating-a-contract
+      - draft-send-or-confirm-a-contract-notice
+      - determine-whether-a-term-binds-or-a-charge-is-owed
+      - approve-or-pay-invoices
+      - contact-provider-or-counsel
+    advice_boundary: >-
+      Makes a renewal legible by reading the agreement as amended, counting
+      the dates, and checking the provider's letter and invoices against it.
+      Decides nothing, drafts and sends no notice, does not say whether a
+      term binds or a charge is owed, and is not legal, tax, accounting, or
+      procurement advice. The office decides whether to renew; counsel
+      confirms deadlines, notice methods, and the meaning of the agreement.
+    example_use_case: >-
+      An office manager finds, three days before it passes, that an amendment
+      titled as an administrative update moved the notice deadline a month
+      earlier than the provider's renewal letter says.
+    path: skills/contract-renewal-check/

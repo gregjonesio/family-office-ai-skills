@@ -44,6 +44,7 @@ Contracts and diligence materials are sensitive; provide high-risk documents man
 
 - Produce a plain-English read of the proposal, renewal, or contract with [Document Digest](../skills/document-digest/): key dates, obligations, unusual terms, and auto-renewal and notice provisions flagged, with questions for counsel.
 - Structure a review with [Vendor Review](../skills/vendor-review/): terms, service issues, cost considerations, documentation status, risks, vendor questions, and a recommended process next step.
+- Before a self-renewing agreement renews, check the agreement and every amendment against the provider's renewal letter and recent invoices with [Contract Renewal Check](../skills/contract-renewal-check/): the term's end, the notice deadline and method with the counts shown, the letter's statements, and charges not in the fee schedule, with questions for the provider and counsel.
 - Prepare for the vendor or negotiation conversation with [Meeting Prep Pack](../skills/meeting-prep-pack/).
 - Capture follow-ups, documentation gaps, and escalations after the conversation with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/).
 
@@ -105,6 +106,7 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 ## Related Skills
 
 - [Vendor Review](../skills/vendor-review/)
+- [Contract Renewal Check](../skills/contract-renewal-check/)
 - [Document Digest](../skills/document-digest/)
 - [Meeting Prep Pack](../skills/meeting-prep-pack/)
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/)

@@ -8,6 +8,26 @@ All notable changes to this repository are documented here. This project follows
 
 ### Added
 
+- **[Contract Renewal Check](skills/contract-renewal-check/) skill.**
+  Reads a service agreement that renews automatically, with every
+  amendment, against the provider's renewal letter and recent invoices
+  before anyone decides whether to renew: the renewal, notice and price
+  terms as they read after every amendment, the term's end date and the
+  notice deadline with the working shown, how notice must be given, each
+  statement in the renewal letter against the agreement, current charges
+  against the fee schedule, what the documents cannot show, questions for
+  the provider and counsel, and action items. Its instructions tell the
+  AI not to recommend a renewal decision, not to draft or send a notice
+  or treat a reply to the letter as notice, and not to say whether a
+  charge is owed; output still needs human review, and counsel confirms
+  deadlines and notice methods. Ships with a
+  [test kit](skills/contract-renewal-check/test-kit/): a fictional
+  managed IT services agreement whose amendment changed the renewal terms
+  under an administrative heading, a renewal letter that states them
+  differently, and an invoice with charges outside the fee schedule, with
+  an answer key written before the run and the recorded result. Catalog
+  entry, sample input and sample output included; linked from the
+  [vendor onboarding and review playbook](playbooks/vendor-onboarding-and-review.md).
 - **[Capital Call Notice Check](skills/capital-call-notice-check/) skill.**
   Checks a capital call notice against the fund's previous notice and the
   office's record of the fund's terms before it is routed for approval: the
