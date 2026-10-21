@@ -46,6 +46,7 @@ Travel documents, identifiers, and detailed schedules are sensitive; provide the
 
 - Assemble a structured per-meeting brief for the trip's commitments with [Meeting Prep Pack](../skills/meeting-prep-pack/): attendees, agenda, and desired outcomes.
 - Produce plain-English reads of itineraries, confirmations, and travel documents with [Document Digest](../skills/document-digest/), surfacing key times, addresses, gate and FBO details, and document requirements.
+- Check a booked trip's confirmations against the agent's summary and the traveler profiles with [Travel Itinerary Check](../skills/travel-itinerary-check/): nights covered, connections and handoffs on the times actually booked, each traveler's ticket status, holds and payment dates, and each statement in the summary, with questions for the agent. It supports the plan gate; it does not book, change or pay for anything, or state entry requirements.
 - Surface the trip, its dates, document-expiry checks, and open logistics in the [Principal Weekly Brief](../skills/principal-weekly-brief/).
 - Capture post-trip follow-ups with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/).
 
@@ -101,6 +102,7 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 
 ## Related Skills
 
+- [Travel Itinerary Check](../skills/travel-itinerary-check/)
 - [Meeting Prep Pack](../skills/meeting-prep-pack/)
 - [Document Digest](../skills/document-digest/)
 - [Principal Weekly Brief](../skills/principal-weekly-brief/)

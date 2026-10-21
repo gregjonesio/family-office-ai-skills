@@ -755,3 +755,68 @@ skills:
       titled as an administrative update moved the notice deadline a month
       earlier than the provider's renewal letter says.
     path: skills/contract-renewal-check/
+
+  - id: travel-itinerary-check
+    display_name: Travel Itinerary Check
+    category: operations
+    description: >-
+      Reads every confirmation for a booked trip (airline receipts and booking
+      records, hotel confirmations, rail tickets, car transfers) against the
+      travel agent's summary and the office's traveler profiles before anyone
+      relies on the trip: the time-sensitive items first, the trip day by day
+      and night by night as the confirmations record it with every connection
+      time and night count shown, each traveler's status on each booking, a
+      check of each statement in the summary against the confirmations, what
+      each confirmation says about price, payment and cancellation, what the
+      documents cannot show, questions for the agent, and action items.
+    intended_users:
+      - executive-assistant
+      - chief-of-staff
+      - office-manager
+      - family-office-operator
+    input_types:
+      - travel-agent-summary
+      - airline-receipt
+      - hotel-confirmation
+      - rail-and-transfer-confirmation
+      - traveler-profile
+    output_types:
+      - itinerary-check
+      - agent-question-list
+    risk_level: medium
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+      - book-change-cancel-or-pay-for-travel
+      - authorize-a-charge
+      - state-entry-or-visa-requirements
+      - contact-agent-or-provider
+    advice_boundary: >-
+      Makes a booked trip legible by building it from the confirmations and
+      checking the agent's summary and the travelers' bookings against them.
+      Books, changes, cancels and pays for nothing, contacts no one, states no
+      entry requirement the documents do not state, and is not travel,
+      immigration, visa, legal or insurance advice. The office decides what to
+      do with the agent and the providers, and confirms entry requirements with
+      the official source.
+    example_use_case: >-
+      An executive assistant finds, two days before a ticketing hold expires,
+      that the agent's "confirmed and ticketed" summary covers a child's seat
+      that was never ticketed and a hotel booked from the night of departure.
+    path: skills/travel-itinerary-check/

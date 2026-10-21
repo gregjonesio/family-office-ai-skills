@@ -8,6 +8,27 @@ All notable changes to this repository are documented here. This project follows
 
 ### Added
 
+- **[Travel Itinerary Check](skills/travel-itinerary-check/) skill.**
+  Reads every confirmation for a booked trip (airline receipts and booking
+  records, hotel confirmations, rail tickets, car transfers) against the
+  travel agent's summary and the office's traveler profiles before anyone
+  relies on the trip: the time-sensitive items first, the trip day by day
+  and night by night as the confirmations record it with every connection
+  time and night count shown, each traveler's status on each booking, each
+  statement in the summary against the confirmations, price, payment and
+  cancellation terms as printed, what the documents cannot show, questions
+  for the agent, and action items. Its instructions tell the AI not to
+  book, change, cancel or pay for anything, not to reply to the agent or
+  any provider, and not to state entry, passport or visa requirements the
+  documents do not state; output still needs human review, and entry
+  requirements are confirmed with the official source. Ships with a
+  [test kit](skills/travel-itinerary-check/test-kit/): a fictional family
+  trip whose agent's summary says everything is confirmed and ticketed,
+  and seven documents that differ from it in their dates, fare
+  conditions, rate terms and footnotes, with an answer key written before
+  the run and the recorded result. Catalog entry, sample input and sample
+  output included; linked from the
+  [executive travel coordination playbook](playbooks/executive-travel-coordination.md).
 - **[Contract Renewal Check](skills/contract-renewal-check/) skill.**
   Reads a service agreement that renews automatically, with every
   amendment, against the provider's renewal letter and recent invoices

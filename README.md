@@ -70,7 +70,7 @@ This repository publishes generalized, sanitized versions of workflows that map 
 
 ```
 family-office-ai-skills/
-├── skills/        Fourteen structured AI workflows (SKILL.md + README + examples)
+├── skills/        Fifteen structured AI workflows (SKILL.md + README + examples)
 ├── blueprints/    Composed, end-to-end system designs
 ├── playbooks/     How recurring operational responsibilities are executed
 ├── case-studies/  Fictional, worked end-to-end examples
@@ -79,7 +79,7 @@ family-office-ai-skills/
 └── docs/          Governance, privacy, implementation, and operating-model guidance
 ```
 
-- **`skills/`:** Fourteen workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output. Where a skill's job has a checkable answer, it also ships a `test-kit/`: fictional documents and an answer key for checking the skill before you rely on it.
+- **`skills/`:** Fifteen workflows. Each contains a `SKILL.md` (the workflow contract), a `README.md` (plain-English overview), and an `examples/` folder with a fictional sample input and the resulting output. Where a skill's job has a checkable answer, it also ships a `test-kit/`: fictional documents and an answer key for checking the skill before you rely on it.
 - **`blueprints/`:** Composed, end-to-end system designs that show how several skills, context sources, and review gates fit together.
 - **`playbooks/`:** How a lean family office runs its recurring operational responsibilities: the cadence, approvals, accountability, and review gates, and where AI reduces administrative burden without replacing judgment. See the [playbooks overview](playbooks/README.md).
 - **`case-studies/`:** Fictional, sanitized examples that walk one workflow from operating problem to follow-through.
@@ -100,6 +100,7 @@ family-office-ai-skills/
 | [Insurance Renewal Comparison](skills/insurance-renewal-comparison/) | Compares a renewal against the expiring policy line by line and checks the broker's cover letter against what changed | An operator preparing for a renewal call finds changes on the declarations pages that the cover letter does not mention |
 | [Capital Call Notice Check](skills/capital-call-notice-check/) | Checks a capital call notice against the previous notice and the office's record of the fund's terms: arithmetic, dates, fee basis, and every field that changed | An operator finds, before a notice reaches approval, that every payment instruction field changed and the total does not equal its own lines |
 | [Contract Renewal Check](skills/contract-renewal-check/) | Reads a self-renewing service agreement, with every amendment, against the provider's renewal letter and recent invoices: term end, notice deadline, notice method, price, and charges | An office manager finds that an amendment moved the notice deadline a month earlier than the renewal letter says |
+| [Travel Itinerary Check](skills/travel-itinerary-check/) | Reads every confirmation for a booked trip against the travel agent's summary and the travelers' profiles: nights covered, connections and handoffs on the times booked, each traveler's ticket status, and each statement in the summary | An executive assistant finds that a "confirmed and ticketed" trip has a child's seat that was never ticketed and a hotel booked from the night of departure |
 | [Pre-Booking Gap Analysis](skills/pre-booking-gap-analysis/) | Establishes what a ledger already contains before entries are prepared, so the work covers only the genuine gap | A controller picking up a period someone else started finds what is genuinely unbooked |
 | [Transfer and Duplicate Review](skills/transfer-duplicate-review/) | Finds where one economic event has been represented more than once across accounts | A bookkeeper working feeds across several accounts finds a movement counted twice |
 | [Reconciliation Evidence Pack](skills/reconciliation-evidence-pack/) | Assembles reconciliation evidence as two separate assertions, completeness and validity | A controller sees that an account's zero net difference is produced by offsetting errors |
@@ -149,6 +150,9 @@ Each skill ships with a fictional, end-to-end example so you can see exactly wha
 
 - **Contract Renewal Check:** *In:* a managed IT services agreement, an amendment, the provider's renewal letter, and the latest invoice. *Out:* the renewal, notice and price terms as amended with each clause quoted, the term's end and the notice deadline with every count shown, each statement in the letter checked against the agreement, each invoice line checked against the fee schedule, and questions for the provider and counsel, without recommending a renewal decision or sending anything. It ships with a **test kit**: the same fictional renewal with an answer key.
   → [sample input](skills/contract-renewal-check/examples/sample-input.md) · [sample output](skills/contract-renewal-check/examples/sample-output.md) · [test kit](skills/contract-renewal-check/test-kit/)
+
+- **Travel Itinerary Check:** *In:* a travel agent's summary email, airline receipts and a booking record, two hotel confirmations, rail and transfer confirmations, and the office's traveler profiles. *Out:* the time-sensitive items first, the trip day by day and night by night as the confirmations record it with every connection time and night count shown, each traveler's status on each booking, each statement in the summary checked against the confirmations, price, payment and cancellation terms as printed, and questions for the agent, without booking, changing, paying for or replying to anything. It ships with a **test kit**: the same fictional trip with an answer key.
+  → [sample input](skills/travel-itinerary-check/examples/sample-input.md) · [sample output](skills/travel-itinerary-check/examples/sample-output.md) · [test kit](skills/travel-itinerary-check/test-kit/)
 
 Browse any skill's `examples/` folder for the rest.
 
