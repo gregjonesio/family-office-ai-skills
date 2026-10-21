@@ -8,6 +8,25 @@ All notable changes to this repository are documented here. This project follows
 
 ### Added
 
+- **[Entity Compliance Calendar](skills/entity-compliance-calendar/) skill.**
+  Builds a twelve-month compliance calendar for one entity from its own
+  documents (formation certificate, governing agreement, state notices,
+  registered agent letters, the accountant's emails and the office's
+  register entry): anything already passed or due soon, a dated calendar
+  with each date's source quoted and its count shown, the rules behind
+  the dates, obligations without a date, where documents disagree, what
+  the documents do not cover, questions for counsel, the accountant or
+  the provider, and action items. Its instructions tell the AI not to add
+  obligations, rules or amounts from outside the documents, not to apply
+  a weekend rule beyond the document that states it, not to decide which
+  of two disagreeing documents governs, and not to make any filing or
+  share any login; output still needs human review, and counsel and the
+  accountant confirm the obligations and dates. Ships with a
+  [test kit](skills/entity-compliance-calendar/test-kit/): a fictional
+  holding LLC whose dates run from four different starting points, with
+  an answer key written before the run and the recorded result. Catalog
+  entry, sample input and sample output included; linked from the
+  [entity governance calendar playbook](playbooks/entity-governance-calendar.md).
 - **[Contract Renewal Check](skills/contract-renewal-check/) skill.**
   Reads a service agreement that renews automatically, with every
   amendment, against the provider's renewal letter and recent invoices
