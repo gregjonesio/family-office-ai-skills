@@ -755,3 +755,69 @@ skills:
       titled as an administrative update moved the notice deadline a month
       earlier than the provider's renewal letter says.
     path: skills/contract-renewal-check/
+
+  - id: entity-compliance-calendar
+    display_name: Entity Compliance Calendar
+    category: operations
+    description: >-
+      Builds a twelve-month compliance calendar for one entity from its own
+      documents (formation certificate, governing agreement, state notices,
+      registered agent letters, the accountant's emails and the office's
+      register entry): anything already passed or due soon, a dated calendar
+      with each date's source quoted and its count shown, the rules behind
+      the dates, obligations without a date, where documents disagree, what
+      the documents do not cover, questions for counsel, the accountant or
+      the provider, and action items.
+    intended_users:
+      - family-office-operator
+      - chief-of-staff
+      - controller
+      - office-manager
+    input_types:
+      - formation-document
+      - governing-agreement
+      - state-notice
+      - registered-agent-letter
+      - accountant-email
+      - entity-register-entry
+    output_types:
+      - compliance-calendar
+      - counsel-question-list
+      - accountant-question-list
+    risk_level: medium
+    tool_permissions: none
+    context_sources:
+      - manual input
+      - approved read-only connector where appropriate
+    connector_posture: "manual input or approved read-only connector; no write/send/transaction authority"
+    human_review_required: true
+    prohibited_inputs:
+      - confidential-data-in-unapproved-ai-tools
+      - live-credentials
+    prohibited_actions:
+      - execute-transactions
+      - approve-investments
+      - send-communications-automatically
+      - provide-legal-advice
+      - provide-tax-advice
+      - provide-investment-advice
+      - make-fiduciary-determinations
+      - access-live-systems
+      - rely-on-confidential-data-in-unapproved-ai-tools
+      - make-or-submit-filings
+      - add-obligations-not-in-the-documents
+      - determine-good-standing-or-authority
+      - share-credentials-or-filing-pins
+      - contact-agencies-providers-counsel-or-accountant
+    advice_boundary: >-
+      Builds a dated draft calendar of one entity's obligations from the
+      entity's own documents, with every date traced and counted. Adds no
+      obligation the documents do not state, decides no question of
+      interpretation, says nothing about good standing, makes no filing,
+      and is not legal, tax, accounting or compliance advice. Counsel and
+      the accountant confirm the obligations and the dates.
+    example_use_case: >-
+      An operator rebuilding a holding LLC's calendar finds that the
+      operating agreement counts members' tax information from the calendar
+      year, months before the accountant plans to send it.
+    path: skills/entity-compliance-calendar/

@@ -43,6 +43,7 @@ Entity and governing documents are sensitive; provide them manually in approved 
 
 ## AI-Assisted Activities
 
+- Build or rebuild an entity's twelve-month calendar from its own documents with [Entity Compliance Calendar](../skills/entity-compliance-calendar/): every filing, report, meeting and renewal the documents set, with each date traced to its clause and its count shown, anything already passed, and where documents disagree. It adds no obligation the documents do not state and makes no filing.
 - Produce plain-English reads of governing documents, notices, and resolutions with [Document Digest](../skills/document-digest/): obligations, recurring dates, signatory requirements, and questions for counsel: **without legal interpretation**.
 - Turn the calendar's upcoming obligations into an owned, tracked list with [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/) (used as an obligations-to-action extractor): owners, deadlines, and dependencies per filing or formality.
 - Surface upcoming governance dates and their status in the [Principal Weekly Brief](../skills/principal-weekly-brief/) so nothing approaches unseen.
@@ -101,6 +102,7 @@ Figures are directional, not audited. See [measurement-framework.md](../docs/mea
 
 ## Related Skills
 
+- [Entity Compliance Calendar](../skills/entity-compliance-calendar/)
 - [Document Digest](../skills/document-digest/)
 - [Post-Meeting Action Extractor](../skills/post-meeting-action-extractor/)
 - [Principal Weekly Brief](../skills/principal-weekly-brief/)

@@ -72,7 +72,7 @@ Once you have run it on fictional input and confirmed it behaves conservatively,
 
 ## Next steps
 
-- Browse [the fourteen skills](README.md#the-skills).
+- Browse [the fifteen skills](README.md#the-skills).
 - Read the [Trust and safety posture](README.md#trust-and-safety-posture).
 - Test conservatively with the [Evaluation and Red-Team Guide](docs/evaluation-guide.md).
 
